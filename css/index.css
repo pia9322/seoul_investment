@@ -210,6 +210,7 @@ main .main_wrap .main_wrap_02 .wrap_02 .home_slide .home_box .home_content .home
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #666;
 }
 
 main .main_wrap .main_wrap_02 .wrap_02 .home_slide .home_box .home_content .home_detail p:nth-of-type(3) a:hover {
@@ -249,8 +250,17 @@ main .main_wrap .main_wrap_03 .wrap_03 .main_wrap_title {
 
 main .main_wrap .main_wrap_03 .wrap_03 .main_wrap_title h2 {
   padding: 0 60px;
+}
+
+main .main_wrap .main_wrap_03 .wrap_03 .main_wrap_title h2 a {
   color: #112d4e;
   font-size: 52px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main .main_wrap .main_wrap_03 .wrap_03 .main_wrap_title h2 a:hover {
+  opacity: .5;
 }
 
 main .main_wrap .main_wrap_03 .wrap_03 .notice {

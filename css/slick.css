@@ -1,0 +1,159 @@
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+  transition: .3s;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 30px 50px;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+/*# sourceMappingURL=slick.css.map */
+
+
+.slick-current{
+}
+
+.slick-slider{
+}
+.slick-active {
+}
+
+.slick-slide {
+  float: left;
+  height: 740px;
+  min-height: 1px;
+  display: none;
+  margin: 0 30px;
+}
+.slick-slide > div {
+  height: 740px; width: 400px;
+}
+.slick-slide > div > li {
+  border: 1px solid #ddd;
+}
+
+
+
+
+
+.slick-arrow{
+  outline-style: none;
+  transition: .3s;
+  background: none;
+  font-size: 0;
+}
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; height: 20px;
+  z-index: 10;
+  border: none;
+  cursor: pointer;
+}
+.slick-prev{
+  transform: rotate(-135deg);
+  left: 40px;
+  border-top: 4px solid #999;
+  border-right: 4px solid #999;
+}
+.slick-next { 
+  transform: rotate(135deg);
+  right: 40px;
+  border-top: 4px solid #999;
+  border-left: 4px solid #999;
+}
+
+.slick-arrow:hover{
+  opacity: .5;    
+}
+.slick-slide:not(.slick-active) {
+  opacity: 0.5;
+  transition: .3s;
+}

@@ -192,7 +192,7 @@ main .main_wrap .main_wrap_02 .wrap_02 .home_slide .home_box .home_content .home
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
+  margin: 30px 0;
 }
 
 main .main_wrap .main_wrap_02 .wrap_02 .home_slide .home_box .home_content .home_detail p:nth-of-type(3) a {

@@ -167,6 +167,7 @@ main{
                                         display: flex;
                                         align-items: center;
                                         justify-content: center;
+                                        color: #666;
                                         &:hover{
                                             background: #112d4e;
                                             color: #fff;
@@ -202,7 +203,15 @@ main{
                 .main_wrap_title {
                     display: flex; align-items: center; justify-content: center;
                     margin-top: 120px;
-                    h2 {padding: 0 60px; color: #112d4e; font-size: 52px;}
+                    h2 {padding: 0 60px;
+                        a{
+                            color: #112d4e; font-size: 52px;
+                            transition: .3s;
+                            &:hover {
+                                opacity: .5;
+                            }
+                        }
+                    }
                 }
 
                 .notice {

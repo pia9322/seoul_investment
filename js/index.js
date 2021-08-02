@@ -39,29 +39,38 @@ $(function(){
 
     $('.home_slide').slick({
         infinite: true,          
-        slidesToShow: 3,
+        slidesToShow: 2,
         arrows: true,
         centerMode: true,
         centerPadding : '220px',
         responsive: [
-            // {
-            //     breakpoint: 768,
-            //     settings: {
-            //         arrows: false,
-            //         centerMode: true,
-            //         centerPadding: '40px',
-            //         slidesToShow: 3
-            //     }
-            // },
-            // {
-            //     breakpoint: 480,
-            //     settings: {
-            //         arrows: false,
-            //         centerMode: true,
-            //         centerPadding: '40px',
-            //         slidesToShow: 1
-            //     }
-            // }
+            {
+                breakpoint: 1440,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
         ]
     });
 

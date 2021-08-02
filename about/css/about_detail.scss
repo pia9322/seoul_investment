@@ -1,0 +1,98 @@
+.about_01_wrap_01{
+    position: relative;
+    .wrap{
+        > figure {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            figcaption{
+                position: absolute;
+                display: flex;
+                width: 100%; height: 100%;
+                align-items: center; justify-content: center;
+                flex-direction: column;
+                color: #fff;
+                .textbox_title{
+                    font-size: 52px;
+                }
+                .textbox_sub{}
+            }
+        }
+    }
+
+}
+
+.about_detail_01{
+    width: 70%; margin: 150px auto 0;
+    border: 1px solid #F00;
+    .wrap {
+        .content_01{
+        display: flex;
+        .detail_main_visual_01{
+            width: 710px; height: 530px;
+        }
+        
+        .detail_main_caption{
+            figcaption{
+                padding: 40px 0 0 60px;
+                ul {
+                    li{
+                    }
+                    .caption_01{
+                        font-size: 36px;
+                    }
+                    .caption_02{
+                        margin-top: 32px;
+                        font-size: 24px;
+                        padding-bottom: 24px;
+                        border-bottom: 1px solid #ddd;
+                        color: #112d4e;
+                        img{width:10px; height:17px}
+                    }
+                    .caption_03, .caption_04, .caption_05{
+                        list-style: circle;
+                    }
+                    .caption_03{
+                        margin-top: 30px;
+                    }
+                    .caption_04{
+                        margin-top: 10px;
+                    }
+                    .caption_05{
+                        margin-top: 10px;
+                    }
+                    .caption_more{
+                        display: inline-block;font-size: 20px; padding: 20px 40px; border: 1px solid #ddd;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+      }
+      .content_02{
+          table {
+              margin-top: 120px;
+              width:100%;
+              tr{
+                  border: 1px solid #fff;
+                td:nth-of-type(1), td:nth-of-type(3){
+                    background: #112d4e;
+                    padding: 20px 20px;
+                    width:10%;
+                    text-align: center;
+                    color: #fff;
+                }
+                td:nth-of-type(2), td:nth-of-type(4){
+                    border: 1px solid #ddd;
+                    padding-left: 40px;
+                    width: 300px
+                }
+            }
+        }
+      }
+    }
+}
+
+.about_detail_02{}
+.about_detail_03{}

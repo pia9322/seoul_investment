@@ -1,0 +1,140 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+
+@font-face {
+    font-family: 'AppleSDGothicNeoM';
+    src: url('../font/appleSDgothicNeo/AppleSDGothicNeoM.ttf'); /* IE9 Compat Modes */
+    /* unicode-range: U+AC00-U+D7A3; */
+    /* unicode-range: U+0041-005A, U+0061-007A; */
+}
+
+@font-face {
+	font-family: 'Play';
+    src: url('../font/Play/Play-Bold.ttf'); /* IE9 Compat Modes */
+}
+
+*{
+	box-sizing: border-box;
+	font-family: 'AppleSDGothicNeoM', 'Play', sans-serif;
+}
+
+img {
+	width: 100%; height:100%;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {display: block; text-decoration: none;}
+
+
+
+
+
+
+
+/* swiper */
+.main_wrap_01 .swiper-container .text_swiper .text_swiper_wrap .swiper-progress-bar .slide_progress-bar {
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 110%;
+    width: 100px;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .main_wrap_01 .swiper-container .text_swiper .text_swiper_wrap .swiper-progress-bar .slide_progress-bar .swiper-pagination .swiper-pagination-current {
+    color: #fff;
+    position: absolute;
+    right: 110%;
+    top: 0;
+    font-size: 24px;
+  }
+  
+.main_wrap_01 .swiper-container .text_swiper .text_swiper_wrap .swiper-progress-bar .slide_progress-bar .swiper-pagination .swiper-pagination-total {
+    color: #fff;
+    position: absolute;
+    left: 110%;
+    top: 0;
+    font-size: 24px;
+}
+
+.main_wrap_01 .swiper-container .text_swiper .text_swiper_wrap .swiper-progress-bar .slide_progress-bar:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	border-radius: 10px;
+	height: 100%;
+	width: 0;
+	content: "";
+}
+
+.main_wrap_01 .swiper-container .text_swiper .text_swiper_wrap .swiper-progress-bar.active .slide_progress-bar {
+	opacity: 1;
+}
+
+.main_wrap_01 .swiper-container .text_swiper .text_swiper_wrap .swiper-progress-bar.animate .slide_progress-bar:after {
+	-webkit-transition: width linear;
+	transition: width linear;
+	-webkit-transition-delay: unset;
+			transition-delay: unset;
+	width: 100%;
+	-webkit-transition-duration: 5s;
+			transition-duration: 5s;
+}
+
+.main_wrap_01 .swiper-container .swiper-button-next, .main_wrap_01 .swiper-container .swiper-button-prev {
+	color: #000;
+}
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+}
+/* swiper */

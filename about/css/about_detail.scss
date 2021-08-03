@@ -1,3 +1,6 @@
+
+.text_pointing {width:10px; height:17px; margin-right: 6px;}
+
 .operation_about_01{
     position: relative;
     .wrap{
@@ -132,10 +135,12 @@
         border: 1px solid #f00;
         margin-top: 40px;
         .content_table_01{
-            // width: 100%;
+            width: 100%;
+            text-align: center;
             caption{display: none;}
-            tr,th,td {border: 1px solid #ddd;}
+            tr,th,td {border: 1px solid #ddd; padding:20px; vertical-align: middle;}
 
+            
             .table_detail_01{
                 th{font-size: 20px; padding:20px 30px; background: #112d4e; color: #fff;}
             }
@@ -143,7 +148,7 @@
                 td{
                     figure{
                         width: 230px; height:200px;
-                        margin: 25px;
+                        margin: 25px auto;
                     }
                 }
             }
@@ -153,6 +158,149 @@
 }
 
 
+.operation_about_05{
+    width: 70%; margin: 0 auto;
+    .content_title{
+        margin-top: 140px;
+        display: flex;
+        width:100%;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 24px;
+        figcaption{
+            font-size: 24px;
+            font-weight: bold;
+            color: #112d4e;
+        }
+    }
+    .content_main{
+        margin-top: 40px;
+        .wrap{
+            display: flex;
+            justify-content: space-between;
+            .content_01{
+                margin: 0 auto;
+                ul{
+                    position: relative;
+                    width: 550px; height: 500px;
+                    li:not(:first-of-type) {
+                        position: absolute;
+                        z-index: 10;
+                    }
+                    .map_pointer_01{
+                        left: 224px; top: 72px;
+                    }
+                    .map_pointer_02{
+                        left: 187px; top: 108px;
+                    }
+                    .map_pointer_03{
+                        left: 72px; top: 276px;
+                    }
+                    .map_pointer_04{
+                        right: 28px; top: 235px;
+                    }
+                    
+                    .point > svg > path{
+                        transition: .3s;
+                    }
+                    .point.active > svg > path{
+                        fill: #112d4e;
+                    }
+                }
+            }
+
+            .content_02{
+                width: 500px;
+                > ul {
+                    > li {
+                        border-bottom: 1px solid #ddd;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 15px;
+                        .content_text{
+                            line-height: 1.5rem;
+                            padding-bottom: 15px;
+                            p{
+                                font-size: 20px;
+                            }
+                            i{
+                                color: #666;
+                            }
+                        }
+                        .content_ico{
+                            figure{
+                                .map_pointer{transition: .3s;}
+                                .map_svg:hover .map_pointer{
+                                    fill: #112d4e;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
-.text_pointing {width:10px; height:17px; margin-right: 6px;}
+
+.operation_about_06{
+    width: 70%; margin: 0 auto;
+    .content_title{
+        margin-top: 140px;
+        display: flex;
+        width:100%;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 24px;
+        figcaption{
+            font-size: 24px;
+            font-weight: bold;
+            color: #112d4e;
+        }
+    }
+    .content_main{
+        margin-top: 40px;
+        .wrap{
+            display: flex;
+            .content_01{
+                figure{
+                    width: 710px; height: 530px;
+                }
+            }
+
+            .content_02{
+                margin-left: 60px;
+                ul{
+                    .content_02_wrap{
+                        margin: 20px 0;
+                        > li:not(:first-of-type) {
+                            margin-top: 10px;
+                        }
+                        > li{
+                            display: flex;
+
+                            strong{
+                                width: 60px; text-align: right; margin: 2.5px 30px 0 0;
+                                color: #112d4e;
+                                font-weight: bold;
+                            }
+                            .content_02_detail{
+                                > li{
+                                    padding-left: 30px;
+                                    border-left: 1px solid #ddd;
+                                    margin-top: 2.5px;
+                                }
+                            }
+                        }
+                    }
+                }
+                a{
+                    margin-top: 50px;
+                    padding: 15px 30px;
+                    border: 1px solid #ddd;
+                    display: inline-block;
+                    color: #222;
+                }
+            }
+        }
+    }
+}

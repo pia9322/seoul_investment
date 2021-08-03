@@ -4,6 +4,8 @@ header {
     // min-width: 1900px;
     max-width: 1900px;
     margin: 0 auto;
+    z-index: 9999;
+
     > .header_wrap{
         width: 70%; margin: 0 auto;
         padding: 20px 0;
@@ -18,18 +20,50 @@ header {
         nav a {}
 
         // header_left
-        .header_left {
-        } 
+        .header_left {} 
 
         // header_center 
         .header_center {
-            display: flex;
-            font-size: 18px;
-            
-            > a {
-                padding: 0 30px;
-                color: #000;
-                font-family: "AppleSDGothicNeoM";
+            > ul{
+                display: flex;
+                font-size: 18px;
+                > li{
+                    position: relative;
+                    > a {
+                        padding: 0 30px;
+                        color: #000;
+                        font-family: "AppleSDGothicNeoM";
+                    }
+                    .depth_01 {
+                        z-index: 10000;
+                        display: none;
+                        position: absolute;
+                        left: -50%;
+                        top: 100%;
+                        width: 200%;
+                        text-align: center;
+                        border-radius: 10px;
+
+                        > li {
+                            padding: 10px 0;
+                            background: rgba($color: #fff, $alpha: .5);
+                            transition: .1s;
+                            > a {
+                                font-size: .9rem;
+                                color: #222;
+                            }
+                            &:hover {
+                                background: #112d4e;
+                                a {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    &:hover .depth_01{
+                        display: block;
+                    }
+                }
             }
         }
 
@@ -70,6 +104,7 @@ header {
     }
     
 }
+
 
 
 main{

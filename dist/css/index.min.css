@@ -1,11 +1,25 @@
 @import url("common.css");
-header { max-width: 1900px; margin: 0 auto; }
+header { max-width: 1900px; margin: 0 auto; z-index: 9999; }
 
 header > .header_wrap { width: 70%; margin: 0 auto; padding: 20px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-header > .header_wrap .header_center { display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 18px; }
+header > .header_wrap .header_center > ul { display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 18px; }
 
-header > .header_wrap .header_center > a { padding: 0 30px; color: #000; font-family: "AppleSDGothicNeoM"; }
+header > .header_wrap .header_center > ul > li { position: relative; }
+
+header > .header_wrap .header_center > ul > li > a { padding: 0 30px; color: #000; font-family: "AppleSDGothicNeoM"; }
+
+header > .header_wrap .header_center > ul > li .depth_01 { z-index: 10000; display: none; position: absolute; left: -50%; top: 100%; width: 200%; text-align: center; border-radius: 10px; }
+
+header > .header_wrap .header_center > ul > li .depth_01 > li { padding: 10px 0; background: rgba(255, 255, 255, 0.5); -webkit-transition: .1s; transition: .1s; }
+
+header > .header_wrap .header_center > ul > li .depth_01 > li > a { font-size: .9rem; color: #222; }
+
+header > .header_wrap .header_center > ul > li .depth_01 > li:hover { background: #112d4e; }
+
+header > .header_wrap .header_center > ul > li .depth_01 > li:hover a { color: #fff; }
+
+header > .header_wrap .header_center > ul > li:hover .depth_01 { display: block; }
 
 header > .header_wrap .header_right { position: relative; width: 22px; height: 22px; }
 

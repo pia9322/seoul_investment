@@ -1,8 +1,8 @@
-.about_01_wrap_01 {
+.operation_about_01 {
   position: relative;
 }
 
-.about_01_wrap_01 .wrap > figure {
+.operation_about_01 .wrap > figure {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,7 +15,7 @@
           justify-content: center;
 }
 
-.about_01_wrap_01 .wrap > figure figcaption {
+.operation_about_01 .wrap > figure figcaption {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,36 +35,36 @@
   color: #fff;
 }
 
-.about_01_wrap_01 .wrap > figure figcaption .textbox_title {
+.operation_about_01 .wrap > figure figcaption .textbox_title {
   font-size: 52px;
 }
 
-.about_detail_01 {
+.operation_about_02 {
   width: 70%;
   margin: 150px auto 0;
   border: 1px solid #F00;
 }
 
-.about_detail_01 .wrap .content_01 {
+.operation_about_02 .wrap .content_01 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.about_detail_01 .wrap .content_01 .detail_main_visual_01 {
+.operation_about_02 .wrap .content_01 .detail_main_visual_01 {
   width: 710px;
   height: 530px;
 }
 
-.about_detail_01 .wrap .content_01 .detail_main_caption figcaption {
+.operation_about_02 .wrap .content_01 .detail_main_caption figcaption {
   padding: 40px 0 0 60px;
 }
 
-.about_detail_01 .wrap .content_01 .detail_main_caption figcaption ul .caption_01 {
+.operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_01 {
   font-size: 36px;
 }
 
-.about_detail_01 .wrap .content_01 .detail_main_caption figcaption ul .caption_02 {
+.operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_02 {
   margin-top: 32px;
   font-size: 24px;
   padding-bottom: 24px;
@@ -72,28 +72,23 @@
   color: #112d4e;
 }
 
-.about_detail_01 .wrap .content_01 .detail_main_caption figcaption ul .caption_02 img {
-  width: 10px;
-  height: 17px;
+.operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_03, .operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_04, .operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_05 {
+  list-style-type: disc;
 }
 
-.about_detail_01 .wrap .content_01 .detail_main_caption figcaption ul .caption_03, .about_detail_01 .wrap .content_01 .detail_main_caption figcaption ul .caption_04, .about_detail_01 .wrap .content_01 .detail_main_caption figcaption ul .caption_05 {
-  list-style: circle;
-}
-
-.about_detail_01 .wrap .content_01 .detail_main_caption figcaption ul .caption_03 {
+.operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_03 {
   margin-top: 30px;
 }
 
-.about_detail_01 .wrap .content_01 .detail_main_caption figcaption ul .caption_04 {
+.operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_04 {
   margin-top: 10px;
 }
 
-.about_detail_01 .wrap .content_01 .detail_main_caption figcaption ul .caption_05 {
+.operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_05 {
   margin-top: 10px;
 }
 
-.about_detail_01 .wrap .content_01 .detail_main_caption figcaption ul .caption_more {
+.operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more {
   display: inline-block;
   font-size: 20px;
   padding: 20px 40px;
@@ -101,16 +96,16 @@
   margin-top: 40px;
 }
 
-.about_detail_01 .wrap .content_02 table {
+.operation_about_02 .wrap .content_02 table {
   margin-top: 120px;
   width: 100%;
 }
 
-.about_detail_01 .wrap .content_02 table tr {
+.operation_about_02 .wrap .content_02 table tr {
   border: 1px solid #fff;
 }
 
-.about_detail_01 .wrap .content_02 table tr td:nth-of-type(1), .about_detail_01 .wrap .content_02 table tr td:nth-of-type(3) {
+.operation_about_02 .wrap .content_02 table tr td:nth-of-type(1), .operation_about_02 .wrap .content_02 table tr td:nth-of-type(3) {
   background: #112d4e;
   padding: 20px 20px;
   width: 10%;
@@ -118,9 +113,87 @@
   color: #fff;
 }
 
-.about_detail_01 .wrap .content_02 table tr td:nth-of-type(2), .about_detail_01 .wrap .content_02 table tr td:nth-of-type(4) {
+.operation_about_02 .wrap .content_02 table tr td:nth-of-type(2), .operation_about_02 .wrap .content_02 table tr td:nth-of-type(4) {
   border: 1px solid #ddd;
   padding-left: 40px;
   width: 300px;
+}
+
+.operation_about_03 {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.operation_about_03 .content_title {
+  margin-top: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 24px;
+}
+
+.operation_about_03 .content_title figcaption {
+  font-size: 24px;
+  font-weight: bold;
+  color: #112d4e;
+}
+
+.operation_about_03 .content_main {
+  margin-top: 40px;
+}
+
+.operation_about_04 {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.operation_about_04 .content_title {
+  margin-top: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 24px;
+}
+
+.operation_about_04 .content_title figcaption {
+  font-size: 24px;
+  font-weight: bold;
+  color: #112d4e;
+}
+
+.operation_about_04 .content_main {
+  border: 1px solid #f00;
+  margin-top: 40px;
+}
+
+.operation_about_04 .content_main .content_table_01 caption {
+  display: none;
+}
+
+.operation_about_04 .content_main .content_table_01 tr, .operation_about_04 .content_main .content_table_01 th, .operation_about_04 .content_main .content_table_01 td {
+  border: 1px solid #ddd;
+}
+
+.operation_about_04 .content_main .content_table_01 .table_detail_01 th {
+  font-size: 20px;
+  padding: 20px 30px;
+  background: #112d4e;
+  color: #fff;
+}
+
+.operation_about_04 .content_main .content_table_01 .table_detail_02 td figure {
+  width: 230px;
+  height: 200px;
+  margin: 25px;
+}
+
+.text_pointing {
+  width: 10px;
+  height: 17px;
+  margin-right: 6px;
 }
 /*# sourceMappingURL=about_detail.css.map */

@@ -1,4 +1,4 @@
-.about_01_wrap_01{
+.operation_about_01{
     position: relative;
     .wrap{
         > figure {
@@ -23,7 +23,7 @@
 
 }
 
-.about_detail_01{
+.operation_about_02{
     width: 70%; margin: 150px auto 0;
     border: 1px solid #F00;
     .wrap {
@@ -48,10 +48,9 @@
                         padding-bottom: 24px;
                         border-bottom: 1px solid #ddd;
                         color: #112d4e;
-                        img{width:10px; height:17px}
                     }
                     .caption_03, .caption_04, .caption_05{
-                        list-style: circle;
+                        list-style-type: disc;
                     }
                     .caption_03{
                         margin-top: 30px;
@@ -94,5 +93,66 @@
     }
 }
 
-.about_detail_02{}
-.about_detail_03{}
+.operation_about_03{
+    width: 70%; margin: 0 auto;
+    .content_title{
+        margin-top: 140px;
+        display: flex;
+        width:100%;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 24px;
+        figcaption{
+            font-size: 24px;
+            font-weight: bold;
+            color: #112d4e;
+        }
+    }
+    .content_main{
+        margin-top: 40px;
+    }
+}
+
+
+
+.operation_about_04{
+    width: 70%; margin: 0 auto;
+    .content_title{
+        margin-top: 140px;
+        display: flex;
+        width:100%;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 24px;
+        figcaption{
+            font-size: 24px;
+            font-weight: bold;
+            color: #112d4e;
+        }
+    }
+    .content_main{
+        border: 1px solid #f00;
+        margin-top: 40px;
+        .content_table_01{
+            // width: 100%;
+            caption{display: none;}
+            tr,th,td {border: 1px solid #ddd;}
+
+            .table_detail_01{
+                th{font-size: 20px; padding:20px 30px; background: #112d4e; color: #fff;}
+            }
+            .table_detail_02{
+                td{
+                    figure{
+                        width: 230px; height:200px;
+                        margin: 25px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+.text_pointing {width:10px; height:17px; margin-right: 6px;}

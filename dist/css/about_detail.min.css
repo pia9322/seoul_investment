@@ -28,7 +28,7 @@
 
 .operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_05 { margin-top: 10px; }
 
-.operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more { display: inline-block; font-size: 20px; padding: 20px 40px; border: 1px solid #ddd; margin-top: 40px; -webkit-transition: .3s; transition: .3s; }
+.operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more { display: inline-block; font-size: 20px; padding: 20px 40px; border: 1px solid #ddd; margin-top: 40px; -webkit-transition: .3s; transition: .3s; color: #222; }
 
 .operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more:hover { background: #112d4e; color: #fff; cursor: pointer; }
 
@@ -92,6 +92,8 @@
 
 .operation_about_05 .content_main .wrap .content_01 ul .point > svg > path { -webkit-transition: .3s; transition: .3s; }
 
+.operation_about_05 .content_main .wrap .content_01 ul .point:hover > svg > path { fill: #112d4e; }
+
 .operation_about_05 .content_main .wrap .content_01 ul .point.active > svg > path { fill: #112d4e; }
 
 .operation_about_05 .content_main .wrap .content_02 { width: 500px; }
@@ -107,6 +109,8 @@
 .operation_about_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_pointer { -webkit-transition: .3s; transition: .3s; }
 
 .operation_about_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_svg:hover .map_pointer { fill: #112d4e; }
+
+.operation_about_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_svg.active .map_pointer { fill: #112d4e; }
 
 .operation_about_06 { width: 70%; margin: 0 auto; }
 

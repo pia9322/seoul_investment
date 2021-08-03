@@ -1,0 +1,193 @@
+.text_pointing {
+  width: 10px;
+  height: 17px;
+  margin-right: 6px;
+}
+
+main {
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
+main .operation_about_01 {
+  position: relative;
+}
+
+main .operation_about_01 .wrap > figure {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .operation_about_01 .wrap > figure figcaption {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+main .operation_about_01 .wrap > figure figcaption .textbox_title {
+  font-size: 52px;
+}
+
+main .operation_about_notice {
+  width: 70%;
+  margin: 0 auto;
+}
+
+main .operation_about_notice .form_wrap {
+  margin: 150px auto 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 30px;
+}
+
+main .operation_about_notice .form_wrap .form_01 form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .operation_about_notice .form_wrap .form_01 form fieldset legend {
+  display: none;
+}
+
+main .operation_about_notice .form_wrap .form_01 form fieldset .form_01_title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+main .operation_about_notice .form_wrap .form_01 form fieldset .form_01_selectbox select {
+  border: 1px solid #ddd;
+  margin-left: 10px;
+  width: 180px;
+  height: 40px;
+}
+
+main .operation_about_notice .form_wrap .form_02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .operation_about_notice .form_wrap .form_02 form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .operation_about_notice .form_wrap .form_02 form fieldset legend {
+  display: none;
+}
+
+main .operation_about_notice .form_wrap .form_02 form fieldset .form_02_selectbox select {
+  border: 1px solid #ddd;
+  height: 40px;
+}
+
+main .operation_about_notice .form_wrap .form_02 form fieldset .form_02_selectbox input[type=text] {
+  height: 40px;
+  width: 220px;
+  border: 1px solid #ddd;
+}
+
+main .operation_about_notice .form_wrap .form_02 form fieldset .form_02_selectbox input[type=submit] {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+}
+
+main .operation_about_notice .table_notice {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main .operation_about_notice .table_notice thead {
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #666;
+}
+
+main .operation_about_notice .table_notice thead tr th {
+  padding: 20px 0;
+  text-align: center;
+}
+
+main .operation_about_notice .table_notice tbody tr td {
+  text-align: center;
+  padding: 20px 15px;
+}
+
+main .operation_about_notice .table_notice tbody tr td:nth-of-type(2) p {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #dfac3f;
+  color: #dfac3f;
+}
+
+main .operation_about_notice .table_notice_more {
+  margin: 40px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .operation_about_notice .table_notice_more > a {
+  display: inline-block;
+  padding: 10px 10px;
+  color: #112d4e;
+  border: 1px solid #112d4e;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main .operation_about_notice .table_notice_more > a:hover {
+  color: #fff;
+  background: #112d4e;
+}
+
+main .operation_about_notice .table_notice_more_btn .btn_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=about_detail_02.css.map */

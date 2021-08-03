@@ -48,7 +48,6 @@
 .operation_about_02 {
   width: 70%;
   margin: 150px auto 0;
-  border: 1px solid #F00;
 }
 
 .operation_about_02 .wrap .content_01 {
@@ -100,6 +99,14 @@
   padding: 20px 40px;
   border: 1px solid #ddd;
   margin-top: 40px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more:hover {
+  background: #112d4e;
+  color: #fff;
+  cursor: pointer;
 }
 
 .operation_about_02 .wrap .content_02 table {
@@ -172,7 +179,6 @@
 }
 
 .operation_about_04 .content_main {
-  border: 1px solid #f00;
   margin-top: 40px;
 }
 
@@ -393,5 +399,13 @@
   border: 1px solid #ddd;
   display: inline-block;
   color: #222;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.operation_about_06 .content_main .wrap .content_02 a:hover {
+  background: #112d4e;
+  color: #fff;
+  cursor: pointer;
 }
 /*# sourceMappingURL=about_detail.css.map */

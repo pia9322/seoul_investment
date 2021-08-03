@@ -8,7 +8,7 @@
 
 .operation_about_01 .wrap > figure figcaption .textbox_title { font-size: 52px; }
 
-.operation_about_02 { width: 70%; margin: 150px auto 0; border: 1px solid #F00; }
+.operation_about_02 { width: 70%; margin: 150px auto 0; }
 
 .operation_about_02 .wrap .content_01 { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -28,7 +28,9 @@
 
 .operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_05 { margin-top: 10px; }
 
-.operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more { display: inline-block; font-size: 20px; padding: 20px 40px; border: 1px solid #ddd; margin-top: 40px; }
+.operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more { display: inline-block; font-size: 20px; padding: 20px 40px; border: 1px solid #ddd; margin-top: 40px; -webkit-transition: .3s; transition: .3s; }
+
+.operation_about_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more:hover { background: #112d4e; color: #fff; cursor: pointer; }
 
 .operation_about_02 .wrap .content_02 table { margin-top: 120px; width: 100%; }
 
@@ -52,7 +54,7 @@
 
 .operation_about_04 .content_title figcaption { font-size: 24px; font-weight: bold; color: #112d4e; }
 
-.operation_about_04 .content_main { border: 1px solid #f00; margin-top: 40px; }
+.operation_about_04 .content_main { margin-top: 40px; }
 
 .operation_about_04 .content_main .content_table_01 { width: 100%; text-align: center; }
 
@@ -130,5 +132,7 @@
 
 .operation_about_06 .content_main .wrap .content_02 ul .content_02_wrap > li .content_02_detail > li { padding-left: 30px; border-left: 1px solid #ddd; margin-top: 2.5px; }
 
-.operation_about_06 .content_main .wrap .content_02 a { margin-top: 50px; padding: 15px 30px; border: 1px solid #ddd; display: inline-block; color: #222; }
+.operation_about_06 .content_main .wrap .content_02 a { margin-top: 50px; padding: 15px 30px; border: 1px solid #ddd; display: inline-block; color: #222; -webkit-transition: .3s; transition: .3s; }
+
+.operation_about_06 .content_main .wrap .content_02 a:hover { background: #112d4e; color: #fff; cursor: pointer; }
 /*# sourceMappingURL=about_detail.min.css.map */

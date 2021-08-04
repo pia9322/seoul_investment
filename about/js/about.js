@@ -28,4 +28,21 @@ $(function(){
             $('.map_svg').eq(j).removeClass('active');
         });
     }
+
+    function headFun(){
+        let href = location.href;
+        let hrefTest_last = href.lastIndexOf("coding/");
+        let hrefSubstring = href.substring(hrefTest_last + 7);
+        let headerNav = document.querySelector('.header_navi');
+        console.log(headerNav)
+
+
+        if (hrefSubstring.indexOf("index.html") !== 0) {
+            headerNav.classList.add("active")
+        } else {
+            headerNav.classList.remove("active")
+        }
+    }
+    headFun()
+
 });

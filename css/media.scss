@@ -14,12 +14,25 @@ header {
         } 
 
         .header_center {
-            display: flex;
-            font-size: 18px;
-            
-            > a {
-                font-size: .9em;
-                padding: 0 20px;
+            >ul{
+                display: flex;
+                font-size: 18px;
+                > a {
+                    font-size: .9em;
+                    padding: 0 20px;
+                }
+                .depth_01{
+                    >li{
+                        >a{
+
+                        }
+                        &:hover{
+                            a{
+
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -311,13 +324,29 @@ main{
             } 
     
             .header_center {
-                display: flex;
-                font-size: 16px;
-                
-                > a {
-                    font-size: .9em;
-                    padding: 0 20px;
+                > ul{
+                    display: flex;
+                    font-size: 16px;
+                    > li {
+                        > a {
+                            font-size: .9em;
+                            padding: 0 20px;
+                        }
+                        .depth_01 {
+                            > li{
+                                >a{
+
+                                }
+                                &:hover{
+                                    a{
+
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
+
             }
     
             // header_right 
@@ -597,6 +626,8 @@ main{
     header {
         > .header_wrap{
             width: 100%; margin: 0 auto;
+            justify-content: space-around;
+            transition: .3s;
             > nav {
     
             }
@@ -607,21 +638,37 @@ main{
             } 
     
             .header_center {
-                display: flex;
-                font-size: 16px;
-                
-                > a {
-                    font-size: .8em;
-                    padding: 0 20px;
+                > ul{
+                    display: none;
+                    // font-size: 16px;
+                    >li{
+                        > a {
+                            // font-size: .8em;
+                            // padding: 0 20px;
+                        }
+                        .depth_01 {
+                            > li{
+                                >a{
+
+                                }
+                                &:hover{
+                                    a{
+
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
+                
             }
     
             // header_right 
             .header_right {
-                width: 15px;
-                height: 15px;
+                width: 20px;
+                height: 20px;
                 span {
-                    width: 15px;
+                    width: 20px;
                     &:nth-of-type(1) {
                     }
                     &:nth-of-type(2) {
@@ -918,12 +965,27 @@ main{
                 } 
         
                 .header_center {
-                    display: none;
-                    // font-size: 16px;
-                    
-                    > a {
-                        font-size: .8em;
-                        padding: 0 20px;
+                    > ul {
+                        display: none;
+                        // font-size: 16px;
+                        > li {
+                            > a {
+                                font-size: .8em;
+                                padding: 0 20px;
+                            }
+                            .depth_01 {
+                                > li{
+                                    >a{
+    
+                                    }
+                                    &:hover{
+                                        a{
+    
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
         

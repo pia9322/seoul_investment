@@ -4,13 +4,13 @@
     width: 90%;
     margin: 0 auto;
   }
-  header > .header_wrap .header_center {
+  header > .header_wrap .header_center > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 18px;
   }
-  header > .header_wrap .header_center > a {
+  header > .header_wrap .header_center > ul > a {
     font-size: .9em;
     padding: 0 20px;
   }
@@ -190,13 +190,13 @@
     width: 100%;
     margin: 0 auto;
   }
-  header > .header_wrap .header_center {
+  header > .header_wrap .header_center > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 16px;
   }
-  header > .header_wrap .header_center > a {
+  header > .header_wrap .header_center > ul > li > a {
     font-size: .9em;
     padding: 0 20px;
   }
@@ -378,23 +378,20 @@
   header > .header_wrap {
     width: 100%;
     margin: 0 auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
-  header > .header_wrap .header_center {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 16px;
-  }
-  header > .header_wrap .header_center > a {
-    font-size: .8em;
-    padding: 0 20px;
+  header > .header_wrap .header_center > ul {
+    display: none;
   }
   header > .header_wrap .header_right {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
   }
   header > .header_wrap .header_right span {
-    width: 15px;
+    width: 20px;
   }
   main .main_wrap > article {
     margin: 0 auto;
@@ -581,10 +578,10 @@
     width: 100%;
     margin: 0 auto;
   }
-  header > .header_wrap .header_center {
+  header > .header_wrap .header_center > ul {
     display: none;
   }
-  header > .header_wrap .header_center > a {
+  header > .header_wrap .header_center > ul > li > a {
     font-size: .8em;
     padding: 0 20px;
   }

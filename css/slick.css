@@ -44,6 +44,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px 0;
 }
 
 .slick-track:before, .slick-track:after {
@@ -154,6 +155,7 @@
 }
 
 /*  */
+
 /* .slick-slide:not(.slick-active) {
   opacity: 0.5;
   transition: .3s;

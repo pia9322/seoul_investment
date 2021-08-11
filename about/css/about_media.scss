@@ -273,7 +273,7 @@
         .about_01_wrap_02{
             .wrap{
                 #quick_search{
-                    width: 400px;
+                    width: 300px;
                     input{
                     }
                     button{
@@ -294,14 +294,14 @@
                             }
                             .home_detail {
                                 p:nth-of-type(1) {
-                                    font-size: 20px;
+                                    font-size: 16px;
                                 } 
                                 p:nth-of-type(2) {
                                     font-size: .8rem;
                                     line-height: 1rem;
                                 } 
                                 p:last-child {
-                                    padding-top: 40px;
+                                    padding-top: 20px;
                                     display: flex;
                                     flex-direction: column;
                                     a{

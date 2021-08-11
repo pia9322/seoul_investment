@@ -218,13 +218,17 @@ main{
                             right: 28px; top: 235px;
                         }
                         
-                        .point > svg > path{
+                        .point a > svg > path{
                             transition: .3s;
-                        }
-                        .point:hover > svg > path{
+                            -webkit-transition: .3s;
+                            -moz-transition: .3s;
+                            -ms-transition: .3s;
+                            -o-transition: .3s;
+}
+                        .point:hover a > svg > path{
                             fill: #112d4e;
                         }
-                        .point.active > svg > path{
+                        .point.active a > svg > path{
                             fill: #112d4e;
                         }
                     }

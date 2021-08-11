@@ -292,16 +292,19 @@ main .operation_about_05 .content_main .wrap .content_01 ul .map_pointer_04 {
   top: 235px;
 }
 
-main .operation_about_05 .content_main .wrap .content_01 ul .point > svg > path {
-  -webkit-transition: .3s;
+main .operation_about_05 .content_main .wrap .content_01 ul .point a > svg > path {
   transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
 }
 
-main .operation_about_05 .content_main .wrap .content_01 ul .point:hover > svg > path {
+main .operation_about_05 .content_main .wrap .content_01 ul .point:hover a > svg > path {
   fill: #112d4e;
 }
 
-main .operation_about_05 .content_main .wrap .content_01 ul .point.active > svg > path {
+main .operation_about_05 .content_main .wrap .content_01 ul .point.active a > svg > path {
   fill: #112d4e;
 }
 

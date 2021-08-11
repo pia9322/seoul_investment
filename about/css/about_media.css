@@ -157,20 +157,20 @@
     font-size: 31px;
   }
   main .about_01_wrap_02 .wrap #quick_search {
-    width: 400px;
+    width: 300px;
   }
   main .about_01_wrap_03 .wrap > ul .home_box .home_content {
     width: 90%;
   }
   main .about_01_wrap_03 .wrap > ul .home_box .home_content .home_detail p:nth-of-type(1) {
-    font-size: 20px;
+    font-size: 16px;
   }
   main .about_01_wrap_03 .wrap > ul .home_box .home_content .home_detail p:nth-of-type(2) {
     font-size: .8rem;
     line-height: 1rem;
   }
   main .about_01_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
-    padding-top: 40px;
+    padding-top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

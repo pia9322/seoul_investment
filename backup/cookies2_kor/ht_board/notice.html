@@ -1,0 +1,147 @@
+  <?
+include_once "../../include/config.html";
+$ROOT_URL = "../..";
+$BASE_URL = "$ROOT_URL/$first_dir";
+$PAGE_CODE_1 = "01";
+$PAGE_CODE_2 = "0101";
+$MENU_01 = "";
+$MENU_02 = "";
+$MENU_03 = "";
+$PAGE_TITLE = "";
+$PAGE_IMG = "";
+include "$BASE_URL/include/header.html";
+?>
+  <div id="container" class="mall">
+      <div id="svis">
+          <div>
+              <img data-aos="fade" src="./images/mall_svis_icon.png" alt="">
+              <h2 data-aos="fade">NOTICE</h2>
+              <!-- <div data-aos="fade" data-aos-delay="400">
+              LIFESTYLE PACKAGE
+          </div> -->
+          </div>
+      </div>
+      <div class="contents">
+          <link rel="stylesheet" href="./board.css">
+          <table class="list-table">
+              <colgroup>
+                  <col width="10%">
+                  <col>
+                  <col width="20%">
+                  <col width="10%" class="text-hidden">
+              </colgroup>
+              <thead>
+                  <tr>
+                      <td class="list-td list-td-head list-td-center">No.</td>
+                      <td class="list-td list-td-head list-td-left">Title</td>
+                      <td class="list-td list-td-head list-td-center text-hidden">Name</td>
+                      <td class="list-td list-td-head list-td-center">Date</td>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td nowrap="" class="list-td list-td-center">3</td>
+                      <td class="list-td list-td-left cut_txt">
+                          <a href="./view.html?f_uid=96&amp;f_div=news&amp;page=1&amp;keyfield=&amp;keyword=&amp;from="
+                              class="board_body">Lorem Ipsum is simply dummy text of the printing and typesetting
+                              industry.</a>
+                      </td>
+                      <td nowrap="" class="list-td list-td-center text-hidden">관리자</td>
+                      <td nowrap="" class="list-td list-td-center">20-01-31</td>
+                  </tr>
+                  <tr>
+                      <td nowrap="" class="list-td list-td-center">2</td>
+                      <td class="list-td list-td-left cut_txt">
+                          <a href="./view.html?f_uid=95&amp;f_div=news&amp;page=1&amp;keyfield=&amp;keyword=&amp;from="
+                              class="board_body">Lorem Ipsum is simply dummy text of the printing and typesetting
+                              industry.</a>
+                      </td>
+                      <td nowrap="" class="list-td list-td-center text-hidden">관리자</td>
+                      <td nowrap="" class="list-td list-td-center">17-07-26</td>
+                  </tr>
+                  <tr>
+                      <td nowrap="" class="list-td list-td-center">1</td>
+                      <td class="list-td list-td-left cut_txt">
+                          <a href="./view.html?f_uid=94&amp;f_div=news&amp;page=1&amp;keyfield=&amp;keyword=&amp;from="
+                              class="board_body">Lorem Ipsum is simply dummy text of the printing and typesetting
+                              industry.</a>
+                      </td>
+                      <td nowrap="" class="list-td list-td-center text-hidden">관리자</td>
+                      <td nowrap="" class="list-td list-td-center">16-5-11</td>
+                  </tr>
+              </tbody>
+          </table>
+          <nav class="text-center" style="margin-top:20px;">
+              <ul class="pagination pagination-sm justify-content-center">
+                  <li class="page-item">
+                      <a class="page-link" href="javascript:;">
+                          <i class="fas fa-chevron-left" style="line-height:1.3;"></i>
+                      </a>
+                  </li>
+                  <li class="page-item active">
+                      <a class="page-link" href="javascript:;">1</a>
+                  </li>
+                  <li class="page-item">
+                      <a class="page-link" href="javascript:;">
+                          <span class="fas fa-chevron-right" style="line-height:1.3;"></span>
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+          <div style="padding-bottom:190px; padding-top:20px;">
+              <div class="paging-left">
+                  <!--
+		<a href="javascript:;" onClick="alert('Please log in.')"><button type="button" class="btn btn-primary" style="display:none">WRITE</button></a>
+-->
+                  &nbsp;
+              </div>
+              <script>
+                  function searchIt() {
+                      if (!document.search.keyword.value) {
+                          alert("Please enter a search term.");
+                          document.search.keyword.focus();
+                          return false;
+                      } else {
+                          document.search.submit();
+                      }
+                  }
+              </script>
+              <div class="paging-right">
+                  <form name="search" method="get">
+                      <input type="hidden" name="f_div" value="news">
+                      <input type="hidden" name="from" value="">
+                      <div class="input-group input-group-sm">
+                          <select class="form_select" name="keyfield">
+                              <option value="f_title">Subject</option>
+                              <option value="f_name">Writer</option>
+                              <option value="f_comment">Context</option>
+                          </select>
+                          <input class="form_input" type="text" name="keyword" value="">
+                          <span class="input-group-append">
+                              <button class="form_btn" type="button" onclick="return searchIt();">Search</button>
+                          </span>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script>
+      $(document).ready(function () {
+          $("a").on('click', function (event) {
+              if (this.hash !== "") {
+                  event.preventDefault();
+                  var hash = this.hash;
+                  $('html, body').animate({
+                      scrollTop: $(hash).offset().top
+                  }, 600, function () {
+                      window.location.hash = hash;
+                  });
+              }
+          });
+      });
+  </script>
+
+  <?
+include "$BASE_URL/include/footer.html";
+?>

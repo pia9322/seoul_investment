@@ -1,0 +1,112 @@
+<?
+include_once "$ROOT_URL/include/dbconn.html";
+
+$f_div_get = htmlspecialchars(trim($_GET[f_div]), ENT_QUOTES);
+$f_div_post = htmlspecialchars(trim($_POST[f_div]), ENT_QUOTES);
+
+if ($f_div_get=='news' || $f_div_post=='news') {
+/*
+	$PAGE_CODE_1 = "03";
+    $PAGE_CODE_2 = "0301";
+    $MENU_01 = "코센뉴스";
+
+	$PAGE_CODE_1 = "03";
+	$PAGE_CODE_2 = "0301";
+	$MENU_01 = "코센뉴스";
+	$MENU_02 = "코센뉴스";
+	$MENU_03 = "";
+	$PAGE_TITLE = "더 나은 미래를 향한 선두주자, 코센";
+	$PAGE_IMG = $BASE_URL."/img/sub/sub_".$PAGE_CODE_1.".jpg";
+*/
+    $BBS_PAGE_CODE_1 = "03";
+    $BBS_PAGE_CODE_2 = "0301";
+    $BBS_MENU_01 = "코센뉴스";
+    $BBS_MENU_02 = "코센뉴스";
+    $BBS_MENU_03 = "";
+    $BBS_PAGE_TITLE = "더 나은 미래를 향한 선두주자, 코센";
+    $BBS_PAGE_IMG = $BASE_URL."/img/sub/sub_".$PAGE_CODE_1.".jpg";
+}
+?>
+
+
+<link rel="stylesheet" type="text/css" href="./board.css">
+<style>
+    .contents.fix {
+        padding: 0 !important;
+    }
+</style>
+
+
+
+
+<?
+#################################### [접근오류] ####################################
+if (!($_POST[f_div] || $_GET[f_div])) {
+	echo "<script>alert('Invalid Access');history.back();</script>";
+	exit;
+}
+
+
+
+#################################### [환경설정] ####################################
+$query_cfg = "select * from ht_config where f_div='$_GET[f_div]$_POST[f_div]'";
+
+if ($result_cfg = mysqli_query($dbconn, $query_cfg)) {
+	if ($result_cfg->num_rows) {
+		$cfg = mysqli_fetch_assoc($result_cfg);
+	} else {
+        echo "<script>alert('There is no ht_config.div value set.'); //history.back();</script>";
+    }
+	mysqli_free_result($result_cfg);
+}
+
+
+
+#################################### [접근권한] ####################################
+###### [읽기 권한] ######
+if ($now_page=="viewbody.html") {
+	if ($cfg['f_readable']=="1") {
+		include "../include/only_member.html";
+	} else if ($cfg['f_readable']=="9") {
+		include "../include/only_admin.html";
+	}
+}
+###### [쓰기 권한] ######
+if ($now_page=="writeform.html" || $now_page=="write.html" || $now_page=="replyform.html" || $now_page=="reply.html" || $now_page=="modifyform.html" || $now_page=="modify.html" || $now_page=="deleteform.html" || $now_page=="delete.html" || $now_page=="comment_ok.html" || $now_page=="comment_del.html") {
+	if ($cfg['f_writable']=="1") {
+		include "../include/only_member.html";
+	} else if ($cfg['f_writable']=="9") {
+		include "../include/only_admin.html";
+	}
+}
+
+############### [업로드 금지 파일] ###############
+$fileNotAllow = array("html", "htm", "php", "php3", "asp", "aspx", "shtml", "shtm", "phtml", "phtm", "inc", "cfg", "ztx", "dot", "cgi", "pl", "exe", "bat", "com", "js");
+
+############### [업로드 가능 파일] ###############
+$fileAllow = array("jpg", "jpeg", "png", "gif", "zip", "doc", "docx", "xls", "xlsx", "ppt", "pptx", "hwp", "pdf");
+?>
+
+
+
+
+<script>
+function addFile() {
+	for (var i=0; i<10; i++) {
+		if (document.getElementById("file_"+i).style.display == "none") {
+			document.getElementById("file_"+i).style.display = "block";
+			break;
+		}
+	}
+	return false;
+}
+function addLink() {
+	for (var i=0; i<3; i++) {
+		if (document.getElementById("f_link_"+i).style.display == "none") {
+			document.getElementById("f_link_"+i).style.display = "block";
+			break;
+		}
+	}
+	return false;
+}
+</script>

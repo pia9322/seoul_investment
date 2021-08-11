@@ -1,0 +1,64 @@
+<?
+$file_dir = "../../upload/".$_GET[f_div]."/".$_GET[file_encode];
+
+header("Content-Type: application/octet-stream");
+Header("Content-Disposition: attachment;;filename=$_GET[file_original]");
+header("Content-Transfer-Encoding: binary");
+Header("Content-Length: ".(string)(filesize($file_dir)));
+Header("Cache-Control: cache, must-revalidate");
+header("Pragma: no-cache");
+header("Expires: 0");
+
+
+/*
+if(eregi("(MSIE 5.0|MSIE 5.1|MSIE 5.5|MSIE 6.0)", $HTTP_USER_AGENT)) {
+	if(strstr($HTTP_USER_AGENT, "MSIE 5.5")) {
+		header("Content-Type: doesn/matter");
+		header("Content-disposition: filename=$file_original");
+		header("Content-Transfer-Encoding: binary");
+		header("Pragma: no-cache");
+		header("Expires: 0");
+	}
+	if(strstr($HTTP_USER_AGENT, "MSIE 5.0")) {
+		Header("Content-type: file/unknown");
+		header("Content-Disposition: attachment;filename=$file_original");
+		Header("Content-Description: PHP3 Generated Data");
+		header("Pragma: no-cache");
+		header("Expires: 0");
+	}
+	if(strstr($HTTP_USER_AGENT, "MSIE 5.1")) {
+		Header("Content-type: file/unknown");
+		header("Content-Disposition: attachment;filename=$file_original");
+		header("Content-Description: PHP3 Generated Data");
+		header("Pragma: no-cache");
+		header("Expires: 0");
+	}
+	if(strstr($HTTP_USER_AGENT, "MSIE 6.0")) {
+		header("Content-type: application/x-msdownload");
+		header("Content-Length: ".(string)(filesize("$file")));
+		header("Content-Disposition: attachment;filename=$file_original");
+		header("Content-Transfer-Encoding: binary");
+		header("Pragma: no-cache");
+		header("Expires: 0");
+	}
+} else {
+	Header("Content-type: file/unknown");
+	Header("Content-Length: ".(string)(filesize("$file")));
+	Header("Content-Disposition: attachment;filename=$file_original");
+	Header("Content-Description: PHP3 Generated Data");
+	Header("Pragma: no-cache");
+	Header("Expires: 0");
+}
+*/
+
+
+if (is_file($file_dir)) {
+	$fp = fopen($file_dir, "rb");
+
+	if (!fpassthru($fp)) {
+		fclose($fp);
+	}
+} else {
+	echo "The file or path does not exist.";
+}
+?>

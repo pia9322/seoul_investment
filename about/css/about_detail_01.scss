@@ -1,7 +1,7 @@
 
 .text_pointing {width:10px; height:17px; margin-right: 6px;}
 main{
-    max-width: 2560px; margin: 0 auto ;
+    // max-width: 2560px; margin: 0 auto ;
     // .operation_about_01
     .operation_about_01{
         position: relative;
@@ -11,6 +11,8 @@ main{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                height: 350px;
+
                 figcaption{
                     position: absolute;
                     display: flex;
@@ -176,18 +178,26 @@ main{
             border-bottom: 1px solid #ddd;
             padding-bottom: 24px;
             figcaption{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
                 font-size: 24px;
                 font-weight: bold;
                 color: #112d4e;
+                .content_title_sub_01{
+                    font-size: 16px;
+                    color:#666;
+                    font-weight: 400;
+                }
             }
         }
         .content_main{
             margin-top: 40px;
             .wrap{
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 .content_01{
-                    margin: 0 auto;
                     ul{
                         position: relative;
                         width: 550px; height: 500px;

@@ -1,0 +1,281 @@
+<?
+include_once "../../include/config.html";
+$ROOT_URL = "../..";
+$BASE_URL = "$ROOT_URL/$first_dir";
+
+include "$BASE_URL/ht_board/config.html";
+$PAGE_CODE_1 = $BBS_PAGE_CODE_1;
+$PAGE_CODE_2 = $BBS_PAGE_CODE_2;
+$MENU_01 = $BBS_MENU_01;
+$MENU_02 = $BBS_MENU_02;
+$MENU_03 = $BBS_MENU_03;
+$PAGE_TITLE = $BBS_PAGE_TITLE;
+$PAGE_IMG = $BBS_PAGE_IMG;
+
+include "$BASE_URL/include/header.html";
+?>
+
+
+
+
+<?
+######################## [변수 재정의] ########################\
+$f_div = htmlspecialchars(trim($_GET[f_div]), ENT_QUOTES);
+$f_class = htmlspecialchars(trim($_GET[f_class]), ENT_QUOTES);
+$from = htmlspecialchars(trim($_GET[from]), ENT_QUOTES);
+$keyfield = htmlspecialchars(trim($_GET[keyfield]), ENT_QUOTES);
+$keyword = htmlspecialchars(trim($_GET[keyword]), ENT_QUOTES);
+$page = htmlspecialchars(trim($_GET[page]), ENT_QUOTES);
+
+################## [게시판 위쪽 삽입 내용] ###################
+echo $cfg[f_top_content];
+
+
+
+######################## [레코드 개수] ########################\
+if (trim($keyword) and trim($keyfield)) {
+	$query_cnt = "select count(*) as cnt from ht_bbs where $keyfield LIKE '%$keyword%' and f_div='$f_div'";
+} else {
+	$query_cnt = "select count(*) as cnt from ht_bbs where f_div='$f_div'";
+}
+
+$result_cnt = mysqli_query($dbconn, $query_cnt);
+$row_cnt = mysqli_fetch_assoc($result_cnt);
+
+
+
+################## [페이징 관련 변수 정의] ###################
+$total_article = $row_cnt[cnt]; // 전체 게시물
+$total_page = ceil($total_article/$cfg[f_show_per_page]); // 전체 페이지수
+if (!$total_page) {
+	$total_page = 1;
+}
+
+if($page>$total_page) {
+	$page = $total_page;
+} else if(!$page || $page<1) {
+   $page = 1;
+} else {
+   $page = $page;
+}
+
+$article_no = $total_article - $cfg[f_show_per_page]*($page-1); // 상대 글번호
+$start = ($page*$cfg[f_show_per_page])-$cfg[f_show_per_page];
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="list-table">
+	<colgroup>
+		<col width="10%" />
+		<col>
+		<col width="10%" />
+		<col width="10%" class="text-hidden" />
+	</colgroup>
+	<thead>
+		<tr>
+			<td class="list-td list-td-head list-td-center">no</td>
+			<td class="list-td list-td-head list-td-left">title</td>
+			<td class="list-td list-td-head list-td-center text-hidden">name</td>
+			<td class="list-td list-td-head list-td-center">date</td>
+		</tr>
+	</thead>
+	<tbody>
+
+
+<?
+################## [레코드 추출] ###################
+if (trim($keyword) and trim($keyfield)) {
+	$query = "select * from ht_bbs where f_div='$f_div' and $keyfield like '%$keyword%' order by f_uid desc LIMIT $start, $cfg[f_show_per_page]";
+} else {
+	$query = "select * from ht_bbs where f_div='$f_div' order by f_uid desc LIMIT $start, $cfg[f_show_per_page]";
+}
+
+if ($result = mysqli_query($dbconn, $query)) {
+	if ($result->num_rows) {
+		while ($row = mysqli_fetch_assoc($result)) {
+			if ($keyfield=="f_title") { // 검색된 글씨 색상 변경
+				$f_title = str_replace("$keyword", "<span style='background-color:#fcfccc'>$keyword</span>", $row[f_title]);
+			} else {
+				$f_title = $row[f_title];
+			}
+?>
+
+	<tr>
+		<td nowrap class="list-td list-td-center"><?=$article_no?></td>
+		<td class="list-td list-td-left cut_txt">
+			<a href="./view.html?f_uid=<?=$row[f_uid]?>&f_div=<?=$f_div?>&page=<?=$page?>&keyfield=<?echo $keyfield?>&keyword=<?echo $keyword?>&from=<?echo $from?>" class="board_body"><?echo $f_title?></a>
+<?
+			############## [코멘트 / NEW / 비밀글] #############
+			if ($cfg[f_comment]=="1") {
+				$query_comment = "select count(*) as cnt from ht_bbs_comment where f_fid='$row[f_uid]'";
+				$result_comment = mysqli_query($dbconn, $query_comment);
+				$row_comment = mysqli_fetch_assoc($result_comment);
+
+				if ($row_comment[cnt]>0) {
+					echo "<span class='secret'>($row_comment[cnt])</span>";
+				}
+			}
+			if ($date_t>time()-86400) { // 새글 표시
+				echo "<span class='secret'>NEW</span>";
+			}
+?>
+		</td>
+		<td nowrap class="list-td list-td-center text-hidden"><?=$row[f_name]?></td>
+		<td nowrap class="list-td list-td-center"><?=substr($row[f_date],5,5)?></td>
+	</tr>
+
+<?
+			$article_no--;
+			unset($is_file);
+		} // while
+	} else { // if ($result->num_rows)
+		echo "<tr><td colspan=4 align=center height=150 style='border-bottom:1px solid #ccc'>No published (discovered) content.</td></tr>";
+	} // if ($result->num_rows)
+	mysqli_free_result($result);
+} // if ($result = mysqli_query($dbconn, $query))
+?>
+
+	</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="text-center" style="margin-top:20px;">
+	<ul class="pagination pagination-sm justify-content-center">
+<?
+			########## 게시물 목록 하단의 각 페이지로 직접 이동할 수 있는 페이지링크에 대한 설정을 한다. ##########
+			$total_block = ceil($total_page/$cfg[f_show_page_block]);
+			$block = ceil($page/$cfg[f_show_page_block]);
+
+			$first_page = ($block-1)*$cfg[f_show_page_block];
+			$last_page = $block*$cfg[f_show_page_block];
+
+			if($total_block <= $block) {
+				$last_page = $total_page;
+			}
+
+
+			if($block > 1) {
+				$my_page = $first_page;
+				echo "<li class='page-item'><a class='page-link' href='$PHP_SELF?f_div=$f_div&page=$my_page&keyfield=$keyfield&keyword=$keyword&from=$from'><i class='fas fa-chevron-left'></i></a></li>";
+			} else {
+				echo "<li class='page-item'><a class='page-link' href='javascript:;'><i class='fas fa-chevron-left' style='line-height:1.3;'></i></a></li>";
+			}
+
+
+			########## 현재의 페이지 블럭범위내에서 각 페이지로 바로 이동할 수 있는 하이퍼링크를 출력한다. ##########
+			for($direct_page = $first_page+1; $direct_page <= $last_page; $direct_page++) {
+				if($page == $direct_page) {
+					echo "<li class='page-item active'><a class='page-link' href='javascript:;'>$direct_page</a></li>";
+				} else {
+					echo "<li class='page-item'><a class='page-link' href='$PHP_SELF?f_div=$f_div&page=$direct_page&keyfield=$keyfield&keyword=$keyword&from=$from'>$direct_page</a></li>";
+				}
+			}
+
+
+			if($block < $total_block) {
+				$my_page = $last_page+1;
+				echo "<li class='page-item'><a class='page-link' href='$PHP_SELF?f_div=$f_div&page=$my_page&keyfield=$keyfield&keyword=$keyword&from=$from'><span class='fas fa-chevron-right'></span></a></li>";
+			} else {
+				echo "<li class='page-item'><a class='page-link' href='javascript:;'><span class='fas fa-chevron-right' style='line-height:1.3;'></span></a></li>";
+			}
+?>
+	</ul>
+</nav>
+
+
+
+
+<div style="padding-bottom:190px; padding-top:20px;">
+	<div class="paging-left">
+
+<?
+if ($_SESSION[f_user_id] || $_SESSION[f_admin_id]) {
+?>
+		<a href="./write.html?f_div=<?=$f_div?>&from=<?=$from?>&"><button type="button" class="btn btn-primary" >WRITE</button></a>
+<?
+} else {
+?>
+<!--
+		<a href="javascript:;" onClick="alert('Please log in.')"><button type="button" class="btn btn-primary" style="display:none">WRITE</button></a>
+-->
+        &nbsp;
+<?
+}
+?>
+
+	</div>
+
+	<script>
+	function searchIt() {
+		if (!document.search.keyword.value) {
+			alert("Please enter a search term.");
+			document.search.keyword.focus();
+			return false;
+		} else {
+			document.search.submit();
+		}
+	}
+	</script>
+
+	<div class="paging-right">
+		<form name="search" method="get">
+		<input type="hidden" name="f_div" value="<?echo $f_div?>">
+		<input type="hidden" name="from" value="<?echo $from?>">
+		<div class="input-group input-group-sm">
+			<select class="form_select" name="keyfield" class="custom-select custom-select-sm input-group-prepend">
+				<option value="f_title" <?if ($keyfield=="f_title") {echo "selected";}?>>Subject</option>
+				<option value="f_name" <?if ($keyfield=="f_name") {echo "selected";}?>>Writer</option>
+				<option value="f_comment" <?if ($keyfield=="f_comment") {echo "selected";}?>>Context</option>
+			</select>
+			<input class="form_input" type="text" name="keyword" value="<?echo $keyword?>">
+			<span class="input-group-append">
+				<button class="form_btn" type="button" onClick="return searchIt();">Search</button>
+			</span>
+		</div>
+		</form>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<?
+################## [게시판 아래쪽 삽입 내용] ###################
+echo $cfg[f_bottom_content];
+?>
+
+
+
+<?
+include "$BASE_URL/include/footer.html";
+?>

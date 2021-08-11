@@ -1,0 +1,426 @@
+<?
+include_once "../../include/config.html";
+$ROOT_URL = "../..";
+$BASE_URL = "$ROOT_URL/$first_dir";
+
+include "$BASE_URL/ht_board/config.html";
+$PAGE_CODE_1 = $BBS_PAGE_CODE_1;
+$PAGE_CODE_2 = $BBS_PAGE_CODE_2;
+$MENU_01 = $BBS_MENU_01;
+$MENU_02 = $BBS_MENU_02;
+$MENU_03 = $BBS_MENU_03;
+$PAGE_TITLE = $BBS_PAGE_TITLE;
+$PAGE_IMG = $BBS_PAGE_IMG;
+
+include "$BASE_URL/include/header.html";
+?>
+
+
+
+
+<?
+######################## [변수 재정의] ########################
+$f_uid = htmlspecialchars(trim($_GET[f_uid]), ENT_QUOTES);
+$f_div = htmlspecialchars(trim($_GET[f_div]), ENT_QUOTES);
+$f_class = htmlspecialchars(trim($_GET[f_class]), ENT_QUOTES);
+$from = htmlspecialchars(trim($_GET[from]), ENT_QUOTES);
+$keyfield = htmlspecialchars(trim($_GET[keyfield]), ENT_QUOTES);
+$keyword = htmlspecialchars(trim($_GET[keyword]), ENT_QUOTES);
+$page = htmlspecialchars(trim($_GET[page]), ENT_QUOTES);
+
+################## [게시판 위쪽 삽입 내용] ###################
+echo $cfg[f_top_content];
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function chk_del() {
+	if (!confirm("정말 삭제할까요?")){
+		return false;
+	} else {
+		location.href='./db_exec.html?mode=del&f_uid=<?=$f_uid?>&f_div=<?=$f_div?>&page=<?=$page?>&keyfield=<?=$keyfield?>&keyword=<?=$keyword?>&from=<?=$from?>';
+	}
+}
+function chk_del_comment(c_f_uid) {
+	if (!confirm("정말 삭제할까요?")){
+		return false;
+	} else {
+		location.href='./db_exec.html?f_uid=<?=$f_uid?>&f_div=<?=$f_div?>&page=<?=$page?>&keyfield=<?=$keyfield?>&keyword=<?=$keyword?>&from=<?=$from?>&c_f_uid='+c_f_uid+'';
+	}
+}
+</script>
+
+<style>
+.view-body img {
+    width: 100%;
+}
+</style>
+
+
+<?
+$query = "select * from ht_bbs where f_uid='$f_uid'";
+
+if ($result = mysqli_query($dbconn, $query)) {
+	if ($result->num_rows) {
+		$row = mysqli_fetch_assoc($result);
+	} else {
+		echo "<script>alert('The article does not exist.'); history.back();</script>";
+		exit;
+	}
+	mysqli_free_result($result);
+}
+
+
+if ($keyfield=="f_title") { // 검색된 글씨 색상 변경
+	$f_title = str_replace("$keyword", "<span style='background-color:#fcfccc'>$keyword</span>", $row[f_title]);
+} else {
+	$f_title = $row[f_title];
+}
+
+
+$query_up = "update ht_bbs set f_ref=$row[f_ref]+1 where f_uid=$f_uid"; // 게시물의 조회수를 증가
+$result_up = mysqli_query($dbconn, $query_up);
+?>
+
+
+
+
+
+
+
+
+<table class="list-table">
+	<colgroup>
+		<col width="100%" />
+	</colgroup>
+	<thead>
+		<tr>
+			<td class="view-title list-td-left" style="padding-bottom:8px;"><?=$row[f_title]?></td>
+		</tr>
+		<tr>
+			<td class="list-td-left" style="padding-bottom:8px;">
+<?
+if ($row[f_name]) {
+?>
+				<span class="view-name"><?=$row[f_name]?></span>
+<?
+}
+?>
+<?
+if ($row[f_id]) {
+?>
+				<span class="view-name" style="/*margin-left: -30px;*/">(<?=$row[f_id]?>)</span>
+<?
+}
+?>
+<?
+if ($row[f_email]) {
+?>
+				<span class="view-name"><?=$row[f_email]?></span>
+<?
+}
+?>
+<?
+if ($row[f_date]) {
+?>
+				<span class="view-name"><?=$row[f_date]?></span>
+<?
+}
+?>
+<?
+if ($row[f_ref]) {
+?>
+				<span class="view-name">view : <?=$row[f_ref]?></span>
+<?
+}
+?>
+
+
+<?
+if ($cfg[f_comment]=="1") {
+	$query_cnt = "select count(*) as cnt from ht_bbs_comment where f_fid='$f_uid'";
+	$result_cnt = mysqli_query($dbconn, $query_cnt);
+	$row_cnt = mysqli_fetch_assoc($result_cnt);
+
+?>
+				<span class="view-name">Comment : <?=$row_cnt[cnt]?></span>
+<?
+}
+?>
+
+
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="view-body list-td-left" style="background-color: #FFFFFF !important;"><?=htmlspecialchars_decode($row[f_comment])?></td>
+		</tr>
+<!----------- [첨부파일] ------------>
+<?
+for ($i=0; $i<10; $i++) {
+	if ($row[f_file_.($i)]) {
+		$j++;
+	}
+}
+
+if ($j>0) {
+?>
+		<tr>
+			<td class="view-tag list-td-left">
+				<div class="row">
+<?
+	for ($i=0; $i<10; $i++) {
+		if ($row[f_file_.($i)]) {
+?>
+					<div class="col-2 cut_txt" 	style="table-layout: fixed;"><a href="./download.html?file_encode=<?=$row[f_file_.($i)]?>&file_original=<?=$row[f_filename_.($i)]?>&f_div=<?=$f_div?>"><span class="view-name"><i class="fas fa-save"></i> <?=$row[f_filename_.($i)]?></span></a></div>
+<?
+		}
+	}
+?>
+				</div>
+			</td>
+		</tr>
+<?
+}
+?>
+
+
+<!----------- [링크] ------------>
+<?
+for ($i=0; $i<2; $i++) {
+	if ($row[f_link_.($i)]) {
+		$k++;
+	}
+}
+
+if ($k>0) {
+?>
+		<tr>
+			<td class="view-tag list-td-left">
+				<div class="row">
+<?
+	for ($i=0; $i<2; $i++) {
+		if ($row[f_link_.($i)]) {
+?>
+					<div class="col-2 cut_txt" 	style="table-layout: fixed;"><a href="<?=$row[f_link_.($i)]?>" target="_blank"><span class="view-name"><i class="fas fa-link"></i> <?=$row[f_link_.($i)]?></span></a></div>
+<?
+		}
+	}
+?>
+				</div>
+			</td>
+		</tr>
+<?
+}
+?>
+
+
+		<tr>
+			<td style="border-top: 1px solid #DDD;"></td>
+		</tr>
+
+
+		<tr>
+			<td style="padding-bottom:50px; padding-top:20px; background-color: #FFFFFF !important;">
+				<div class="row">
+					<div class="col-6" style="float:left;"><a href="./list.html?f_uid=<?=$f_uid?>&f_div=<?=$f_div?>&page=<?=$page?>&keyfield=<?=$keyfield?>&keyword=<?=$keyword?>&from=<?=$from?>"><button type="button" class="form_btn">LIST</button></a></div>
+					<div class="col-6 text-right">
+<!--
+						<button type="button" class="btn btn-secondary" onClick="location.href='./modify.html?f_uid=<?=$f_uid?>&f_div=<?=$f_div?>&page=<?=$page?>&keyfield=<?=$keyfield?>&keyword=<?=$keyword?>&from=<?=$from?>'">MODIFY</button>
+						<button type="button" class="btn btn-secondary" onClick="return chk_del();">DELETE</button>
+-->
+<!--
+						<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#delModal_<?=$f_uid?>">DELETE</button>
+-->
+					</div>
+				</div>
+
+				<!-------- [패스워드(글삭제) 확인 모달] --------
+				<form action="delete.html" method="get">
+				<input type="hidden" name="f_uid" value="<?=$f_uid?>">
+				<input type="hidden" name="f_div" value="<?=$f_div?>">
+				<input type="hidden" name="page" value="<?=$page?>">
+				<input type="hidden" name="keyfield" value="<?=$keyfield?>">
+				<input type="hidden" name="keyword" value="<?=$keyword?>">
+				<input type="hidden" name="from" value="<?=$from?>">
+				<div class="modal fade" id="delModal_<?=$f_uid?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-sm" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Delete the article</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<div class="modal-body">
+								<div class="form-group">
+									<label for="del-passwd" class="col-form-label">Password</label>
+									<input type="password" name="f_passwd" class="form-control" id="del-passwd" required="required">
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="submit" class="btn btn-primary">Delete</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				</form>
+                -->
+			</td>
+		</tr>
+
+
+
+
+
+
+
+
+
+<!----------- [댓글] ------------>
+<?
+if ($cfg[f_comment]=="1") {
+?>
+		<tr>
+			<td class="list-td-left">
+				<form name="comment" method="post" action="./comment_ok.html">
+				<input type="hidden" name="f_uid" value="<?echo $f_uid?>">
+				<input type="hidden" name="f_div" value="<?echo $f_div?>">
+				<input type="hidden" name="page" value="<?echo $page?>">
+				<input type="hidden" name="keyfield" value="<?echo $keyfield?>">
+				<input type="hidden" name="keyword" value="<?echo $keyword?>">
+				<input type="hidden" name="from" value="<?echo $from?>">
+
+				<div>Comment</div>
+				<div class="row">
+					<div class="col-10" style="padding-top:5px;"><textarea name="f_title" class="form-control form-control-sm" placeholder="comment" required="required" style="height:80px"></textarea></div>
+					<div class="col-2" style="padding-top:5px;"><button type="submit" class="btn btn-secondary" style="width:100%; height:80px">WRITE</button></div>
+				</div>
+				</form>
+			</td>
+		</tr>
+<?
+	$query_comment = "select * from ht_bbs_comment where f_fid='$f_uid' order by f_uid desc";
+	if ($result_comment = mysqli_query($dbconn, $query_comment)) {
+		if ($result_comment->num_rows) {
+			while ($row_comment = mysqli_fetch_assoc($result_comment)) {
+?>
+		<tr>
+			<td class="view-comment list-td-left">
+				<div style="padding-bottom:15px;">
+					<strong><?=$row_comment[f_id]?></strong>&nbsp;&nbsp;<span style="font-size:12px; color:#BBB"><?=$row_comment[f_date]?></span>&nbsp;&nbsp;
+					<button type="button" class="btn btn-secondary" onClick="return chk_del_comment(<?=$row_comment[f_uid]?>);" style="padding: 0.1rem 0.2rem; font-size: 10px; line-height: 0.8; border-radius: 2.25rem;">X</button>
+<!--
+					<a href="javascript:;" data-toggle="modal" data-target="#commentModal_<?=$row_comment[f_uid]?>"><span class="far fa-trash-alt" style="font-size:11px;"></span></a>
+-->
+				</div>
+				<div style="line-height:18px;"><?=nl2br($row_comment[f_title])?></div>
+
+				<!-------- [패스워드 확인 모달] --------
+				<form action="comment_del.html" method="get">
+				<input type="hidden" name="f_uid" value="<?=$f_uid?>">
+				<input type="hidden" name="f_div" value="<?=$f_div?>">
+				<input type="hidden" name="page" value="<?=$page?>">
+				<input type="hidden" name="keyfield" value="<?=$keyfield?>">
+				<input type="hidden" name="keyword" value="<?=$keyword?>">
+				<input type="hidden" name="from" value="<?=$from?>">
+				<input type="hidden" name="c_f_uid" value="<?=$row_comment[f_uid]?>">
+				<div class="modal fade" id="commentModal_<?=$row_comment[f_uid]?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-sm" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Delete the comment</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<div class="modal-body">
+								<div class="form-group">
+									<label for="del-passwd" class="col-form-label">Password</label>
+									<input type="password" name="f_passwd" class="form-control" id="del-passwd" required="required">
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="submit" class="btn btn-primary">Delete</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				</form>
+                -->
+
+			</td>
+		</tr>
+<?
+			}
+		}
+	}
+}
+?>
+
+	</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?
+################## [게시판 아래쪽 삽입 내용] ###################
+echo $cfg[f_bottom_content];
+?>
+
+
+
+<?
+include "$BASE_URL/include/footer.html";
+?>

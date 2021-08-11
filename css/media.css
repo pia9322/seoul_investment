@@ -1,18 +1,18 @@
 @charset "UTF-8";
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   header > .header_wrap {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
   }
   header > .header_wrap .header_center > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 18px;
+    font-size: 1rem;
   }
   header > .header_wrap .header_center > ul > a {
-    font-size: .9em;
-    padding: 0 20px;
+    font-size: .9rem;
+    padding: 0 1rem;
   }
   header > .header_wrap .header_right {
     width: 20px;
@@ -187,18 +187,17 @@
 /* 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header > .header_wrap {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
   }
   header > .header_wrap .header_center > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 16px;
+    font-size: 1rem;
   }
   header > .header_wrap .header_center > ul > li > a {
     font-size: .9em;
-    padding: 0 20px;
   }
   header > .header_wrap .header_right {
     width: 20px;
@@ -725,23 +724,24 @@
     margin-top: 60px;
   }
   main .main_wrap .main_wrap_04 .wrap_04 > figure figcaption {
-    font-size: 12px;
+    font-size: 9px;
     left: 15%;
     top: 50%;
   }
   main .main_wrap .main_wrap_04 .wrap_04 > figure figcaption .textbox_title > span {
-    font-size: 11px;
+    font-size: 6px;
   }
   main .main_wrap .main_wrap_04 .wrap_04 > figure figcaption .textbox_sub_01 {
     margin-top: 0;
-    font-size: 8px;
+    font-size: 6px;
+    display: none;
   }
   main .main_wrap .main_wrap_04 .wrap_04 > figure figcaption .textbox_sub_02 {
-    margin-top: 0;
+    margin-top: 10px;
   }
   main .main_wrap .main_wrap_04 .wrap_04 > figure figcaption .textbox_sub_02 a {
-    font-size: 8px;
-    padding: 5px 10px;
+    font-size: 6px;
+    padding: 5px 5px;
   }
   main .main_wrap .footer {
     font-size: .4em;

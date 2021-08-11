@@ -1,0 +1,194 @@
+<?
+include_once "../../include/dbconn.html";
+?>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="더돕다">
+    <meta property="og:description" content="LG 에너지솔루션 글로벌 컨시어지 서비스, 더돕다 - VIP 서비스 전문기업">
+    <meta property="og:image" content="../images/og.jpg">
+    <meta property="og:url" content="">
+    <title>LG 에너지솔루션 글로벌 컨시어지 서비스, 더돕다</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/jquery.fullPage.css">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/lucid.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/jquery.fullPage.js"></script>
+    <script src="../js/ScrollMagic.min.js"></script>
+</head>
+
+<body>
+    <div class="skip_navi" title="스킵 메뉴">
+        <a href="#container">본문 바로가기</a>
+        <a href="#header">메뉴 바로가기</a>
+    </div>
+    <header id="header">
+        <div id="nav_bg"></div>
+        <h1 class="logo"><a href="/index.html">더돕다</a></h1>
+<!--
+        <nav class="gnb">
+			<div class="menu">
+                <a href="../dopda/the_dopda.html">THE DOPDA</a>
+                <ul class="sub_menu">
+                    <li><a href="../dopda/the_dopda.html">THE DOPDA</a></li>
+                    <li><a href="../ht_board/notice.html">NOTICE</a></li>
+                </ul>
+            </div>
+            <div class="menu"><a href="../membership/elephants_membership.html">MEMBERSHIP</a>
+                <ul class="sub_menu">
+                    <li><a href="../membership/elephants_membership.html">ELEPHANTS MEMBERSHIP</a></li>
+                </ul>
+            </div>
+            <div class="menu"><a href="../consulting/vip_program.html">CONSULTING</a>
+                <ul class="sub_menu">
+                    <li><a href="../consulting/vip_program.html">VIP PROGRAM</a></li>
+                    <li><a href="../consulting/concierge.html">CONCIERGE SERVICES</a></li>
+                    <li><a href="#">SERVICE MANAGEMENT</a></li>
+                    <li><a href="../consulting/insight.html">INSIGHT</a></li>
+                </ul>
+            </div>
+            <div class="menu"><a href="../service/dopda_life_service.html">SERVICES</a>
+                <ul class="sub_menu">
+                    <li><a href="../service/dopda_life_service.html">LIFESTYLE CURATION SERVICES</a></li>
+                    <li><a href="../service/dopda_biz_service.html">BUISNESS SERVICES</a></li>
+                </ul>
+            </div>
+            <div class="menu"><a href="../awards/elephant_awards.html">AWARDS</a>
+                <ul class="sub_menu">
+                    <li><a href="../awards/elephant_awards.html">ELEPHANTS AWARDS</a></li>
+                    <li><a href="../awards/winners.html">WINNERS</a></li>
+                </ul>
+            </div>
+            <div><a href="../contact/inquiry.html">CONTACT US</a></div>
+        </nav>
+-->
+        <div id="login_btn">
+            <a href="../main/login.html"></a>
+        </div>
+        <div id="mall_btn">
+            <div><a href="#">PRIVATE MALL</a>
+                <ul>
+					<li class="mo_menu p_menu"><span>주재원 & 장기출장자</span>
+						<ul class="mo_sub_menu p_sub_menu">
+							<li><a href="../ht_board/notice.html">NOTICE</a></li>
+							<li><a href="../mall/lifestyle_package.html">건강검진 서비스</a></li>
+							<li><a href="../mall/lifestyle_package.html">출국 코로나 검사 지원</a></li>
+							<li><a href="../mall/lifestyle_package.html">가족 심리상담</a></li>
+							<li><a href="../mall/lifestyle_package.html">병원 임시동행, 간병인 섭외</a></li>
+							<li><a href="../mall/lifestyle_package.html">노부모 & 독거 노인 부모 안심콜</a></li>
+							<li><a href="../mall/lifestyle_package.html">진학 및 진로 상담</a></li>
+							<li><a href="../mall/lifestyle_package.html">국내 물품 구매 대행 및 국제 우편 발송</a></li>
+							<li><a href="../mall/lifestyle_package.html">임대차 관리 대행</a></li>
+							<li><a href="../mall/lifestyle_package.html">이사 준비 및 짐 보관 대행</a></li>
+							<li><a href="../mall/lifestyle_package.html">법률 상담</a></li>
+							<li><a href="../mall/lifestyle_package.html">임시 거주지 섭외 대행</a></li>
+							<li><a href="../mall/lifestyle_package.html">차량 관리</a></li>
+							<li><a href="../mall/lifestyle_package.html">해외 장기 체류자 보험</a></li>
+							<li><a href="../contact/inquiry.html">CONTACT US</a></li>
+						</ul>
+					</li>
+					<li class="mo_menu p_menu"><span>신입사원</span>
+						<ul class="mo_sub_menu p_sub_menu">
+							<li><a href="../ht_board/notice.html">NOTICE</a></li>
+							<li><a href="../mall/lifestyle_package.html">살롱 프로그램</a></li>
+							<li><a href="../mall/lifestyle_package.html">자산관리 및 재무설계</a></li>
+							<li><a href="../mall/lifestyle_package.html">거주지 섭외 대행</a></li>
+							<li><a href="../mall/lifestyle_package.html">이사 지원</a></li>
+							<li><a href="../mall/lifestyle_package.html">구독 서비스</a></li>
+							<li><a href="../contact/inquiry.html">CONTACT US</a></li>
+						</ul>
+					</li>
+                </ul>
+            </div>
+            <div id="mall_bg"></div>
+        </div>
+
+        <input type="checkbox" id="menuicon">
+        <label for="menuicon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="sidebar mo_only">
+            <ul>
+<!--
+				<li class="mo_menu"><span>THE DOPDA</span>
+                    <ul class="mo_sub_menu">
+                        <li><a href="../dopda/the_dopda.html">THE DOPDA</a></li>
+                        <li><a href="../ht_board/notice.html">NOTICE</a></li>
+                    </ul>
+                </li>
+                <li class="mo_menu"><span>MEMBERSHIP</span>
+                    <ul class="mo_sub_menu">
+                        <li><a href="../membership/elephants_membership.html">ELEPHANTS MEMBERSHIP</a></li>
+                    </ul>
+                </li>
+                <li class="mo_menu"><span>CONSULTING</span>
+                    <ul class="mo_sub_menu">
+                        <li><a href="../consulting/vip_program.html">VIP PROGRAM</a></li>
+                        <li><a href="../consulting/concierge.html">CONCIERGE SERVICES</a></li>
+                        <li><a href="#">SERVICE MANAGEMENT</a></li>
+                        <li><a href="../consulting/insight.html">INSIGHT</a></li>
+                    </ul>
+                </li>
+                <li class="mo_menu"><span>SERVICES</span>
+                    <ul class="mo_sub_menu">
+                        <li><a href="../service/dopda_life_service.html">LIFESTYLE CURATION SERVICES</a></li>
+                        <li><a href="../service/dopda_biz_service.html">BUISNESS SERVICES</a></li>
+                    </ul>
+                </li>
+                <li class="mo_menu"><span>AWARDS</span>
+                    <ul class="mo_sub_menu">
+                        <li><a href="../awards/elephant_awards.html">ELEPHANTS AWARDS</a></li>
+                        <li><a href="../awards/winners.html">WINNERS</a></li>
+                    </ul>
+                </li>
+                <li class="mo_menu">
+                    <div><a href="../contact/inquiry.html"><span>CONTACT US</span></a></div>
+                </li>
+-->
+                <li class="mo_menu"><span>주재원 & 장기출장자</span>
+                    <ul class="mo_sub_menu">
+                        <li><a href="../ht_board/notice.html">NOTICE</a></li>
+							<li><a href="../mall/lifestyle_package.html">건강검진 서비스</a></li>
+							<li><a href="../mall/lifestyle_package.html">출국 코로나 검사 지원</a></li>
+							<li><a href="../mall/lifestyle_package.html">가족 심리상담</a></li>
+							<li><a href="../mall/lifestyle_package.html">병원 임시동행, 간병인 섭외</a></li>
+							<li><a href="../mall/lifestyle_package.html">노부모 & 독거 노인 부모 안심콜</a></li>
+							<li><a href="../mall/lifestyle_package.html">진학 및 진로 상담</a></li>
+							<li><a href="../mall/lifestyle_package.html">국내 물품 구매 대행 및 국제 우편 발송</a></li>
+							<li><a href="../mall/lifestyle_package.html">임대차 관리 대행</a></li>
+							<li><a href="../mall/lifestyle_package.html">이사 준비 및 짐 보관 대행</a></li>
+							<li><a href="../mall/lifestyle_package.html">법률 상담</a></li>
+							<li><a href="../mall/lifestyle_package.html">임시 거주지 섭외 대행</a></li>
+							<li><a href="../mall/lifestyle_package.html">차량 관리</a></li>
+							<li><a href="../mall/lifestyle_package.html">해외 장기 체류자 보험</a></li>
+                        <li><a href="../contact/inquiry.html">CONTACT US</a></li>
+                    </ul>
+                </li>
+                <li class="mo_menu"><span>신입사원</span>
+                    <ul class="mo_sub_menu">
+                        <li><a href="../ht_board/notice.html">NOTICE</a></li>
+							<li><a href="../mall/lifestyle_package.html">살롱 프로그램</a></li>
+							<li><a href="../mall/lifestyle_package.html">자산관리 및 재무설계</a></li>
+							<li><a href="../mall/lifestyle_package.html">거주지 섭외 대행</a></li>
+							<li><a href="../mall/lifestyle_package.html">이사 지원</a></li>
+							<li><a href="../mall/lifestyle_package.html">구독 서비스</a></li>
+                        <li><a href="../contact/inquiry.html">CONTACT US</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <label for="menuicon" id="mo_nav_bg"></label>
+        <label for="menuicon" class="background"></label>
+    </header>

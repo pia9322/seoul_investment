@@ -1,0 +1,262 @@
+<?
+######################## [변수 재정의] ########################
+$mode = htmlspecialchars(trim($_POST[mode]), ENT_QUOTES);
+
+$f_div = htmlspecialchars(trim($_POST[f_div]), ENT_QUOTES);
+$f_class = htmlspecialchars(trim($_POST[f_class]), ENT_QUOTES);
+$from = htmlspecialchars(trim($_POST[from]), ENT_QUOTES);
+$keyfield = htmlspecialchars(trim($_POST[keyfield]), ENT_QUOTES);
+$keyword = htmlspecialchars(trim($_POST[keyword]), ENT_QUOTES);
+$page = htmlspecialchars(trim($_POST[page]), ENT_QUOTES);
+
+$f_uid = htmlspecialchars(trim($_POST[f_uid]), ENT_QUOTES);
+$f_fid = htmlspecialchars(trim($_POST[f_fid]), ENT_QUOTES);
+$f_id = htmlspecialchars(trim($_POST[f_id]), ENT_QUOTES);
+$f_passwd = htmlspecialchars(trim($_POST[f_passwd]), ENT_QUOTES);
+$f_name = htmlspecialchars(trim($_POST[f_name]), ENT_QUOTES);
+$f_email = htmlspecialchars(trim($_POST[f_email]), ENT_QUOTES);
+$f_title = htmlspecialchars(trim($_POST[f_title]), ENT_QUOTES);
+$f_comment = htmlspecialchars($_POST[ckeditor], ENT_QUOTES);
+
+$f_link_0 = htmlspecialchars(trim($_POST[f_link_0]), ENT_QUOTES);
+$f_link_1 = htmlspecialchars(trim($_POST[f_link_1]), ENT_QUOTES);
+$f_link_2 = htmlspecialchars(trim($_POST[f_link_2]), ENT_QUOTES);
+$f_notice_yn = htmlspecialchars(trim($_POST[f_notice_yn]), ENT_QUOTES);
+$f_main_yn = htmlspecialchars(trim($_POST[f_main_yn]), ENT_QUOTES);
+$f_show_yn = htmlspecialchars(trim($_POST[f_show_yn]), ENT_QUOTES);
+if (!$f_show_yn){
+	$f_show_yn = "Y";	
+}
+
+if (htmlspecialchars(trim($_GET[mode]), ENT_QUOTES)=="del") {
+    $f_uid = htmlspecialchars(trim($_GET[f_uid]), ENT_QUOTES);
+    $f_div = htmlspecialchars(trim($_GET[f_div]), ENT_QUOTES);
+    if (!$f_uid || !$f_div) {
+        echo "<script>alert('필수 값이 전달되지 않았습니다(del)'); history.back();</script>";
+        exit;
+    }
+} else {
+    if (!$mode) {
+        echo "<script>alert('필수 값이 전달되지 않았습니다'); history.back();</script>";
+        exit;
+    }
+}
+
+
+$BASE_URL = "../..";
+$ADMIN_LAYOUT = "Y";
+$PAGE_CODE_1 = "";
+$PAGE_CODE_2 = "";
+$MENU_01 = "";
+$MENU_02 = "";
+$MENU_03 = "";
+
+include "./config.html";
+include "$BASE_URL/admin/include/admin_header.html";
+?>
+
+
+
+
+
+
+<?
+if ($mode=="add") {
+
+    if (!$f_div || !$f_title || !$f_comment) {
+        echo "<script>alert('필수 값이 전달되지 않았습니다'); history.back();</script>";
+        exit;
+    }
+
+
+
+    for ($i=0; $i<10; $i++) {
+        if ($_FILES['f_file_'.$i]['size'] > 0) {
+    
+            ${"filename_original_".($i)} = strtolower(str_replace(" ","",$_FILES['f_file_'. $i]['name'])); // 원래 파일명
+            $file_ext_array = explode(".", ${"filename_original_".($i)});
+            $file_ext = $file_ext_array[count($file_ext_array)-1]; // 파일 확장자
+            ${"filename_saving_".($i)} = time()."_".$i.".".$file_ext; // 저장될 파일명
+            $saving_location = $BASE_URL."/upload/".$f_div."/".${"filename_saving_".($i)}; // 저장될 전체경로+파일명 (상대경로만 작동함!!)
+
+/*
+            echo "원래 파일명 : ".${"filename_original_".($i)}." <br>";
+            echo "파일 확장자 : ".$file_ext." <br>";
+            echo "저장될 파일명 : ".${"filename_saving_".($i)}." <br>";
+            echo "저장될 전체경로+파일명 : ".$saving_location." <br>";
+            exit;
+*/
+
+            if (!in_array($file_ext, $fileAllow)) {
+    //			print_r($fileAllow);
+    //			exit;
+                echo "<script>alert('Uploaded files(".$file_ext.") are prohibited.'); history.back();</script>";
+                exit;
+            }
+    
+            $copy = move_uploaded_file($_FILES['f_file_'.$i]['tmp_name'], $saving_location);
+    
+            if(!$copy){
+                echo "<script>alert('File Upload Failure - ".${"file_name_".($i)}."'); history.back();</script>";
+                exit;
+            }
+        }
+    }
+
+
+
+    $f_date = date("Y-m-d H:i:s");
+    $f_ip = $_SERVER['REMOTE_ADDR'];
+    $f_name = $_SESSION['f_admin_name'];
+    $f_notice_yn = 'N';
+    
+    $query = "insert into ht_bbs 
+            (f_uid, f_fid, f_id, f_passwd, f_name, f_email, f_title, f_comment, f_file_0, f_file_1, f_file_2, f_file_3, f_file_4, f_file_5, f_file_6, f_file_7, f_file_8, f_file_9, f_filename_0, f_filename_1, f_filename_2, f_filename_3, f_filename_4, f_filename_5, f_filename_6, f_filename_7, f_filename_8, f_filename_9, f_link_0, f_link_1, f_link_2, f_date, f_ip, f_ref, f_thread, f_div, f_class, f_notice_yn, f_main_yn, f_show_yn)
+            values
+            ('', '', '$f_id', '$f_passwd', '$f_name', '$f_email', '$f_title', '$f_comment', '$filename_saving_0', '$filename_saving_1', '$filename_saving_2', '$filename_saving_3', '$filename_saving_4', '$filename_saving_5', '$filename_saving_6', '$filename_saving_7', '$filename_saving_8', '$filename_saving_9', '$filename_original_0', '$filename_original_1', '$filename_original_2', '$filename_original_3', '$filename_original_4', '$filename_original_5', '$filename_original_6', '$filename_original_7', '$filename_original_8', '$filename_original_9', '$f_link_0', '$f_link_1', '$f_link_2', '$f_date', '$f_ip', '$f_ref', '', '$f_div', '$f_class', '$f_notice_yn', '$f_main_yn', '$f_show_yn')
+    ";
+    $result = mysqli_query($dbconn, $query);
+    
+    //echo "$query";
+    //exit;
+    
+    
+    if($result) {
+        echo "<script>alert('Input completed'); location.href='./list.html?f_div=".$f_div."&from=".$from."';</script>";
+        exit;
+    } else {
+        echo "<script>alert('Database input error'); history.back();</script>";
+        exit;
+    }
+}
+
+
+
+
+
+
+
+
+if ($mode=="mod") {
+
+    if (!$f_uid || !$f_div || !$f_title || !$f_comment) {
+        echo "<script>alert('필수 값이 전달되지 않았습니다'); history.back();</script>";
+        exit;
+    }
+
+
+    #################### [파일 삭제하기] #######################
+    for ($i=0; $i<10; $i++) {
+        if ($_POST[del_file_.($i)]=="Y") {
+            $query = "update ht_bbs set f_file_".$i."='', f_filename_".$i."='' where f_uid='$f_uid'";
+            $result = mysqli_query($dbconn, $query);
+        }
+    }
+
+
+    #################### [파일 업로드/업데이트] #######################
+    for ($i=0; $i<10; $i++) {
+        if ($_FILES['f_file_'.$i]['size'] > 0) {
+
+            ${"filename_original_".($i)} = strtolower(str_replace(" ","",$_FILES['f_file_'. $i]['name'])); // 원래 파일명
+            $file_ext_array = explode(".", ${"filename_original_".($i)});
+            $file_ext = $file_ext_array[count($file_ext_array)-1]; // 파일 확장자
+            ${"filename_saving_".($i)} = time()."_".$i.".".$file_ext; // 저장될 파일명
+            $saving_location = $BASE_URL."/upload/".$f_div."/".${"filename_saving_".($i)}; // 저장될 전체경로+파일명 (상대경로만 작동함!!)
+/*
+            echo "원래 파일명 : ".${"filename_original_".($i)}." <br>";
+            echo "파일 확장자 : ".$file_ext." <br>";
+            echo "저장될 파일명 : ".${"filename_saving_".($i)}." <br>";
+            echo "저장될 전체경로+파일명 : ".$saving_location." <br>";
+            exit;
+*/
+
+            if (!in_array($file_ext, $fileAllow)) {
+                echo "<script>alert('Uploaded files are prohibited.'); history.back();</script>";
+                exit;
+            }
+
+            $copy = move_uploaded_file($_FILES['f_file_'.$i]['tmp_name'], $saving_location);
+
+            if(!$copy){
+                echo "<script>alert('File Upload Failure - ".${"file_name_".($i)}."'); history.back();</script>";
+                exit;
+            } else {
+                $query = "update ht_bbs set f_file_".$i."='".${"filename_saving_".($i)}."', f_filename_".$i."='".${"filename_original_".($i)}."' where f_uid='$f_uid'";
+                $result = mysqli_query($dbconn, $query);
+            }
+        }
+    }
+
+
+
+
+    $f_name = $_SESSION['f_admin_name'];
+    $f_notice_yn = 'N';
+
+    $query = "update ht_bbs set
+        f_id = '$f_id',
+        f_passwd = '$f_passwd',
+        f_name = '$f_name',
+        f_email = '$f_email',
+        f_title = '$f_title',
+        f_comment = '$f_comment',
+        f_link_0 = '$f_link_0',
+        f_link_1 = '$f_link_1',
+        f_link_2 = '$f_link_2',
+        f_div = '$f_div',
+        f_class = '$f_class',
+        f_notice_yn = '$f_notice_yn',
+        f_main_yn = '$f_main_yn',
+        f_show_yn = '$f_show_yn'
+    where f_uid='$f_uid'
+    ";
+    $result = mysqli_query($dbconn, $query);
+
+
+
+    if($result) {
+    echo "<script>alert('Update completed'); location.href='./view.html?f_uid=".$f_uid."&f_div=".$f_div."&page=".$page."&keyfield=".$keyfield."&keyword=".$keyword."&from=".$from."';</script>";
+    exit;
+    } else {
+    echo "<script>alert('Database input error'); history.back();</script>";
+    exit;
+    }
+}
+
+
+if (htmlspecialchars(trim($_GET[mode]), ENT_QUOTES)=="del") {
+
+    ######################## [변수 재정의] ########################\
+    $f_div = htmlspecialchars(trim($_GET[f_div]), ENT_QUOTES);
+    $f_class = htmlspecialchars(trim($_GET[f_class]), ENT_QUOTES);
+    $from = htmlspecialchars(trim($_GET[from]), ENT_QUOTES);
+    $keyfield = htmlspecialchars(trim($_GET[keyfield]), ENT_QUOTES);
+    $keyword = htmlspecialchars(trim($_GET[keyword]), ENT_QUOTES);
+    $page = htmlspecialchars(trim($_GET[page]), ENT_QUOTES);
+    $f_uid = htmlspecialchars(trim($_GET[f_uid]), ENT_QUOTES);
+
+
+
+
+    $query = "delete from ht_bbs where f_uid='$f_uid'";
+    $result = mysqli_query($dbconn, $query);
+
+
+    if($result) {
+        echo "<script>alert('Delete completed'); location.href='./list.html?f_uid=".$f_uid."&f_div=".$f_div."&page=".$page."&keyfield=".$keyfield."&keyword=".$keyword."&from=".$from."';</script>";
+        exit;
+    } else {
+        echo "<script>alert('Database delete error'); history.back();</script>";
+        exit;
+    }
+}
+?>
+
+
+
+
+
+<?
+include "$BASE_URL/admin/include/admin_footer.html";
+?>

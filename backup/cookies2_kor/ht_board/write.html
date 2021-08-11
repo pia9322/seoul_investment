@@ -1,0 +1,343 @@
+<?
+include_once "../../include/config.html";
+$ROOT_URL = "../..";
+$BASE_URL = "$ROOT_URL/$first_dir";
+
+include "$BASE_URL/ht_board/config.html";
+$PAGE_CODE_1 = $BBS_PAGE_CODE_1;
+$PAGE_CODE_2 = $BBS_PAGE_CODE_2;
+$MENU_01 = $BBS_MENU_01;
+$MENU_02 = $BBS_MENU_02;
+$MENU_03 = $BBS_MENU_03;
+$PAGE_TITLE = $BBS_PAGE_TITLE;
+$PAGE_IMG = $BBS_PAGE_IMG;
+
+include "$BASE_URL/include/header.html";
+?>
+
+
+
+
+<?
+######################## [변수 재정의] ########################\
+$f_div = htmlspecialchars(trim($_GET[f_div]), ENT_QUOTES);
+$f_class = htmlspecialchars(trim($_GET[f_class]), ENT_QUOTES);
+$from = htmlspecialchars(trim($_GET[from]), ENT_QUOTES);
+$keyfield = htmlspecialchars(trim($_GET[keyfield]), ENT_QUOTES);
+$keyword = htmlspecialchars(trim($_GET[keyword]), ENT_QUOTES);
+$page = htmlspecialchars(trim($_GET[page]), ENT_QUOTES);
+
+################## [게시판 위쪽 삽입 내용] ###################
+echo $cfg[f_top_content];
+?>
+
+
+
+
+
+
+
+
+<form name="write" method="post" action="./db_exec.html" enctype="multipart/form-data">
+<input type="hidden" name="mode" value="add">
+<input type="hidden" name="f_div" value="<?echo $f_div?>">
+<input type="hidden" name="f_class" value="<?echo $f_class?>">
+<input type="hidden" name="from" value="<?echo $from?>">
+
+<table class="list-table">
+	<colgroup>
+		<col width="15%" />
+		<col width="35%" />
+		<col width="15%" />
+		<col width="35%" />
+	</colgroup>
+
+	<tbody>
+
+
+<?
+if ($_SESSION[f_admin_id]) {
+?>
+
+		<tr style="background-color:#F8F8F8">
+<!--
+			<td class="form-td list-td-right form-td-head">공지</td>
+			<td class="form-td">
+				<span class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="f_notice_1" name="f_notice_yn" class="custom-control-input" value="Y">
+					<label class="custom-control-label" for="f_notice_1" style="line-height: 1.8;">공지</label>
+				</span>
+				<span class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="f_notice_2" name="f_notice_yn" class="custom-control-input" value="N" checked>
+					<label class="custom-control-label" for="f_notice_2" style="line-height: 1.8;">일반</label>
+				</span>
+			</td>
+-->
+			<td class="form-td list-td-right form-td-head">노출</td>
+			<td class="form-td" colspan="3">
+				<span class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="f_show_1" name="f_show_yn" class="custom-control-input" value="Y" checked>
+					<label class="custom-control-label" for="f_show_1" style="line-height: 1.8;">노출</label>
+				</span>
+				<span class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="f_show_2" name="f_show_yn" class="custom-control-input" value="N">
+					<label class="custom-control-label" for="f_show_2" style="line-height: 1.8;">숨김</label>
+				</span>
+			</td>
+
+<!--
+			<td class="form-td list-td-right form-td-head">메인</td>
+			<td class="form-td">
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="f_main_1" name="f_main_yn" class="custom-control-input" value="Y">
+					<label class="custom-control-label" for="f_main_1" style="line-height: 1.8;">메인노출</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="f_main_2" name="f_main_yn" class="custom-control-input" value="N" checked>
+					<label class="custom-control-label" for="f_main_2" style="line-height: 1.8;">일반</label>
+				</div>
+			</td>
+
+		</tr>
+		<tr style="background-color:#F8F8F8">
+			<td class="form-td list-td-right form-td-head">노출</td>
+			<td class="form-td">
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="f_show_1" name="f_show_yn" class="custom-control-input" value="Y" checked>
+					<label class="custom-control-label" for="f_show_1" style="line-height: 1.8;">노출</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="f_show_2" name="f_show_yn" class="custom-control-input" value="N">
+					<label class="custom-control-label" for="f_show_2" style="line-height: 1.8;">숨김</label>
+				</div>
+			</td>
+			<td class="form-td list-td-right form-td-head">구분</td>
+			<td class="form-td">
+				<div class="input-group">
+					<select name="f_class" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+						<option selected>선택</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+				</div>
+			</td>
+-->
+		</tr>
+
+
+<?
+}
+?>
+
+
+
+
+
+
+
+		<tr>
+			<td class="form-td list-td-right form-td-head">Subject</td>
+			<td colspan="3" class="form-td"><input type="text" name="f_title" class="form-control input_100" required="required"></td>
+		</tr>
+
+
+
+
+
+
+
+		<tr>
+<?
+$input_option = array('f_name', 'f_email', 'f_id', 'f_passwd');
+
+$j=1;
+for ($i=0; $i<count($input_option); $i++) {
+	if ($cfg[$input_option[$i]]=="1") {
+		if ($input_option[$i]=="f_name") {
+			$input_title = "이름";
+			$input_type = "text";
+		} else if ($input_option[$i]=="f_email") {
+			$input_title = "이메일";
+			$input_type = "text";
+		} else if ($input_option[$i]=="f_id") {
+			$input_title = "아이디";
+			$input_type = "text";
+		} else if ($input_option[$i]=="f_passwd") {
+			$input_title = "패스워드";
+			$input_type = "password";
+		}
+?>
+			<td class="form-td list-td-right form-td-head"><?=$input_title?></td>
+			<td class="form-td"><input type="<?=$input_type?>" name="<?=$input_option[$i]?>" class="form-control input_100" required="required"></td>
+<?
+		if ($j % 2 == 0) {
+			echo "</tr><tr>";
+		}
+		$j++;
+	}
+}
+
+if (($j-1) % 2 == 1) {
+?>
+			<td class="form-td list-td-right form-td-head"></td>
+			<td class="form-td"></td>
+<?
+}
+?>
+		</tr>
+
+
+
+
+		<tr>
+			<td class="form-td list-td-right form-td-head">Context</td>
+			<td colspan="3" class="form-td">
+				<textarea name="ckeditor" id="ckeditor"></textarea>
+			</td>
+		</tr>
+<?
+if ($cfg[f_upload]=="1") {
+?>
+		<tr>
+			<td class="form-td list-td-right form-td-head">Files <button class="btn btn-sm add-file" onClick="return addFile();">+</button></td>
+			<td colspan="3" class="form-td">
+
+
+<?
+for ($i=0; $i<10; $i++) {
+	if ($i==0) {
+		$display = "block";
+	} else {
+		$display = "none";
+	}
+?>
+				<div id="file_<?=$i?>" class="custom-file" style="margin-bottom:4px; display:<?=$display?>;">
+					<input type="file" class="custom-file-input" id="file_input_<?=$i?>" name="f_file_<?=$i?>">
+<!--
+					<label class="custom-file-label" for="file_input_<?=$i?>">Choose file</label>
+-->
+				</div>
+<?
+}
+?>
+			</td>
+		</tr>
+<?
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+<?
+if ($cfg[f_link]=="1") {
+?>
+		<tr>
+			<td class="form-td list-td-right form-td-head">Links <button class="btn btn-sm add-file" onClick="return addLink();">+</button></td>
+			<td colspan="3" class="form-td">
+
+<?
+for ($i=0; $i<3; $i++) {
+	if ($i==0) {
+		$display = "block";
+	} else {
+		$display = "none";
+	}
+?>
+				<input type="text" id="f_link_<?=$i?>" name="f_link_<?=$i?>" class="form-control input_100" style="margin-bottom:4px; display:<?=$display?>;">
+<?
+}
+?>
+			</td>
+		</tr>
+<?
+}
+?>
+	</tbody>
+</table>
+
+
+
+
+
+
+
+<div style="padding:20px 0px 40px 0px;">
+	<div class="text-right">
+		<a href="javascript:;" onClick="history.back()"><button type="button" class="btn btn-secondary">BACK</button></a>
+		<button type="submit" class="btn btn-primary" style="padding-left:50px; padding-right:50px;">WRITE</button>
+	</div>
+</div>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/ckeditor/ckeditor_4.11.4/ckeditor.js"></script>
+
+
+<script>
+	CKEDITOR.replace('ckeditor', {
+		extraPlugins: 'image2,uploadimage',
+
+		// Configure your file manager integration. This example uses CKFinder 3 for PHP.
+		filebrowserBrowseUrl: '/ckfinder/ckfinder_3.5.0/ckfinder.html',
+		filebrowserImageBrowseUrl: '/ckfinder/ckfinder_3.5.0/ckfinder.html?type=Images',
+		filebrowserUploadUrl: '/ckfinder/ckfinder_3.5.0/core/connector/php/connector.php?command=QuickUpload&type=Files',
+		filebrowserImageUploadUrl: '/ckfinder/ckfinder_3.5.0/core/connector/php/connector.php?command=QuickUpload&type=Images',
+
+		// Upload dropped or pasted images to the CKFinder connector (note that the response type is set to JSON).
+		uploadUrl: '/ckfinder/ckfinder_3.5.0/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
+
+		// Reduce the list of block elements listed in the Format drop-down to the most commonly used.
+		format_tags: 'p;h1;h2;h3;pre',
+		// Simplify the Image and Link dialog windows. The "Advanced" tab is not needed in most cases.
+		removeDialogTabs: 'image:advanced;link:advanced',
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?
+################## [게시판 아래쪽 삽입 내용] ###################
+echo $cfg[f_bottom_content];
+?>
+
+
+
+<?
+include "$BASE_URL/include/footer.html";
+?>

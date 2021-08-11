@@ -20,12 +20,12 @@ $(function(){
         }); 
     }
     
-    for (let j=0; j < map_svg.length ; j++){
-        $('.point').eq(j).on('mouseover',function(){
-            $('.map_svg').eq(j).addClass('active');
+    for (let i=0; i < map_svg.length ; i++){
+        $('.point').eq(i).on('mouseover',function(){
+            $('.map_svg').eq(i).addClass('active');
         });
-        $('.point').eq(j).on('mouseleave',function(){
-            $('.map_svg').eq(j).removeClass('active');
+        $('.point').eq(i).on('mouseleave',function(){
+            $('.map_svg').eq(i).removeClass('active');
         });
     }
 

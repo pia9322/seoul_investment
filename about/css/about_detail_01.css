@@ -4,11 +4,6 @@
   margin-right: 6px;
 }
 
-main {
-  max-width: 2560px;
-  margin: 0 auto;
-}
-
 main .operation_about_01 {
   position: relative;
 }
@@ -24,6 +19,7 @@ main .operation_about_01 .wrap > figure {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 350px;
 }
 
 main .operation_about_01 .wrap > figure figcaption {
@@ -232,9 +228,25 @@ main .operation_about_05 .content_title {
 }
 
 main .operation_about_05 .content_title figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 24px;
   font-weight: bold;
   color: #112d4e;
+}
+
+main .operation_about_05 .content_title figcaption .content_title_sub_01 {
+  font-size: 16px;
+  color: #666;
+  font-weight: 400;
 }
 
 main .operation_about_05 .content_main {
@@ -245,13 +257,8 @@ main .operation_about_05 .content_main .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main .operation_about_05 .content_main .wrap .content_01 {
-  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 main .operation_about_05 .content_main .wrap .content_01 ul {

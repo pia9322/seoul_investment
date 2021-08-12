@@ -38,9 +38,9 @@ $(function(){
 
     $(function () {
         $('.home_box').hover(function () {
-            $('.text_hover_box_02', this).stop().slideDown(150)
+            $('.text_hover_box_02', this).stop().slideDown(300,'linear')
         }, function () {
-            $('.text_hover_box_02', this).stop().slideUp(150)
+            $('.text_hover_box_02', this).stop().slideUp(300,'linear')
         })
     });
 
@@ -55,7 +55,7 @@ $(function(){
     
     var swiper = new Swiper(".swiper_02", {
         slidesPerView: 2.5,
-        spaceBetween: 20,
+        spaceBetween: 100,
         loop : true,
         loopAdditionalSlides : 10,
         // centeredSlides: true,
@@ -65,7 +65,7 @@ $(function(){
         // },
         breakpoints : { // 반응형 설정이 가능 width값으로 조정
             768 : {
-              slidesPerView : 1,
+              slidesPerView : 1.5,
             },
         },
     });

@@ -208,9 +208,9 @@ main{
 
         // main_wrap_02
         .main_wrap_02{
-            width: 100%; 
+            width: 100%;
             background: linear-gradient(to right, transparent  50% , #f4f4f4 50%);
-            margin-top: 160px;
+            padding: 160px 0 140px 0;
         
             .wrap_02 {
 
@@ -253,7 +253,6 @@ main{
                                         letter-spacing: -0.64px;
                                         background: #fff;
                                         color: #112d4e;
-                                        box-shadow: 0 5px 10px;
 
                                         .text_hover_box_01{
                                             .detail_text_01 {
@@ -339,7 +338,6 @@ main{
                                 .home_detail{
                                     top:30%;
                                     box-shadow: 0 5px 10px;
-
                                 }
                             }
                         }
@@ -476,13 +474,13 @@ main{
         // main_wrap_05
         .main_wrap_05{
             width: 100%;
-            margin-top: 140px;
             background: no-repeat center / cover url(../images/main_05_bg_01.png);
             // margin-top: 140px;
             .wrap_05 {
                 .main_wrap_title {
                     padding-top: 120px;
                     text-align: center;
+                    margin: 0 auto;
                     // h2 {font-size: 52px;}
                     p {
                         font-family: 'Noto Sans KR';
@@ -502,6 +500,7 @@ main{
                     align-items: center;
                     justify-content: center;
                     padding: 60px 0 120px 0 ;
+                    margin: 0 auto;
 
                     > figure{
                     }

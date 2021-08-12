@@ -194,6 +194,13 @@ main .main_wrap > article {
 main .main_wrap .main_wrap_01 {
   font-size: 0;
   position: relative;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+main .main_wrap .main_wrap_01:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 
 main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide {

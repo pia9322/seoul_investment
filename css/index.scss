@@ -171,6 +171,10 @@ main{
         .main_wrap_01{
             font-size: 0;
             position: relative;
+            cursor: grab;
+            &:active{
+                cursor: grabbing;
+            }
             .swiper-container{
                 .swiper-wrapper{
                     .swiper-slide{

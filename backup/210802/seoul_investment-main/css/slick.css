@@ -155,7 +155,8 @@
 }
 
 /*  */
-/* .slick-slide:not(.slick-active) {
+
+.slick-slide:not(.slick-active) {
   opacity: 0.5;
   transition: .3s;
-} */
+}

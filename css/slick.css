@@ -44,7 +44,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px 0;
+  padding: 100px 0;
 }
 
 .slick-track:before, .slick-track:after {
@@ -109,10 +109,10 @@
   /* height: 740px; */
   min-height: 1px;
   display: none;
-  margin: 0 30px;
+  /* margin: 0 30px; */
+  /* max-width: 510px; */
 }
 .slick-slide > div {
-  /* height: 740px; width: 400px; */
 }
 .slick-slide > div > li {
   border: 1px solid #ddd;
@@ -139,15 +139,15 @@
 }
 .slick-prev{
   transform: rotate(-135deg);
-  left: 40px;
-  border-top: 4px solid #000;
-  border-right: 4px solid #000;
+  left: -60px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
 }
 .slick-next {
   transform: rotate(135deg);
-  right: 40px;
-  border-top: 4px solid #000;
-  border-left: 4px solid #000;
+  right: -60px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
 }
 
 .slick-arrow:hover{

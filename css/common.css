@@ -16,10 +16,14 @@
 	font-family: 'Play';
     src: url('../font/Play/Play-Bold.ttf'); /* IE9 Compat Modes */
 }
+@font-face {
+	font-family: 'Noto Sans KR-thin';
+    src: url('../font/notosanskr/NotoSansKR-Thin.otf'); /* IE9 Compat Modes */
+}
 
 *{
 	box-sizing: border-box;
-	font-family: 'AppleSDGothicNeoM', 'Play', sans-serif;
+	font-family: 'AppleSDGothicNeoM', 'Play','NotoSansKR-Regular', sans-serif;
 }
 
 img {

@@ -35,7 +35,7 @@
   main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide .slide_textbox {
     font-size: .9em;
     left: 10%;
-    top: 30%;
+    top: 40%;
   }
   main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide .slide_textbox .textbox_title {
     line-height: 1.2em;
@@ -43,7 +43,7 @@
   main .main_wrap .main_wrap_01 .swiper-container .text_swiper {
     position: absolute;
     left: 12%;
-    top: 20%;
+    top: 35%;
     z-index: 9999;
   }
   main .main_wrap .main_wrap_02 {
@@ -213,6 +213,12 @@
     width: 20px;
     height: 20px;
   }
+  .main_wrap_01 .swiper-container .text_swiper .text_swiper_wrap .swiper-progress-bar .slide_progress-bar .swiper-pagination .swiper-pagination-total,
+  .main_wrap_01 .swiper-container .text_swiper .text_swiper_wrap .swiper-progress-bar .slide_progress-bar .swiper-pagination .swiper-pagination-current {
+    right: 110%;
+    top: 5px;
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1260px) {
@@ -325,6 +331,7 @@
   }
   header > .header_wrap .header_center > ul > li > a {
     font-size: .9em;
+    padding: 0 .9rem;
   }
   header > .header_wrap .header_right {
     width: 20px;
@@ -346,7 +353,7 @@
   main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide .slide_textbox {
     font-size: .8em;
     left: 10%;
-    top: 30%;
+    top: 40%;
   }
   main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide .slide_textbox .textbox_title {
     line-height: 1.2em;
@@ -354,7 +361,7 @@
   main .main_wrap .main_wrap_01 .swiper-container .text_swiper {
     position: absolute;
     left: 13%;
-    top: 20%;
+    top: 35%;
     z-index: 9999;
   }
   main .main_wrap .main_wrap_02 .wrap_02 .main_wrap_title h2 {
@@ -520,6 +527,12 @@
     width: 15px;
     height: 15px;
   }
+  .main_wrap_01 .swiper-container .text_swiper .text_swiper_wrap .swiper-progress-bar .slide_progress-bar .swiper-pagination .swiper-pagination-total,
+  .main_wrap_01 .swiper-container .text_swiper .text_swiper_wrap .swiper-progress-bar .slide_progress-bar .swiper-pagination .swiper-pagination-current {
+    right: 110%;
+    top: 5px;
+    font-size: 18px;
+  }
 }
 
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
@@ -555,7 +568,7 @@
   main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide .slide_textbox {
     font-size: .6em;
     left: 10%;
-    top: 30%;
+    top: 40%;
   }
   main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide .slide_textbox .textbox_title {
     line-height: 1.2em;
@@ -563,7 +576,7 @@
   main .main_wrap .main_wrap_01 .swiper-container .text_swiper {
     position: absolute;
     left: 13%;
-    top: 20%;
+    top: 35%;
     z-index: 9999;
   }
   main .main_wrap .main_wrap_02 .wrap_02 .main_wrap_title h2 {
@@ -744,12 +757,21 @@
     border-top: 2px solid #000;
     border-left: 2px solid #000;
   }
+  .main_wrap_01 .swiper-container .text_swiper .text_swiper_wrap .swiper-progress-bar .slide_progress-bar .swiper-pagination .swiper-pagination-total,
+  .main_wrap_01 .swiper-container .text_swiper .text_swiper_wrap .swiper-progress-bar .slide_progress-bar .swiper-pagination .swiper-pagination-current {
+    right: 110%;
+    top: 5px;
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 479px) {
   header > .header_wrap {
     width: 100%;
     margin: 0 auto;
+  }
+  header > .header_wrap .header_left {
+    margin-left: 10px;
   }
   header > .header_wrap .header_center > ul {
     display: none;
@@ -766,13 +788,16 @@
   header > .header_wrap .header_right span {
     width: 20px;
   }
+  main .main_wrap .main_wrap_01 {
+    height: 400px;
+  }
   main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide {
     font-size: 31px;
   }
   main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide .slide_textbox {
     font-size: .5em;
     left: 10%;
-    top: 30%;
+    top: 40%;
   }
   main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide .slide_textbox .textbox_title {
     line-height: 1.2em;
@@ -781,11 +806,13 @@
     font-size: .3em;
   }
   main .main_wrap .main_wrap_01 .swiper-container .text_swiper {
-    display: none;
     position: absolute;
     left: 13%;
-    top: 20%;
+    top: 35%;
     z-index: 9999;
+  }
+  main .main_wrap .main_wrap_02 {
+    padding: 160px 0 0 0;
   }
   main .main_wrap .main_wrap_02 .wrap_02 .main_wrap_title h2 {
     font-size: 21px;
@@ -968,6 +995,12 @@
     right: 15px;
     border-top: 2px solid #000;
     border-left: 2px solid #000;
+  }
+  .main_wrap_01 .swiper-container .text_swiper .text_swiper_wrap .swiper-progress-bar .slide_progress-bar .swiper-pagination .swiper-pagination-total,
+  .main_wrap_01 .swiper-container .text_swiper .text_swiper_wrap .swiper-progress-bar .slide_progress-bar .swiper-pagination .swiper-pagination-current {
+    right: 110%;
+    top: 7px;
+    font-size: .8rem;
   }
 }
 /*# sourceMappingURL=media.css.map */

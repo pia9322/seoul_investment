@@ -169,6 +169,7 @@ main{
         }
 
         .main_wrap_01{
+            height: 680px;
             font-size: 0;
             position: relative;
             cursor: grab;
@@ -176,7 +177,20 @@ main{
                 cursor: grabbing;
             }
             .swiper-container{
+                width: 100%;height: 100%;
+
                 .swiper-wrapper{
+                    width: 100%;height: 100%;
+
+                    .slide_01{
+                        background: no-repeat center / cover url("../images/main_visual_01.png");
+                    }
+                    .slide_02{
+                        background: no-repeat center / cover  url("../images/main_visual_02.png");
+                    }
+                    .slide_03{
+                        background: no-repeat center / cover  url("../images/main_visual_03.png");
+                    }
                     .swiper-slide{
                         position: relative;
                         .slide_textbox{
@@ -474,7 +488,7 @@ main{
         // main_wrap_05
         .main_wrap_05{
             width: 100%;
-            background: no-repeat center / cover url(../images/main_05_bg_01.png);
+            background: no-repeat center / cover url("../images/main_05_bg_01.png");
             // margin-top: 140px;
             .wrap_05 {
                 .main_wrap_title {

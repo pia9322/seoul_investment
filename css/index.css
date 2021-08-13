@@ -192,6 +192,7 @@ main .main_wrap > article {
 }
 
 main .main_wrap .main_wrap_01 {
+  height: 680px;
   font-size: 0;
   position: relative;
   cursor: -webkit-grab;
@@ -201,6 +202,28 @@ main .main_wrap .main_wrap_01 {
 main .main_wrap .main_wrap_01:active {
   cursor: -webkit-grabbing;
   cursor: grabbing;
+}
+
+main .main_wrap .main_wrap_01 .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .slide_01 {
+  background: no-repeat center/cover url("../images/main_visual_01.png");
+}
+
+main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .slide_02 {
+  background: no-repeat center/cover url("../images/main_visual_02.png");
+}
+
+main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .slide_03 {
+  background: no-repeat center/cover url("../images/main_visual_03.png");
 }
 
 main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide {
@@ -574,7 +597,7 @@ main .main_wrap .main_wrap_04 .wrap_04 > figure figcaption .textbox_sub_02 a:hov
 
 main .main_wrap .main_wrap_05 {
   width: 100%;
-  background: no-repeat center/cover url(../images/main_05_bg_01.png);
+  background: no-repeat center/cover url("../images/main_05_bg_01.png");
 }
 
 main .main_wrap .main_wrap_05 .wrap_05 .main_wrap_title {

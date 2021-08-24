@@ -76,7 +76,6 @@ header > .header_wrap .header_center > ul > li .depth_01 {
 }
 
 header > .header_wrap .header_center > ul > li .depth_01 > li {
-  padding: 10px 0;
   background: rgba(255, 255, 255, 0.7);
   -webkit-transition: .1s;
   transition: .1s;
@@ -85,6 +84,7 @@ header > .header_wrap .header_center > ul > li .depth_01 > li {
 header > .header_wrap .header_center > ul > li .depth_01 > li > a {
   font-size: .9rem;
   color: #222;
+  padding: 10px 0;
 }
 
 header > .header_wrap .header_center > ul > li .depth_01 > li:hover {
@@ -269,7 +269,7 @@ header > .header_wrap .header_navi.active {
 }
 
 .footer {
-  margin-top: 180px;
+  margin-top: 100px;
   background: #000;
   color: #ddd;
   -webkit-transition: .3s;
@@ -301,6 +301,10 @@ header > .header_wrap .header_navi.active {
   height: 43px;
 }
 
+.footer .footer_wrap > ul .footer_left h2 a img {
+  width: 100%;
+}
+
 .footer .footer_wrap > ul .footer_right {
   padding-left: 30px;
 }
@@ -319,4 +323,162 @@ header > .header_wrap .header_navi.active {
 
 .footer .footer_wrap > ul .footer_right > ul li a {
   color: #fff;
+}
+
+@media screen and (max-width: 1440px) {
+  header > .header_wrap {
+    width: 70%;
+    margin: 0 auto;
+  }
+  header > .header_wrap .header_center > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1rem;
+  }
+  header > .header_wrap .header_center > ul > a {
+    font-size: .9rem;
+    padding: 0 1rem;
+  }
+  header > .header_wrap .header_right {
+    width: 20px;
+    height: 20px;
+  }
+  header > .header_wrap .header_right span {
+    width: 20px;
+  }
+  .footer {
+    font-size: .9em;
+  }
+  .footer .footer_wrap {
+    padding: 20px 0;
+  }
+  .footer .footer_wrap > ul .footer_left {
+    padding-right: 30px;
+  }
+  .footer .footer_wrap > ul .footer_left h2 {
+    width: 200px;
+    height: 40px;
+  }
+  .footer .footer_wrap > ul .footer_right {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  header > .header_wrap {
+    width: 70%;
+    margin: 0 auto;
+  }
+  header > .header_wrap .header_center > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1rem;
+  }
+  header > .header_wrap .header_center > ul > li > a {
+    font-size: .9em;
+    padding: 0 .9rem;
+  }
+  header > .header_wrap .header_right {
+    width: 20px;
+    height: 20px;
+  }
+  header > .header_wrap .header_right span {
+    width: 20px;
+  }
+  .footer {
+    font-size: .7em;
+  }
+  .footer .footer_wrap {
+    padding: 20px 0;
+  }
+  .footer .footer_wrap > ul .footer_left {
+    padding-right: 30px;
+  }
+  .footer .footer_wrap > ul .footer_left h2 {
+    width: 150px;
+    height: 30px;
+  }
+  .footer .footer_wrap > ul .footer_right {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header > .header_wrap {
+    width: 100%;
+    margin: 0 auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  header > .header_wrap .header_center > ul {
+    display: none;
+  }
+  header > .header_wrap .header_right {
+    width: 20px;
+    height: 20px;
+  }
+  header > .header_wrap .header_right span {
+    width: 20px;
+  }
+  .footer {
+    font-size: .6em;
+  }
+  .footer .footer_wrap {
+    padding: 20px 0;
+  }
+  .footer .footer_wrap > ul .footer_left {
+    padding-right: 30px;
+  }
+  .footer .footer_wrap > ul .footer_left h2 {
+    width: 100px;
+    height: 30px;
+  }
+  .footer .footer_wrap > ul .footer_right {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  header > .header_wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+  header > .header_wrap .header_left {
+    margin-left: 10px;
+  }
+  header > .header_wrap .header_center > ul {
+    display: none;
+  }
+  header > .header_wrap .header_center > ul > li > a {
+    font-size: .8em;
+    padding: 0 20px;
+  }
+  header > .header_wrap .header_right {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  header > .header_wrap .header_right span {
+    width: 20px;
+  }
+  .footer {
+    font-size: .4em;
+  }
+  .footer .footer_wrap {
+    padding: 20px 0;
+  }
+  .footer .footer_wrap > ul .footer_left {
+    padding-right: 30px;
+  }
+  .footer .footer_wrap > ul .footer_left h2 {
+    width: 100px;
+    height: 30px;
+  }
+  .footer .footer_wrap > ul .footer_right {
+    padding-left: 0;
+  }
 }

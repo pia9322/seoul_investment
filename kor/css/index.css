@@ -356,7 +356,7 @@ main .main_wrap .main_wrap_02 {
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #f4f4f4));
   background: linear-gradient(to right, transparent 50%, #f4f4f4 50%);
-  padding: 160px 0 140px 0;
+  padding: 160px 0 70px 0;
 }
 
 main .main_wrap .main_wrap_02 .wrap_02 .main_wrap_title {
@@ -777,6 +777,10 @@ main .main_wrap .footer .footer_wrap > ul .footer_left {
 main .main_wrap .footer .footer_wrap > ul .footer_left h2 {
   width: 210px;
   height: 43px;
+}
+
+main .main_wrap .footer .footer_wrap > ul .footer_left h2 a img {
+  width: 100%;
 }
 
 main .main_wrap .footer .footer_wrap > ul .footer_right {

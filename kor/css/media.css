@@ -69,6 +69,10 @@
     width: 510px;
     height: auto;
   }
+  main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .home_img img {
+    width: 100%;
+    height: 100%;
+  }
   main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .home_img .home_detail {
     width: 90%;
     top: 90%;
@@ -252,6 +256,10 @@
     width: 510px;
     height: auto;
   }
+  main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .home_img img {
+    width: 100%;
+    height: 100%;
+  }
   main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .home_img .home_detail {
     width: 90%;
     top: 90%;
@@ -300,7 +308,7 @@
     top: 10%;
   }
   main .main_wrap .main_wrap_05 .wrap_05 .main_wrap_title {
-    padding-top: 120px;
+    padding-top: 100px;
   }
   main .main_wrap .main_wrap_05 .wrap_05 .main_wrap_title p {
     font-size: 30px;
@@ -308,7 +316,7 @@
   }
   main .main_wrap .main_wrap_05 .wrap_05 .main_detail {
     width: 90%;
-    padding: 60px 0 120px 0;
+    padding: 60px 0 100px 0;
   }
   main .main_wrap .main_wrap_05 .wrap_05 .main_detail figure:nth-of-type(1) {
     padding-right: 100px;
@@ -385,6 +393,10 @@
     width: 510px;
     height: auto;
   }
+  main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .home_img img {
+    width: 100%;
+    height: 100%;
+  }
   main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .home_img .home_detail {
     width: 90%;
     top: 90%;
@@ -435,7 +447,7 @@
   }
   main .main_wrap .main_wrap_05 .wrap_05 .main_wrap_title {
     width: 80%;
-    padding-top: 120px;
+    padding-top: 100px;
   }
   main .main_wrap .main_wrap_05 .wrap_05 .main_wrap_title p {
     font-size: 26px;
@@ -443,7 +455,7 @@
   }
   main .main_wrap .main_wrap_05 .wrap_05 .main_detail {
     width: 90%;
-    padding: 60px 0 120px 0;
+    padding: 60px 0 80px 0;
   }
   main .main_wrap .main_wrap_05 .wrap_05 .main_detail figure:nth-of-type(1) {
     padding-right: 40px;
@@ -605,6 +617,10 @@
     width: 510px;
     height: auto;
   }
+  main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .home_img img {
+    width: 100%;
+    height: 100%;
+  }
   main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .home_img .home_detail {
     width: 90%;
     top: 90%;
@@ -655,7 +671,7 @@
   }
   main .main_wrap .main_wrap_05 .wrap_05 .main_wrap_title {
     width: 70%;
-    padding-top: 120px;
+    padding-top: 80px;
   }
   main .main_wrap .main_wrap_05 .wrap_05 .main_wrap_title p {
     font-size: 20px;
@@ -663,7 +679,7 @@
   }
   main .main_wrap .main_wrap_05 .wrap_05 .main_detail {
     width: 90%;
-    padding: 60px 0 120px 0;
+    padding: 60px 0 60px 0;
   }
   main .main_wrap .main_wrap_05 .wrap_05 .main_detail figure:nth-of-type(1) {
     padding-right: 30px;
@@ -824,7 +840,7 @@
     z-index: 9999;
   }
   main .main_wrap .main_wrap_02 {
-    padding: 160px 0 0 0;
+    padding: 60px 0 0 0;
   }
   main .main_wrap .main_wrap_02 .wrap_02 .main_wrap_title h2 {
     font-size: 21px;
@@ -842,6 +858,10 @@
   main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box {
     width: 510px;
     height: auto;
+  }
+  main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .home_img img {
+    width: 100%;
+    height: 100%;
   }
   main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .home_img .home_detail {
     width: 90%;

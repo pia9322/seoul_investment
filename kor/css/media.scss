@@ -72,7 +72,7 @@ main{
     .main_wrap_01{
         font-size: 0;
         position: relative;
-
+        height: 500px;
         .swiper-container{
             .swiper-wrapper{
                 .swiper-slide{
@@ -293,6 +293,7 @@ main{
         margin-top: 60px;
         .wrap_04{
             > figure {
+                height: 300px;
                 img{}
                 figcaption{
                     font-size: 25px;
@@ -591,7 +592,7 @@ main{
     
         .main_wrap_01{
             position: relative;
-    
+            height: 450px;
             .swiper-container{
                 .swiper-wrapper{
                     .swiper-slide{
@@ -812,6 +813,7 @@ main{
             margin-top: 60px;
             .wrap_04{
                 > figure {
+                    height: 300px;
                     img{}
                     figcaption{
                         font-size: 18px;
@@ -963,7 +965,7 @@ main{
     
         .main_wrap_01{
             position: relative;
-    
+            height: 400px;
             .swiper-container{
                 .swiper-wrapper{
                     .swiper-slide{
@@ -1183,6 +1185,7 @@ main{
             margin-top: 60px;
             .wrap_04{
                 > figure {
+                    height: 250px;
                     img{}
                     figcaption{
                         font-size: 16px;
@@ -1348,7 +1351,7 @@ main{
             }
         
             .main_wrap_01{
-                height: 400px;
+                height: 350px;
                 .swiper-container{
                     .swiper-wrapper{
                         .swiper-slide{
@@ -1571,6 +1574,7 @@ main{
                 margin-top: 60px;
                 .wrap_04{
                     > figure {
+                        height: 200px;
                         img{}
                         figcaption{
                             font-size: 9px;

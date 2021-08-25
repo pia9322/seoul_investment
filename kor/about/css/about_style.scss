@@ -379,6 +379,9 @@ main {
                             li:not(:first-of-type) {
                                 position: absolute;
                                 z-index: 10;
+                                img {
+                                    width: 100%;
+                                }
                             }
                             .map_pointer_01{
                                 left: 224px; top: 72px;

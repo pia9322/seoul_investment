@@ -304,6 +304,9 @@
   main .about_02_01 .about_wrap_02 .wrap #quick_search {
     width: 500px;
   }
+  main .about_02_01 .about_wrap_03 .wrap > ul .home_box {
+    width: 50%;
+  }
   main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content {
     width: 90%;
   }
@@ -862,6 +865,14 @@
   }
   main .about_02_01 .about_wrap_02 .wrap #quick_search {
     width: 300px;
+  }
+  main .about_02_01 .about_wrap_03 .wrap > ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .about_02_01 .about_wrap_03 .wrap > ul .home_box {
+    width: 100%;
   }
   main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content {
     width: 90%;

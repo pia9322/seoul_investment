@@ -400,6 +400,7 @@
                 .wrap {
                     > ul{
                         .home_box {
+                            width: 50%;
                             .home_content {
                                 width: 90%;
                                 .home_img {
@@ -1113,7 +1114,9 @@
             .about_wrap_03{
                 .wrap {
                     > ul{
+                        justify-content: center;
                         .home_box {
+                            width: 100%; 
                             .home_content {
                                 width: 90%;
                                 .home_img {

@@ -231,7 +231,7 @@ header {
                                 }
                             }
 
-                            &:hover {
+                            &:hover:not(:first-child) {
                                 overflow: visible;
                             }
                         }
@@ -665,6 +665,87 @@ header {
                 &:nth-of-type(3):hover span:nth-of-type(2) {}
 
                 &:nth-of-type(3):hover span:nth-of-type(3) {}
+            }
+
+            .header_navi {
+                a {
+                }
+    
+                .header_navi_wrap {
+                    width: 95%;
+    
+                    .sub_gnb {
+    
+                        >ul {
+                            justify-content: center;
+
+                            .depth_01 {
+                                >.depth_nav {
+                                    display: flex;
+                                    align-items: center;
+                                    height: 100%;
+                                    position: relative;
+    
+                                    svg {
+                                        transition: .3s;
+    
+                                        &:hover {
+                                            fill: #fff;
+                                            color: transparent;
+                                        }
+                                    }
+    
+                                    &::after {
+                                        content: '';
+                                        height: 20px;
+                                        border-right: 1px solid #ddd;
+                                        position: absolute;
+                                        right: 0;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                    }
+    
+                                    .arrow {
+                                        margin-left: 0;
+    
+                                        img {
+                                            transform: rotate(90deg);
+                                        }
+                                    }
+                                }
+    
+                                .depth_02 {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 100%;
+                                    width: 100%;
+                                    text-align: center;
+    
+                                    >li {
+                                        background: rgba($color: #112d4e, $alpha: .7);
+                                        transition: .1s;
+    
+                                        &:hover {
+                                            background: #fff;
+    
+                                            a {
+                                                color: #000;
+                                            }
+                                        }
+    
+                                        a {
+                                            padding: 10px 0;
+                                        }
+                                    }
+                                }
+    
+                                &:hover:not(:first-child) {
+                                    overflow: visible;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
 

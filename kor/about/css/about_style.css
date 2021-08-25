@@ -468,6 +468,10 @@ main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul li:not(:firs
   z-index: 10;
 }
 
+main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul li:not(:first-of-type) img {
+  width: 100%;
+}
+
 main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_01 {
   left: 224px;
   top: 72px;

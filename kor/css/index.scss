@@ -1229,47 +1229,48 @@ main {
         }
     }
 
+
+
+    .sub_page_header{
+        position: relative;
+        .wrap{
+            .mv {
+                position: relative;
+                height: 420px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                figcaption{
+                    position: absolute;
+                    left:0; top:0;
+                    display: flex;
+                    width: 100%; height: 100%;
+                    align-items: center; justify-content: center;
+                    flex-direction: column;
+                    color: #fff;
+                    .textbox_title{
+                        font-weight: bold;
+                        font-size: 5.2rem
+                    }
+                }
+            }
+
+            .sub_page_title{
+                margin: 120px 0 60px;
+                text-align: center;
+                color: #222;
+                h2{
+                    font-size: 4rem;
+                    letter-spacing: -1.6px;
+                }
+            }
+
+        }
+
+    }
+
     .ceo {
 
-        // about_02_03 .about_wrap_01
-       .sub_page_header{
-           position: relative;
-           .wrap{
-               .mv {
-                   position: relative;
-                   height: 420px;
-                   display: flex;
-                   align-items: center;
-                   justify-content: center;
-                   figcaption{
-                       position: absolute;
-                       left:0; top:0;
-                       display: flex;
-                       width: 100%; height: 100%;
-                       align-items: center; justify-content: center;
-                       flex-direction: column;
-                       color: #fff;
-                       .textbox_title{
-                           font-size: 5.2rem
-                       }
-                   }
-               }
-
-               .sub_page_title{
-                   margin: 120px 0 60px;
-                   text-align: center;
-                   color: #222;
-                   h2{
-                       font-size: 4rem;
-                       letter-spacing: -1.6px;
-                   }
-               }
-
-           }
-   
-       }
-   
-        // about_02_03 .about_wrap_02
        .sub_page_detail{
         width: 70%; margin: 0 auto;
             .wrap {
@@ -1321,7 +1322,55 @@ main {
           
 
        }
-   }
+    }
+
+    .info {
+       .sub_page_detail{
+        width: 70%; margin: 0 auto;
+            .wrap {
+                .content_01 {
+                    width: 720px; margin: 0 auto;
+
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid #ddd;
+                        li {
+                            &:not(:last-child):after {
+                                content: '';
+                                position: absolute;
+                                left:100%; top: 50%;
+                                transform: translateY(-50%);
+                                background: #ddd;
+                                width: 1px;
+                                height: 24px;
+                            }
+                            position: relative;
+                            width: 100%;
+                            padding: 20px 85px;
+                            color: #666;
+                            text-align: center;
+                            &:hover {
+                                background: #112d4e;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                .content_02 {
+            //   d여기부터시작
+                }
+
+     
+
+
+            }
+          
+
+       }
+    }
 
 
 

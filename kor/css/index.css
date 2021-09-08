@@ -43,7 +43,7 @@ header > .header_wrap .header_center > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 18px;
+  font-size: 1.8rem;
   height: 100%;
 }
 
@@ -62,7 +62,6 @@ header > .header_wrap .header_center > ul > li > a {
   padding: 0 1rem;
   color: #000;
   font-family: "AppleSDGothicNeoM";
-  word-break: keep-all;
 }
 
 header > .header_wrap .header_center > ul > li .depth_01 {
@@ -323,7 +322,7 @@ main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide {
 }
 
 main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide .slide_textbox {
-  font-size: 52px;
+  font-size: 5.2rem;
   color: #fff;
   position: absolute;
   left: 290px;
@@ -340,7 +339,7 @@ main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide .s
 
 main .main_wrap .main_wrap_01 .swiper-container .swiper-wrapper .swiper-slide .slide_textbox .textbox_sub {
   margin-top: 28px;
-  font-size: 20px;
+  font-size: 2rem;
   color: #ddd;
 }
 
@@ -363,13 +362,13 @@ main .main_wrap .main_wrap_02 .wrap_02 .main_wrap_title {
 }
 
 main .main_wrap .main_wrap_02 .wrap_02 .main_wrap_title h2 {
-  font-size: 52px;
+  font-size: 5.2rem;
   font-weight: 800;
   color: #112d4e;
 }
 
 main .main_wrap .main_wrap_02 .wrap_02 .main_wrap_title p {
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-top: 10px;
   color: #666;
 }
@@ -426,7 +425,7 @@ main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .
 }
 
 main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .home_img .home_detail .text_hover_box_01 .detail_text_01 {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 800;
 }
 
@@ -447,7 +446,7 @@ main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .
 
 main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .home_img .home_detail .text_hover_box_02 .detail_text_03 {
   margin-top: 7px;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 30px;
 }
 
@@ -522,7 +521,7 @@ main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box .
   height: 80px;
   background: #112d4e;
   color: #fff;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 main .main_wrap .main_wrap_02 .wrap_02 .swiper-container .home_slide .home_box:hover .home_detail {
@@ -554,7 +553,7 @@ main .main_wrap .main_wrap_03 .wrap_03 .main_wrap_title h2 {
 
 main .main_wrap .main_wrap_03 .wrap_03 .main_wrap_title h2 a {
   color: #112d4e;
-  font-size: 52px;
+  font-size: 5.2rem;
   -webkit-transition: .3s;
   transition: .3s;
   font-weight: 800;
@@ -589,7 +588,7 @@ main .main_wrap .main_wrap_03 .wrap_03 .notice .notice_wrap > li .notice_num {
 }
 
 main .main_wrap .main_wrap_03 .wrap_03 .notice .notice_wrap > li .notice_num strong {
-  font-size: 58px;
+  font-size: 5.8rem;
 }
 
 main .main_wrap .main_wrap_03 .wrap_03 .notice .notice_wrap > li .notice_content {
@@ -639,7 +638,7 @@ main .main_wrap .main_wrap_04 .wrap_04 > figure {
 }
 
 main .main_wrap .main_wrap_04 .wrap_04 > figure figcaption {
-  font-size: 32px;
+  font-size: 3.2rem;
   color: #fff;
   position: absolute;
   left: 15%;
@@ -660,13 +659,13 @@ main .main_wrap .main_wrap_04 .wrap_04 > figure figcaption .textbox_title {
 }
 
 main .main_wrap .main_wrap_04 .wrap_04 > figure figcaption .textbox_title > span {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-family: 'Play';
 }
 
 main .main_wrap .main_wrap_04 .wrap_04 > figure figcaption .textbox_sub_01 {
   margin-top: 15px;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: normal;
 }
 
@@ -676,7 +675,7 @@ main .main_wrap .main_wrap_04 .wrap_04 > figure figcaption .textbox_sub_02 {
 
 main .main_wrap .main_wrap_04 .wrap_04 > figure figcaption .textbox_sub_02 a {
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 15px 20px;
   border: 1px solid #ddd;
   -webkit-transition: .3s;
@@ -702,7 +701,7 @@ main .main_wrap .main_wrap_05 .wrap_05 .main_wrap_title {
 
 main .main_wrap .main_wrap_05 .wrap_05 .main_wrap_title p {
   font-family: 'Noto Sans KR';
-  font-size: 36px;
+  font-size: 3.6rem;
   margin-top: 10px;
   font-weight: 300;
   color: #fff;
@@ -801,3 +800,4 @@ main .main_wrap .footer .footer_wrap > ul .footer_right > ul li {
 main .main_wrap .footer .footer_wrap > ul .footer_right > ul li a {
   color: #fff;
 }
+/*# sourceMappingURL=index.css.map */

@@ -6,6 +6,18 @@
   margin-right: 6px;
 }
 
+.about_02_01 .about_wrap_01 .wrap > figure {
+  background: no-repeat center/cover url("../images/about_visual_01.png");
+}
+
+.about_02_02 .about_wrap_01 .wrap > figure {
+  background: no-repeat center/cover url("../images/about_visual_01.png");
+}
+
+.about_02_03 .about_wrap_01 .wrap > figure {
+  background: no-repeat center/cover url("../images/about_visual_01.png");
+}
+
 main > div {
   margin-top: 80px;
 }
@@ -26,7 +38,6 @@ main .about_02_01 .about_wrap_01 .wrap > figure {
       -ms-flex-pack: center;
           justify-content: center;
   height: 350px;
-  background: no-repeat center/cover url("../images/about_visual_01.png");
 }
 
 main .about_02_01 .about_wrap_01 .wrap > figure figcaption {
@@ -201,7 +212,6 @@ main .about_02_02 .about_wrap_01 .wrap > figure {
       -ms-flex-pack: center;
           justify-content: center;
   height: 350px;
-  background: no-repeat center/cover url("../images/about_visual_01.png");
 }
 
 main .about_02_02 .about_wrap_01 .wrap > figure figcaption {
@@ -653,7 +663,6 @@ main .about_02_03 .about_wrap_01 .wrap > figure {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: no-repeat center/cover url("../images/about_visual_01.png");
 }
 
 main .about_02_03 .about_wrap_01 .wrap > figure figcaption {
@@ -867,3 +876,4 @@ main .about_02_03 .about_wrap_02 .table_notice_more_btn .btn_box a {
   border: 1px solid #ddd;
   margin: 0 5px;
 }
+/*# sourceMappingURL=about_style.css.map */

@@ -17,10 +17,8 @@
     <!-- script -->
     <script src="../js/jquery.js"></script>
     <script src="../js/swiper.js"></script>
-    <!-- <script src="js/slick.js"></script> -->
-    <script src="../js/aos.js"></script>
-
     <script src="../js/index.js"></script>
+   
 </head>
 
 <body>
@@ -381,3 +379,77 @@
 </body>
 
 </html>
+<script>
+    $(function(){
+        var swiper = new Swiper('.swiper_01', {
+            effect: 'fade',
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                init: function () {
+                    $('.swiper-progress-bar').removeClass('animate');
+                    $('.swiper-progress-bar').removeClass('active');
+                    $('.swiper-progress-bar').eq(0).addClass('animate');
+                    $('.swiper-progress-bar').eq(0).addClass('active');
+                },
+                slideChangeTransitionStart: function () {
+                    $('.swiper-progress-bar').removeClass('animate');
+                    $('.swiper-progress-bar').removeClass('active');
+                    $('.swiper-progress-bar').eq(0).addClass('active');
+                },
+                slideChangeTransitionEnd: function () {
+                    $('.swiper-progress-bar').eq(0).addClass('animate');
+                },
+            }
+        });
+    
+
+        $(function () {
+            $('.home_box').hover(function () {
+                $('.text_hover_box_02', this).stop().slideDown(300,'linear')
+            }, function () {
+                $('.text_hover_box_02', this).stop().slideUp(300,'linear')
+            })
+        });
+
+
+        var swiper = new Swiper(".swiper_02", {
+            slidesPerView: 2.5,
+            spaceBetween: 100,
+            loop : true,
+            loopAdditionalSlides : 10,
+            // centeredSlides: true,
+            // navigation: {   // 버튼 사용자 지정
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+            breakpoints : { // 반응형 설정이 가능 width값으로 조정
+                768 : {
+                slidesPerView : 1.5,
+                },
+            },
+        });
+
+
+        $(window).scroll(function () {
+            var scrT = $(window).scrollTop();
+            (scrT == $(document).height() - $(window).height())
+            ? $(".footer").addClass("active")
+            : $(".footer").removeClass("active")
+        });
+        
+        
+        // script_END
+});
+</script>

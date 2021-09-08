@@ -7,6 +7,25 @@
     margin-right: 6px;
 }
 
+// sub_visual
+
+.about_02_01 .about_wrap_01 .wrap > figure {
+    background: no-repeat center/cover url('../images/about_visual_01.png');
+}
+
+.about_02_02 .about_wrap_01 .wrap > figure {
+    background: no-repeat center/cover url('../images/about_visual_01.png');
+}
+
+.about_02_03 .about_wrap_01 .wrap > figure {
+    background: no-repeat center/cover url('../images/about_visual_01.png');
+}
+
+// sub_visual
+
+
+
+
 main {
     > div {
         margin-top: 80px;
@@ -18,13 +37,12 @@ main {
             position: relative;
 
             .wrap {
-                >figure {
+                > figure {
                     position: relative;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     height: 350px;
-                    background: no-repeat center/cover url('../images/about_visual_01.png');
                     figcaption {
                         position: absolute;
                         left: 0; top: 0;
@@ -164,7 +182,6 @@ main {
         }
     }
 
-
     .about_02_02 {
  
          // about_02_02 .about_wrap_01
@@ -177,7 +194,6 @@ main {
                     align-items: center;
                     justify-content: center;
                     height: 350px;
-                    background: no-repeat center/cover url('../images/about_visual_01.png');
                     figcaption{
                         position: absolute;
                         left:0; top:0;
@@ -533,7 +549,6 @@ main {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background: no-repeat center/cover url('../images/about_visual_01.png');
                     figcaption{
                         position: absolute;
                         left:0; top:0;

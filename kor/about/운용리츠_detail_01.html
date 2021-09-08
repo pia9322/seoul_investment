@@ -14,7 +14,7 @@
 
     <!-- js -->
     <script src="../js/jquery.js"></script>
-    <script src="js/about.js"></script>
+    <script src="../js/index.js"></script>
 
 
 </head>
@@ -320,7 +320,6 @@
 
             </article>
 
-
             <!-- about_wrap_06 -->
             <article class="about_wrap_06">
 
@@ -434,3 +433,33 @@
 </body>
 
 </html>
+
+<script>    
+    
+    $(function(){
+        let map_svg = document.querySelectorAll(".map_svg");
+        let map_pointer = document.querySelectorAll(".point");
+        console.log(map_pointer);
+
+        for (let i=0; i < map_svg.length ; i++){
+        $('.map_svg').eq(i).on('mouseover',function(){
+            $('.point').eq(i).addClass('active');
+        });
+        $('.map_svg').eq(i).on('mouseleave',function(){
+            $('.point').eq(i).removeClass('active');
+        }); 
+        }
+
+        for (let i=0; i < map_svg.length ; i++){
+        $('.point').eq(i).on('mouseover',function(){
+            $('.map_svg').eq(i).addClass('active');
+        });
+        $('.point').eq(i).on('mouseleave',function(){
+            $('.map_svg').eq(i).removeClass('active');
+        });
+        }
+
+
+    });
+ 
+</script>

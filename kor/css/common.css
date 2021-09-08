@@ -2,12 +2,29 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
 
 
 
 @font-face {
+    font-family: 'AppleSDGothicNeoL';
+    src: url('../font/appleSDgothicNeo/AppleSDGothicNeoL.ttf'); /* IE9 Compat Modes */
+    /* unicode-range: U+AC00-U+D7A3; */
+    /* unicode-range: U+0041-005A, U+0061-007A; */
+}
+
+@font-face {
     font-family: 'AppleSDGothicNeoM';
     src: url('../font/appleSDgothicNeo/AppleSDGothicNeoM.ttf'); /* IE9 Compat Modes */
+    /* unicode-range: U+AC00-U+D7A3; */
+    /* unicode-range: U+0041-005A, U+0061-007A; */
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeoB';
+    src: url('../font/appleSDgothicNeo/AppleSDGothicNeoB.ttf'); /* IE9 Compat Modes */
     /* unicode-range: U+AC00-U+D7A3; */
     /* unicode-range: U+0041-005A, U+0061-007A; */
 }
@@ -17,19 +34,27 @@
 	font-family: 'Play';
     src: url('../font/Play/Play-Bold.ttf'); /* IE9 Compat Modes */
 }
-@font-face {
-	font-family: 'Noto Sans KR-thin';
-    src: url('../font/notosanskr/NotoSansKR-Thin.otf'); /* IE9 Compat Modes */
-}
-
 
 *{
 	box-sizing: border-box;
-	font-family: 'AppleSDGothicNeoM', 'Play','NotoSansKR-Regular', sans-serif;
+	font-family: 'Noto Sans KR', 'AppleSDGothicNeoL' , 'AppleSDGothicNeoM', 'AppleSDGothicNeoB', 'Play', sans-serif;
+}
+
+/* font */
+
+html{
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: auto;
 }
 
 img {
+	vertical-align: top;
 }
+
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,9 +71,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: middle;
+	word-break: keep-all;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -57,8 +80,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	width: 100%; height: 100%;
 	max-width: 2560px;
 	margin: 0 auto;
+	font-size: 1.6rem
 }
 ol, ul {
 	list-style: none;
@@ -75,7 +100,72 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-a {text-decoration: none;}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.pc_only {
+	display: block;
+}
+.ta_only {
+	display: none;
+}
+.mo_only {
+	display: none;
+}
+
+
+/* media br */
+@media screen and (max-width: 1440px) {
+	.pc_only {
+        display: block !important;
+    }
+	.ta_only, .mo_only {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.pc_only, .ta_only {
+        display: block !important;
+    }
+	.mo_only {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.pc_only {
+        display: none !important;
+    }
+	.ta_only, .mo_only {
+		display: block !important;
+	}
+}
+
+@media screen and (max-width: 479px) {
+    .pc_only, .ta_only {
+        display: none !important;
+    }
+	.mo_only {
+		display: block !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

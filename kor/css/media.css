@@ -206,10 +206,10 @@
   main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
     border-left: none;
   }
-  main .about_02_02 .about_wrap_01 {
+  main .reits.seoul_01 .about_wrap_01 {
     position: relative;
   }
-  main .about_02_02 .about_wrap_01 .wrap > figure {
+  main .reits.seoul_01 .about_wrap_01 .wrap > figure {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -221,7 +221,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main .about_02_02 .about_wrap_01 .wrap > figure figcaption {
+  main .reits.seoul_01 .about_wrap_01 .wrap > figure figcaption {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -240,46 +240,46 @@
             flex-direction: column;
     color: #fff;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_visual_01 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_visual_01 {
     width: 710px;
     height: 530px;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption {
     padding: 40px 0 0 60px;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_02 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_02 {
     margin-top: 32px;
     padding-bottom: 24px;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_05 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_05 {
     margin-top: 10px;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more {
     padding: 20px 40px;
     margin-top: 40px;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table {
     margin-top: 120px;
     width: 100%;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(1),
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(3) {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(1),
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(3) {
     padding: 20px 10px;
     width: 10%;
     text-align: center;
     color: #fff;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(2),
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(4) {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(2),
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(4) {
     border: 1px solid #ddd;
     padding-left: 40px;
     width: 300px;
   }
-  main .about_02_02 .about_wrap_03 {
+  main .reits.seoul_01 .about_wrap_03 {
     width: 70%;
     margin: 0 auto;
   }
-  main .about_02_02 .about_wrap_03 .content_title {
+  main .reits.seoul_01 .about_wrap_03 .content_title {
     margin-top: 140px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -288,69 +288,69 @@
     border-bottom: 1px solid #ddd;
     padding-bottom: 24px;
   }
-  main .about_02_02 .about_wrap_03 .content_title figcaption {
+  main .reits.seoul_01 .about_wrap_03 .content_title figcaption {
     font-weight: bold;
     color: #112d4e;
   }
-  main .about_02_02 .about_wrap_03 .content_main {
+  main .reits.seoul_01 .about_wrap_03 .content_main {
     margin-top: 40px;
   }
-  main .about_02_02 .about_wrap_04 .content_title {
+  main .reits.seoul_01 .about_wrap_04 .content_title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  main .about_02_02 .about_wrap_04 .content_main {
+  main .reits.seoul_01 .about_wrap_04 .content_main {
     margin-top: 40px;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 {
     width: 100%;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 caption {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 caption {
     display: none;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 tr,
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 th,
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 td {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 tr,
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 th,
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 td {
     padding: 10px;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 .table_detail_01 th {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 .table_detail_01 th {
     padding: 10px 20px;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 .table_detail_02 td figure {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 .table_detail_02 td figure {
     width: 100%;
     height: auto;
     margin: 0;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul {
     width: 550px;
     height: 500px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_01 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_01 {
     left: 224px;
     top: 72px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_02 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_02 {
     left: 187px;
     top: 108px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_03 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_03 {
     left: 72px;
     top: 276px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_04 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_04 {
     right: 28px;
     top: 235px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 {
     width: 30%;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 > ul > li {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 > ul > li {
     border-bottom: 1px solid #ddd;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -360,21 +360,21 @@
             justify-content: space-between;
     margin-top: 15px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_pointer {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_pointer {
     -webkit-transition: .3s;
     transition: .3s;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_svg:hover .map_pointer {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_svg:hover .map_pointer {
     fill: #112d4e;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_svg.active .map_pointer {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_svg.active .map_pointer {
     fill: #112d4e;
   }
-  main .about_02_02 .about_wrap_06 {
+  main .reits.seoul_01 .about_wrap_06 {
     width: 70%;
     margin: 0 auto;
   }
-  main .about_02_02 .about_wrap_06 .content_title {
+  main .reits.seoul_01 .about_wrap_06 .content_title {
     margin-top: 140px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -383,46 +383,46 @@
     border-bottom: 1px solid #ddd;
     padding-bottom: 24px;
   }
-  main .about_02_02 .about_wrap_06 .content_title figcaption {
+  main .reits.seoul_01 .about_wrap_06 .content_title figcaption {
     font-weight: bold;
     color: #112d4e;
   }
-  main .about_02_02 .about_wrap_06 .content_main {
+  main .reits.seoul_01 .about_wrap_06 .content_main {
     margin-top: 40px;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_01 figure {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_01 figure {
     width: auto;
     height: auto;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 {
     margin-left: 60px;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap {
     margin: 20px 0;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li:not(:first-of-type) {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li:not(:first-of-type) {
     margin-top: 10px;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li strong {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li strong {
     width: 40px;
     text-align: right;
     margin: 2.5px 30px 0 0;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li .content_02_detail > li {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li .content_02_detail > li {
     padding-left: 10px;
     margin-top: 2.5px;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 a {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 a {
     margin-top: 50px;
     padding: 15px 30px;
     -webkit-transition: .3s;
@@ -679,22 +679,22 @@
   main .main_wrap .footer .footer_wrap > ul .footer_right {
     padding-left: 30px;
   }
-  main .situation .about_wrap_02 .wrap #quick_search {
+  main .reits.situation .about_wrap_02 .wrap #quick_search {
     width: 500px;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box {
     width: 50%;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content {
     width: 90%;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
     padding-top: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a {
     width: 50%;
     padding: 10px 10px;
     border: 1px solid #000;
@@ -710,15 +710,15 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:hover {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:hover {
     background: #112d4e;
     color: #fff;
     cursor: pointer;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
     border-left: none;
   }
-  main .about_02_02 .about_wrap_01 .wrap > figure figcaption {
+  main .reits.seoul_01 .about_wrap_01 .wrap > figure figcaption {
     width: 100%;
     height: 100%;
     -webkit-box-orient: vertical;
@@ -726,53 +726,53 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_visual_01 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_visual_01 {
     width: auto;
     height: auto;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption {
     padding: 40px 0 0 0;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_02 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_02 {
     margin-top: 32px;
     padding-bottom: 24px;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_05 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_05 {
     margin-top: 10px;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more {
     padding: 20px 40px;
     margin-top: 40px;
     display: block;
     text-align: center;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table {
     margin-top: 120px;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(1),
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(3) {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(1),
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(3) {
     padding: 20px 10px;
     width: 10%;
     text-align: center;
     color: #fff;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(2),
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(4) {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(2),
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(4) {
     border: 1px solid #ddd;
     padding-left: 40px;
     width: 300px;
   }
-  main .about_02_02 .about_wrap_03 {
+  main .reits.seoul_01 .about_wrap_03 {
     width: 70%;
     margin: 0 auto;
   }
-  main .about_02_02 .about_wrap_03 .content_title {
+  main .reits.seoul_01 .about_wrap_03 .content_title {
     margin-top: 140px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -781,41 +781,41 @@
     border-bottom: 1px solid #ddd;
     padding-bottom: 24px;
   }
-  main .about_02_02 .about_wrap_03 .content_title figcaption {
+  main .reits.seoul_01 .about_wrap_03 .content_title figcaption {
     font-weight: bold;
     color: #112d4e;
   }
-  main .about_02_02 .about_wrap_03 .content_main {
+  main .reits.seoul_01 .about_wrap_03 .content_main {
     margin-top: 40px;
   }
-  main .about_02_02 .about_wrap_04 .content_title {
+  main .reits.seoul_01 .about_wrap_04 .content_title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  main .about_02_02 .about_wrap_04 .content_main {
+  main .reits.seoul_01 .about_wrap_04 .content_main {
     margin-top: 40px;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 {
     width: 100%;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 caption {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 caption {
     display: none;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 tr,
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 th,
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 td {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 tr,
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 th,
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 td {
     padding: 10px;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 .table_detail_01 th {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 .table_detail_01 th {
     padding: 10px 20px;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 .table_detail_02 td figure {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 .table_detail_02 td figure {
     width: 100%;
     height: auto;
     margin: 0;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -827,30 +827,30 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul {
     width: 550px;
     height: 500px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_01 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_01 {
     left: 224px;
     top: 72px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_02 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_02 {
     left: 187px;
     top: 108px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_03 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_03 {
     left: 72px;
     top: 276px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_04 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_04 {
     right: 28px;
     top: 235px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 {
     width: 30%;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 > ul > li {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 > ul > li {
     border-bottom: 1px solid #ddd;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -860,18 +860,18 @@
             justify-content: space-between;
     margin-top: 15px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_text i {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_text i {
     display: none;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_pointer {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_pointer {
     -webkit-transition: .3s;
     transition: .3s;
   }
-  main .about_02_02 .about_wrap_06 {
+  main .reits.seoul_01 .about_wrap_06 {
     width: 70%;
     margin: 0 auto;
   }
-  main .about_02_02 .about_wrap_06 .content_title {
+  main .reits.seoul_01 .about_wrap_06 .content_title {
     margin-top: 140px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -879,14 +879,14 @@
     width: 100%;
     padding-bottom: 24px;
   }
-  main .about_02_02 .about_wrap_06 .content_title figcaption {
+  main .reits.seoul_01 .about_wrap_06 .content_title figcaption {
     font-weight: bold;
     color: #112d4e;
   }
-  main .about_02_02 .about_wrap_06 .content_main {
+  main .reits.seoul_01 .about_wrap_06 .content_main {
     margin-top: 40px;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -895,34 +895,34 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_01 figure {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_01 figure {
     width: auto;
     height: auto;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 {
     margin-left: 0;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap {
     margin: 20px 0;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li:not(:first-of-type) {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li:not(:first-of-type) {
     margin-top: 10px;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li strong {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li strong {
     width: 70px;
     text-align: left;
     margin: 0;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li .content_02_detail > li {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li .content_02_detail > li {
     padding-left: 10px;
     margin-top: 2.5px;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 a {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 a {
     display: block;
     text-align: center;
     margin-top: 50px;
@@ -1093,19 +1093,19 @@
   main .main_wrap .footer .footer_wrap > ul .footer_right {
     padding-left: 30px;
   }
-  main .situation .about_wrap_01 .wrap > figure figcaption .textbox_sub {
+  main .reits.situation .about_wrap_01 .wrap > figure figcaption .textbox_sub {
     text-align: center;
   }
-  main .situation .about_wrap_02 .wrap #quick_search {
+  main .reits.situation .about_wrap_02 .wrap #quick_search {
     width: 300px;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content {
     width: 90%;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:nth-of-type(2) {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:nth-of-type(2) {
     line-height: 1rem;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
     padding-top: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1115,26 +1115,26 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a {
     width: 100%;
     padding: 10px 10px;
     -webkit-transition: .3s;
     transition: .3s;
     border: none;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:hover {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:hover {
     background: #112d4e;
     color: #fff;
     cursor: pointer;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(1) {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(1) {
     border: 1px solid #000;
     border-bottom: none;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
     border: 1px solid #000;
   }
-  main .about_02_02 .about_wrap_01 .wrap > figure figcaption {
+  main .reits.seoul_01 .about_wrap_01 .wrap > figure figcaption {
     width: 100%;
     height: 100%;
     -webkit-box-orient: vertical;
@@ -1142,55 +1142,55 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .about_02_02 .about_wrap_01 .wrap > figure figcaption .textbox_sub {
+  main .reits.seoul_01 .about_wrap_01 .wrap > figure figcaption .textbox_sub {
     text-align: center;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_visual_01 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_visual_01 {
     width: auto;
     height: auto;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption {
     padding: 40px 0 0 0;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_02 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_02 {
     margin-top: 32px;
     padding-bottom: 24px;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_05 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_05 {
     margin-top: 10px;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more {
     padding: 20px 40px;
     margin-top: 40px;
     display: block;
     text-align: center;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table {
     margin-top: 120px;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(1),
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(3) {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(1),
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(3) {
     padding: 10px;
     width: 20%;
     text-align: center;
     color: #fff;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(2),
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(4) {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(2),
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(4) {
     padding: 0;
     text-align: center;
   }
-  main .about_02_02 .about_wrap_03 {
+  main .reits.seoul_01 .about_wrap_03 {
     width: 70%;
     margin: 0 auto;
   }
-  main .about_02_02 .about_wrap_03 .content_title {
+  main .reits.seoul_01 .about_wrap_03 .content_title {
     margin-top: 140px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1199,41 +1199,41 @@
     border-bottom: 1px solid #ddd;
     padding-bottom: 24px;
   }
-  main .about_02_02 .about_wrap_03 .content_title figcaption {
+  main .reits.seoul_01 .about_wrap_03 .content_title figcaption {
     font-weight: bold;
     color: #112d4e;
   }
-  main .about_02_02 .about_wrap_03 .content_main {
+  main .reits.seoul_01 .about_wrap_03 .content_main {
     margin-top: 40px;
   }
-  main .about_02_02 .about_wrap_04 .content_title {
+  main .reits.seoul_01 .about_wrap_04 .content_title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  main .about_02_02 .about_wrap_04 .content_main {
+  main .reits.seoul_01 .about_wrap_04 .content_main {
     margin-top: 40px;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 {
     width: 100%;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 caption {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 caption {
     display: none;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 tr,
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 th,
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 td {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 tr,
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 th,
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 td {
     padding: 10px;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 .table_detail_01 th {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 .table_detail_01 th {
     padding: 10px 0;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 .table_detail_02 td figure {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 .table_detail_02 td figure {
     width: 100%;
     height: auto;
     margin: 0;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1245,31 +1245,31 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul {
     width: 550px;
     height: 500px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_01 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_01 {
     left: 224px;
     top: 72px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_02 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_02 {
     left: 187px;
     top: 108px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_03 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_03 {
     left: 72px;
     top: 276px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_04 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_04 {
     right: 28px;
     top: 235px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 {
     width: 30%;
     display: none;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 > ul > li {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 > ul > li {
     border-bottom: 1px solid #ddd;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1279,18 +1279,18 @@
             justify-content: space-between;
     margin-top: 15px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_text i {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_text i {
     display: none;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_pointer {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_pointer {
     -webkit-transition: .3s;
     transition: .3s;
   }
-  main .about_02_02 .about_wrap_06 {
+  main .reits.seoul_01 .about_wrap_06 {
     width: 70%;
     margin: 0 auto;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1299,34 +1299,34 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_01 figure {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_01 figure {
     width: auto;
     height: auto;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 {
     margin-left: 0;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap {
     margin: 20px 0;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li:not(:first-of-type) {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li:not(:first-of-type) {
     margin-top: 10px;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li strong {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li strong {
     width: 70px;
     text-align: left;
     margin: 0;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li .content_02_detail > li {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li .content_02_detail > li {
     padding-left: 10px;
     margin-top: 2.5px;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 a {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 a {
     display: block;
     text-align: center;
     margin-top: 50px;
@@ -1501,24 +1501,24 @@
   main .main_wrap .footer .footer_wrap > ul .footer_right {
     padding-left: 0;
   }
-  main .situation .about_wrap_02 .wrap #quick_search {
+  main .reits.situation .about_wrap_02 .wrap #quick_search {
     width: 300px;
   }
-  main .situation .about_wrap_03 .wrap > ul {
+  main .reits.situation .about_wrap_03 .wrap > ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box {
     width: 100%;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content {
     width: 90%;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:nth-of-type(2) {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:nth-of-type(2) {
     line-height: 1rem;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
     padding-top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1528,26 +1528,26 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a {
     width: 100%;
     padding: 10px 10px;
     -webkit-transition: .3s;
     transition: .3s;
     border: none;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:hover {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:hover {
     background: #112d4e;
     color: #fff;
     cursor: pointer;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(1) {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(1) {
     border: 1px solid #000;
     border-bottom: none;
   }
-  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
+  main .reits.situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
     border: 1px solid #000;
   }
-  main .about_02_02 .about_wrap_01 .wrap > figure figcaption {
+  main .reits.seoul_01 .about_wrap_01 .wrap > figure figcaption {
     width: 90%;
     height: 100%;
     -webkit-box-orient: vertical;
@@ -1555,56 +1555,56 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .about_02_02 .about_wrap_01 .wrap > figure figcaption .textbox_sub {
+  main .reits.seoul_01 .about_wrap_01 .wrap > figure figcaption .textbox_sub {
     text-align: center;
   }
-  main .about_02_02 .about_wrap_02 {
+  main .reits.seoul_01 .about_wrap_02 {
     width: 90%;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_visual_01 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_visual_01 {
     width: auto;
     height: auto;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption {
     padding: 40px 0 0 0;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_02 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_02 {
     margin-top: 32px;
     padding-bottom: 24px;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_05 {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_05 {
     margin-top: 10px;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_01 .detail_main_caption figcaption ul .caption_more {
     padding: 20px 40px;
     margin-top: 40px;
     display: block;
     text-align: center;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table {
     margin-top: 120px;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(1),
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(3) {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(1),
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(3) {
     padding: 10px;
     width: 20%;
   }
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(2),
-  main .about_02_02 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(4) {
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(2),
+  main .reits.seoul_01 .about_wrap_02 .wrap .content_02 table tr td:nth-of-type(4) {
     padding: 0;
     text-align: center;
   }
-  main .about_02_02 .about_wrap_03 {
+  main .reits.seoul_01 .about_wrap_03 {
     width: 90%;
     margin: 0 auto;
   }
-  main .about_02_02 .about_wrap_03 .content_title {
+  main .reits.seoul_01 .about_wrap_03 .content_title {
     margin-top: 140px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1613,50 +1613,50 @@
     border-bottom: 1px solid #ddd;
     padding-bottom: 24px;
   }
-  main .about_02_02 .about_wrap_03 .content_title figcaption {
+  main .reits.seoul_01 .about_wrap_03 .content_title figcaption {
     font-weight: bold;
     color: #112d4e;
   }
-  main .about_02_02 .about_wrap_03 .content_main {
+  main .reits.seoul_01 .about_wrap_03 .content_main {
     margin-top: 40px;
   }
-  main .about_02_02 .about_wrap_04 {
+  main .reits.seoul_01 .about_wrap_04 {
     width: 90%;
   }
-  main .about_02_02 .about_wrap_04 .content_title {
+  main .reits.seoul_01 .about_wrap_04 .content_title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  main .about_02_02 .about_wrap_04 .content_main {
+  main .reits.seoul_01 .about_wrap_04 .content_main {
     margin-top: 40px;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 {
     width: 100%;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 caption {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 caption {
     display: none;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 tr,
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 th,
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 td {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 tr,
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 th,
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 td {
     padding: 10px 0;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 .table_detail_01 th {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 .table_detail_01 th {
     padding: 10px 0;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 .table_detail_02 {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 .table_detail_02 {
     display: none;
   }
-  main .about_02_02 .about_wrap_04 .content_main .content_table_01 .table_detail_02 td figure {
+  main .reits.seoul_01 .about_wrap_04 .content_main .content_table_01 .table_detail_02 td figure {
     width: 100%;
     height: auto;
     margin: 0;
   }
-  main .about_02_02 .about_wrap_05 {
+  main .reits.seoul_01 .about_wrap_05 {
     width: 90%;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1668,31 +1668,31 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul {
     width: 350px;
     height: auto;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_01 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_01 {
     left: 140px;
     top: 35px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_02 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_02 {
     left: 110px;
     top: 60px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_03 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_03 {
     left: 40px;
     top: 160px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_04 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_01 ul .map_pointer_04 {
     right: 15px;
     top: 125px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 {
     width: 30%;
     display: none;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 > ul > li {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 > ul > li {
     border-bottom: 1px solid #ddd;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1702,17 +1702,17 @@
             justify-content: space-between;
     margin-top: 15px;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_text i {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_text i {
     display: none;
   }
-  main .about_02_02 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_pointer {
+  main .reits.seoul_01 .about_wrap_05 .content_main .wrap .content_02 > ul > li .content_ico figure .map_pointer {
     -webkit-transition: .3s;
     transition: .3s;
   }
-  main .about_02_02 .about_wrap_06 {
+  main .reits.seoul_01 .about_wrap_06 {
     width: 90%;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1721,34 +1721,34 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_01 figure {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_01 figure {
     width: auto;
     height: auto;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 {
     margin-left: 0;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap {
     margin: 20px 0;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li:not(:first-of-type) {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li:not(:first-of-type) {
     margin-top: 10px;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li strong {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li strong {
     width: 70px;
     text-align: left;
     margin: 0;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li .content_02_detail > li {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 ul .content_02_wrap > li .content_02_detail > li {
     padding-left: 10px;
     margin-top: 2.5px;
   }
-  main .about_02_02 .about_wrap_06 .content_main .wrap .content_02 a {
+  main .reits.seoul_01 .about_wrap_06 .content_main .wrap .content_02 a {
     display: block;
     text-align: center;
     margin-top: 50px;

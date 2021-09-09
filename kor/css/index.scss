@@ -545,6 +545,10 @@ main {
         background: no-repeat center/cover url('../company/images/mv.png');
     }
 
+    .reits .mv {
+        background: no-repeat center/cover url('../reits/images/mv.png');
+    }
+
     // sub_visual
 
     .about_02_01 {
@@ -571,7 +575,7 @@ main {
                         color: #fff;
 
                         .textbox_title {
-                            font-size: 52px;
+                            font-size: 5.2rem;
                         }
 
                         .textbox_sub {}
@@ -654,7 +658,7 @@ main {
                             .home_detail {
                                 p:nth-of-type(1) {
                                     padding-top: 30px;
-                                    font-size: 24px;
+                                    font-size: 2.4rem;
                                 }
 
                                 p:nth-of-type(2) {
@@ -719,7 +723,7 @@ main {
                         flex-direction: column;
                         color: #fff;
                         .textbox_title{
-                            font-size: 52px;
+                            font-size: 5.2rem;
                         }
                         .textbox_sub{}
                     }
@@ -749,11 +753,11 @@ main {
                             li{
                             }
                             .caption_01{
-                                font-size: 36px;
+                                font-size: 3.6rem;
                             }
                             .caption_02{
                                 margin-top: 32px;
-                                font-size: 24px;
+                                font-size: 2.4rem;
                                 padding-bottom: 24px;
                                 border-bottom: 1px solid #ddd;
                                 color: #112d4e;
@@ -771,7 +775,7 @@ main {
                                 margin-top: 10px;
                             }
                             .caption_more{
-                                display: inline-block;font-size: 20px; padding: 20px 40px; border: 1px solid #ddd;
+                                display: inline-block;font-size: 2rem; padding: 20px 40px; border: 1px solid #ddd;
                                 margin-top: 40px;
                                 transition: .3s;
                                 color: #222;
@@ -841,7 +845,7 @@ main {
                 border-bottom: 1px solid #ddd;
                 padding-bottom: 24px;
                 figcaption{
-                    font-size: 24px;
+                    font-size: 2.4rem;
                     color: #112d4e;
                 }
             }
@@ -855,7 +859,7 @@ main {
 
                     
                     .table_detail_01{
-                        th{font-size: 20px; padding:20px 30px; background: #112d4e; color: #fff;}
+                        th{font-size: 2rem; padding:20px 30px; background: #112d4e; color: #fff;}
                     }
                     .table_detail_02{
                         td{
@@ -887,10 +891,10 @@ main {
                     width: 100%;
                     justify-content: space-between;
                     align-items: center;
-                    font-size: 24px;
+                    font-size: 2.4rem;
                     color: #112d4e;
                     .content_title_sub_01{
-                        font-size: 16px;
+                        font-size: 1.6rem;
                         color:#666;
                     }
                 }
@@ -951,7 +955,7 @@ main {
                                 .content_text{
                                     padding-bottom: 15px;
                                     p{
-                                        font-size: 20px;
+                                        font-size: 1.6rem;
                                     }
                                     i{
                                         color: #666;
@@ -985,7 +989,7 @@ main {
                 border-bottom: 1px solid #ddd;
                 padding-bottom: 24px;
                 figcaption{
-                    font-size: 24px;
+                    font-size: 2.4rem;
                     color: #112d4e;
                 }
             }
@@ -1067,7 +1071,7 @@ main {
                         flex-direction: column;
                         color: #fff;
                         .textbox_title{
-                            font-size: 52px;
+                            font-size: 5.2rem;
                         }
                         .textbox_sub{}
                     }
@@ -1093,7 +1097,7 @@ main {
                             display: flex;
                             align-items: center;
                             .form_01_title {
-                                font-size: 18px;
+                                font-size: 1.8rem;
                             }
                             .form_01_selectbox{
                                 select{
@@ -1328,9 +1332,9 @@ main {
        .sub_page_detail{
         width: 70%; margin: 0 auto;
             .wrap {
-                .content_01 {
+                .content_btn {
                     width: 720px; margin: 0 auto;
-
+                    cursor: pointer;
                     ul {
                         display: flex;
                         align-items: center;
@@ -1351,7 +1355,7 @@ main {
                             padding: 20px 85px;
                             color: #666;
                             text-align: center;
-                            &:hover {
+                            &:hover, &.active {
                                 background: #112d4e;
                                 color: #fff;
                             }
@@ -1359,9 +1363,194 @@ main {
                     }
                 }
 
-                .content_02 {
-            //   d여기부터시작
+                .info_change {
+                    display: none;
+                    .content_01_01 {
+                        display: flex;
+                        justify-content: center;
+                        figure {
+                            figcaption {
+                                margin: 80px 0 60px;
+                                font-size: 3.2rem;
+                                text-align: center;
+                                strong {
+                                    color: #3c6daa;
+                                }
+                            }
+                        }
+                    }
+    
+                    .content_01_02 {
+                        margin-top: 80px;
+                        .wrap {
+                            display: flex;
+                            justify-content: center;
+                            figure {
+                                width: 427px; height: 443px;
+                                border: 1px solid #ddd;
+                                border-left: none;
+                                &:first-child {
+                                    border-left: 1px solid #ddd;
+                                }
+    
+    
+                                figcaption {
+                                    margin-top: 30px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    strong {
+                                        font-size: 2.4rem;
+                                        color: #222;
+                                    }
+                                    p {
+                                        color: #666;
+                                    }
+                                } 
+                            }
+                        }
+                    }
+    
+                    .content_01_03 {
+                        margin-top: 100px;
+                        .content_title {
+                            font-size: 2.4rem;
+                            color: #112d4e;
+                            font-weight: bold;
+                        }
+    
+                        .content_list {
+                            margin-top: 30px;
+                            > ul {
+                                width: 100%;
+                                display:flex;
+                                border-bottom: 1px solid #ddd;
+                                border-right: 1px solid #ddd;
+                                &:first-child {
+                                    border-top: 1px solid #ddd ;
+                                }
+                                .list_title {
+                                    width: 155px; height: 64px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    background: #59708b;
+                                    color: #fff;
+                                    font-size: 1.8rem;
+                                }
+    
+                                .list_detail {
+                                    padding-left: 40px;
+                                    display: flex;
+                                    align-items: center;
+                                    color: #666;
+                                    span {
+                                        &:not(:first-child){
+                                            margin-left: 20px;
+                                        }
+                                    }
+                                }
+                            }
+    
+                        }
+                    }
+
+
+                    .content_02_01 {
+                      
+                        figure {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            img {
+                                max-width: 1020px;
+                            }
+                            figcaption {
+                                margin: 80px 0 60px;
+                                font-size: 3.2rem;
+                                text-align: center;
+                                letter-spacing: -1.28px;
+                                strong {
+                                    color: #3c6daa;
+                                }
+                            }
+                        }
+                    }
+
+                    .content_02_02 {
+                        margin-top: 100px;
+                        .content_title {
+                            font-size: 2.4rem;
+                            color: #112d4e;
+                            font-weight: bold;
+                        }
+    
+                        .content_list {
+                            margin-top: 30px;
+                            color: #666;
+                            > ul {
+                                width: 100%;
+                                display:flex;
+                                border-bottom: 1px solid #ddd;
+                                border-right: 1px solid #ddd;
+
+                                &:first-child {
+                                    background: #59708b;
+                                    color: #fff;
+                                    font-size: 2rem;
+                                    .list_title {
+                                        border-right: 1px solid #fff;
+                                    }
+                                    .list_detail {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+                                }
+                                
+                                > li {
+                                    padding: 30px 0;
+                                }
+                            
+                                .list_title {
+                                    width: 20%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 1.6rem;
+                                    border-right: 1px solid #ddd ;
+                                }
+                                .list_detail {
+                                    width: 100%;
+                                    display: flex;
+                                    padding-left: 40px;
+                                    ul{
+                                        width: 30%;
+
+                                        > li {
+                                            line-height: 2;
+                                        }
+                                        &:last-child {
+                                            margin-left: 15rem;
+                                        }
+                                    }
+                                }
+
+                            
+
+                            }
+    
+                        }
+                    }
+
+
+
+                    &.active {
+                        display: block;
+                    }
                 }
+
 
      
 
@@ -1372,8 +1561,227 @@ main {
        }
     }
 
+    .expert {
+        .sub_page_detail{
+            width: 70%; margin: 0 auto;
+            .content_01 {
+                figcaption {
+                    margin: 80px 0 60px;
+                    font-size: 3.2rem;
+                    text-align: center;
+    
+                    strong {
+                        color: #3c6daa;
+                    }
+                }
+            }
 
+    
+            .content_02 {
+                margin: 0 auto;
+                .wrap {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .callCard {
+                        width: 640px; height: 210px;
+                        display: flex;
+                        margin-bottom: 30px;
+                        transition: .15s;
+                        &:nth-of-type(even){
+                            margin-left: 40px;
+                        }
 
+                        .title {
+                            width: 35%;
+                            background: #3d638f;
+                            color: #fff;
+                            padding: 3.5rem 0 0 2rem;
+                            line-height: normal;
+                            .card_team {
+                                font-weight: 100;
+                                font-size: 2.4rem;
+                            }
+                            .card_name {
+                                font-size: 3.2rem;
+                            }
+                        }
+
+                        .detail {
+                            padding: 3.5rem 0 0 4rem;
+                            color: #666;
+                            width: 65%;
+                            line-height: 1.5;
+                            border: 1px solid #ddd;
+                            border-left: none;
+
+                            
+                            > li {
+                                display: flex;
+                            }
+                            .card_career {
+                                span:nth-of-type(1){
+                                    font-weight: 500;
+                                    width: 30%;
+                                    color: #222;
+
+                                }
+                                span:nth-of-type(2){}
+                            }
+                            .card_qua {
+                                margin-top: 1.2rem;
+                                span:nth-of-type(1){
+                                    color: #222;
+                                    font-weight: 500;
+                                    width: 30%;
+                                }
+                                span:nth-of-type(2){
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            box-shadow: .5rem .5rem 1rem #000;
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+ 
+    .ci_intro {
+        .sub_page_detail{
+         width: 70%; margin: 0 auto;
+             .wrap {
+
+                .content_title{
+                    display: flex;
+                    width:100%;
+                    border-bottom: 1px solid #ddd;
+                    padding-bottom: 24px;
+                 
+                    align-items: center;
+                    i {
+                        margin-right: 6px;
+                    }
+                    span{
+                        font-size: 2.4rem;
+                        color: #112d4e;
+                        font-weight: bold;
+                        letter-spacing: -0.96px;
+                    }
+                }
+ 
+                .content_01 {
+                
+                    .content_detail{
+                        margin-top: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        img {}
+
+                        figcaption {
+                            font-size: 1.6rem;
+                            margin-top: 30px;
+                            line-height: 1.5;
+                            letter-spacing: -0.64px;
+                            color: #666;
+                        }
+                    }
+
+                    .content_file_download {
+                        margin-top: 60px;
+                        p {
+                            text-align: right;
+                            a {
+                                font-size: 2rem;
+                                color: #fff;
+                                padding: 1.5rem 4rem;
+                                background: #112d4e;
+                                
+                            }
+                        }
+                    }
+                    
+                }
+
+                .content_02 {
+                    margin-top: 120px;
+                    
+                    .content_detail{
+                        margin-top: 15px;
+                        .wrap {
+                            display: flex;
+                            flex-wrap : wrap;
+                            align-items: center;                        
+                            justify-content: space-between;
+                            figure {
+                                width: 30%;
+                                margin: 15px 0;
+                                display: flex;
+                                justify-content: center;
+                            }
+                        }
+                    }
+
+                }
+      
+                .content_03 {
+                    margin-top: 120px;
+                    
+                    .content_detail{
+                        margin-top: 15px;
+                        .wrap {
+                            display: flex;
+                            flex-wrap : wrap;
+                            align-items: center;                        
+                            justify-content: space-between;
+                            figure {
+                                margin: 15px 0;
+                                figcaption {
+                                    margin-bottom: 15px;
+                                    line-height: 1.5;
+                                    letter-spacing: -0.64px;
+                                    color: #222;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+
+                }
+ 
+      
+ 
+ 
+             }
+           
+ 
+        }
+    }
+
+    .performance {
+
+        .sub_page_detail{
+            .wrap{
+                p {
+                    margin: 35.5rem 0;
+                    text-align: center;
+                    a{
+                        letter-spacing: -2.08px;
+                        color: #222;
+                        font-size: 5.4rem;
+                        font-weight: bold;
+                        transition: .15s;
+                        &:hover {
+                            opacity: .5;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
 

@@ -165,23 +165,23 @@
   main .main_wrap .footer .footer_wrap > ul .footer_right {
     padding-left: 30px;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content {
     width: 90%;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_img {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_img {
     max-width: 100%;
     height: auto;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:nth-of-type(2) {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:nth-of-type(2) {
     padding-top: 12px;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
     padding-top: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a {
     width: 50%;
     padding: 10px 10px;
     border: 1px solid #000;
@@ -198,12 +198,12 @@
             justify-content: center;
     color: #666;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:hover {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:hover {
     background: #112d4e;
     color: #fff;
     cursor: pointer;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
     border-left: none;
   }
   main .about_02_02 .about_wrap_01 {
@@ -679,22 +679,22 @@
   main .main_wrap .footer .footer_wrap > ul .footer_right {
     padding-left: 30px;
   }
-  main .about_02_01 .about_wrap_02 .wrap #quick_search {
+  main .situation .about_wrap_02 .wrap #quick_search {
     width: 500px;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box {
+  main .situation .about_wrap_03 .wrap > ul .home_box {
     width: 50%;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content {
     width: 90%;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
     padding-top: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a {
     width: 50%;
     padding: 10px 10px;
     border: 1px solid #000;
@@ -710,12 +710,12 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:hover {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:hover {
     background: #112d4e;
     color: #fff;
     cursor: pointer;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
     border-left: none;
   }
   main .about_02_02 .about_wrap_01 .wrap > figure figcaption {
@@ -1093,19 +1093,19 @@
   main .main_wrap .footer .footer_wrap > ul .footer_right {
     padding-left: 30px;
   }
-  main .about_02_01 .about_wrap_01 .wrap > figure figcaption .textbox_sub {
+  main .situation .about_wrap_01 .wrap > figure figcaption .textbox_sub {
     text-align: center;
   }
-  main .about_02_01 .about_wrap_02 .wrap #quick_search {
+  main .situation .about_wrap_02 .wrap #quick_search {
     width: 300px;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content {
     width: 90%;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:nth-of-type(2) {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:nth-of-type(2) {
     line-height: 1rem;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
     padding-top: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1115,23 +1115,23 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a {
     width: 100%;
     padding: 10px 10px;
     -webkit-transition: .3s;
     transition: .3s;
     border: none;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:hover {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:hover {
     background: #112d4e;
     color: #fff;
     cursor: pointer;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(1) {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(1) {
     border: 1px solid #000;
     border-bottom: none;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
     border: 1px solid #000;
   }
   main .about_02_02 .about_wrap_01 .wrap > figure figcaption {
@@ -1501,24 +1501,24 @@
   main .main_wrap .footer .footer_wrap > ul .footer_right {
     padding-left: 0;
   }
-  main .about_02_01 .about_wrap_02 .wrap #quick_search {
+  main .situation .about_wrap_02 .wrap #quick_search {
     width: 300px;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul {
+  main .situation .about_wrap_03 .wrap > ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box {
+  main .situation .about_wrap_03 .wrap > ul .home_box {
     width: 100%;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content {
     width: 90%;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:nth-of-type(2) {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:nth-of-type(2) {
     line-height: 1rem;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child {
     padding-top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1528,23 +1528,23 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a {
     width: 100%;
     padding: 10px 10px;
     -webkit-transition: .3s;
     transition: .3s;
     border: none;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:hover {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:hover {
     background: #112d4e;
     color: #fff;
     cursor: pointer;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(1) {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(1) {
     border: 1px solid #000;
     border-bottom: none;
   }
-  main .about_02_01 .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
+  main .situation .about_wrap_03 .wrap > ul .home_box .home_content .home_detail p:last-child a:nth-of-type(2) {
     border: 1px solid #000;
   }
   main .about_02_02 .about_wrap_01 .wrap > figure figcaption {

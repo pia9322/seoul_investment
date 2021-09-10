@@ -540,6 +540,10 @@ main {
     .contact .mv {
         background: no-repeat center/cover url('../contact/images/mv.png');
     }
+
+    .recruitment .mv {
+        background: no-repeat center/cover url('../recruitment/images/mv.png');
+    }
     // sub_visual
 
 
@@ -583,13 +587,211 @@ main {
 
 
 
+    .sub_table_wrap{
+
+        .table_header{
+            margin: 150px auto 10px;
+            // border: 1px solid #F00;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 30px;
+            
+            .table_company_select{
+                form{
+                    fieldset{
+                        legend{display: none;}
+                        display: flex;
+                        align-items: center;
+                        .form_01_title {
+                            font-size: 1.8rem;
+                        }
+                        .form_01_selectbox{
+                            select{
+                                border: 1px solid #ddd;
+                                margin-left: 10px;
+                                width: 180px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .table_text_search{
+                display: flex;
+                align-items: center;
+                form{
+                    fieldset{
+                        legend{display: none;}
+                        display: flex;
+                        align-items: center;
+                        .form_02_selectbox{
+                            select{
+                                border: 1px solid #ddd;
+                                height: 40px;
+    
+                            }
+                            input[type=text]{
+                                height: 40px;
+                                width: 220px;
+                                border: 1px solid #ddd;
+    
+                            }
+                            input[type=submit]{
+                                background: #000; color: #fff;border: none;
+                                padding: 10px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+        .table_notice {
+            width: 100%;
+            line-height: 1.78;
+            letter-spacing: -0.45px;
+            table-layout: fixed;
+    
+            thead {
+                letter-spacing: -0.6px;
+                border-top: 1px solid #777;
+                border-bottom: 1px solid #777;
+                color: #222;
+                font-size: 1.8rem;
+                tr {
+                    th {
+                        padding: 20px 0;
+                        text-align: center;
+                        &:nth-of-type(1), &:nth-of-type(4), &:nth-of-type(5) {
+                            width: 8%;
+                        }
+                        &:nth-of-type(2) {
+                            width: 15%;
+                        }
+                        &:nth-of-type(3){
+                            width: auto;
+                        }
+                    }
+    
+                }
+            }
+    
+            tbody {
+                display: none;
+                tr {
+                    border-bottom: 1px solid #e5e5e5;
+                    td {
+                        padding: 20px 0;
+                        text-align: center;
+                        overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+                        &:nth-child(2){
+                            span {
+                                padding: .25rem .5rem;
+                                border: 1px solid #dfac3f;
+                                color: #dfac3f;
+                            }
+                        }
+                        &:nth-child(3){
+                            text-align: left;
+                        }
+                    }
+                    .notice_download {
+                        a {
+                            display: block;
+                        }
+                    }
+                }
+                &.active {
+                    display: table-footer-group;
+                }
+            }
+    
+           
+          
+       
+        }
+    
+        .table_notice_more{
+            margin:40px auto 0;
+            display: flex;
+            justify-content: flex-end;
+            > a {
+                display: inline-block;
+                padding: 10px 10px;   
+                color:  #112d4e;
+                border: 1px solid #112d4e;
+                transition: .3s;
+                &:hover{
+                    color: #fff;
+                    background: #112d4e;
+                }
+            }
+        }
+    
+        .table_notice_more_btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .num_box{
+                a{
+                    color: #ddd;
+                    padding: 0 10px;
+                    font-weight: bold;
+                    &.active {
+                        color: #112D4E;
+                    }
+                }
+            }
+            .btn_box{
+                display: flex;
+                a{
+                    display: flex;
+                    align-items: center; justify-content: center;
+                    padding: 5px;
+                    border: 1px solid #ddd;
+                    margin: 0 5px;
+                }
+    
+            }
+        }
+    
+    }
+
+
+    .sub_page_detail{
+        width: 70%;
+        margin: 0 auto;
+
+        .content_title{
+            display: flex;
+            width:100%;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 24px;
+         
+            align-items: center;
+            i {
+                margin-right: 6px;
+            }
+            span{
+                font-size: 2.4rem;
+                color: #112d4e;
+                font-weight: bold;
+                letter-spacing: -0.96px;
+            }
+        }
+    }
+
+    
+
+
 
   
 // company
     .company.ceo {
 
        .sub_page_detail{
-        width: 70%; margin: 0 auto;
             > .wrap {
                 .content_01 {
                     figure {
@@ -613,18 +815,11 @@ main {
                 }
                 .content_03 {
                     margin-top: 80px;
-                    .content_title {
-                        font-size: 2.4rem;
-                        color: #112d4e;
-                        font-weight: bold;
-                    }
                     .content_list {
-                        margin-top: 20px;
                         display: flex;
                         font-size: 1.8rem;
                         line-height: 1.78;
                         letter-spacing: -0.72px;
-                        border-top: 1px solid #ddd;
                         border-bottom: 1px solid #ddd;
                         padding: 20px 14px;
                         color: #666;
@@ -643,7 +838,6 @@ main {
 
     .company.info {
        .sub_page_detail{
-        width: 70%; margin: 0 auto;
             > .wrap {
                 .content_btn {
                     width: 720px; margin: 0 auto;
@@ -727,11 +921,7 @@ main {
     
                     .content_01_03 {
                         margin-top: 100px;
-                        .content_title {
-                            font-size: 2.4rem;
-                            color: #112d4e;
-                            font-weight: bold;
-                        }
+                 
     
                         .content_list {
                             margin-top: 30px;
@@ -793,11 +983,7 @@ main {
 
                     .content_02_02 {
                         margin-top: 100px;
-                        .content_title {
-                            font-size: 2.4rem;
-                            color: #112d4e;
-                            font-weight: bold;
-                        }
+       
     
                         .content_list {
                             margin-top: 30px;
@@ -876,7 +1062,6 @@ main {
 
     .company.expert {
         .sub_page_detail{
-            width: 70%; margin: 0 auto;
             .content_01 {
                 figcaption {
                     margin: 80px 0 60px;
@@ -953,9 +1138,7 @@ main {
                             }
                         }
 
-                        &:hover {
-                            box-shadow: .5rem .5rem 1rem #000;
-                        }
+                        
                     }
                 }
             }
@@ -965,26 +1148,8 @@ main {
  
     .company.ci_intro {
         .sub_page_detail{
-         width: 70%; margin: 0 auto;
              > .wrap {
 
-                .content_title{
-                    display: flex;
-                    width:100%;
-                    border-bottom: 1px solid #ddd;
-                    padding-bottom: 24px;
-                 
-                    align-items: center;
-                    i {
-                        margin-right: 6px;
-                    }
-                    span{
-                        font-size: 2.4rem;
-                        color: #112d4e;
-                        font-weight: bold;
-                        letter-spacing: -0.96px;
-                    }
-                }
  
                 .content_01 {
                 
@@ -1318,7 +1483,7 @@ main {
                 border-bottom: 1px solid #ddd;
                 padding-bottom: 24px;
                 figcaption{
-                    font-size: 24px;
+                    font-size: 2.4rem;
                     color: #112d4e;
                 }
             }
@@ -1549,158 +1714,7 @@ main {
     }
 
     .reits.seoul_01_more {
-    
          // about_02_03 .about_wrap_02
-        .about_wrap_02{
-            width: 70%; margin: 0 auto;
-            .form_wrap{
-                margin: 150px auto 10px;
-                // border: 1px solid #F00;
-                display: flex;
-                justify-content: space-between;
-                padding-left: 30px;
-                
-                .form_01{
-                    form{
-                        fieldset{
-                            legend{display: none;}
-                            display: flex;
-                            align-items: center;
-                            .form_01_title {
-                                font-size: 1.8rem;
-                            }
-                            .form_01_selectbox{
-                                select{
-                                    border: 1px solid #ddd;
-                                    margin-left: 10px;
-                                    width: 180px;
-                                    height: 40px;
-                                }
-                            }
-                        }
-                    }
-                }
-                .form_02{
-                    display: flex;
-                    align-items: center;
-                    form{
-                        fieldset{
-                            legend{display: none;}
-                            display: flex;
-                            align-items: center;
-                            .form_02_selectbox{
-                                select{
-                                    border: 1px solid #ddd;
-                                    height: 40px;
-    
-                                }
-                                input[type=text]{
-                                    height: 40px;
-                                    width: 220px;
-                                    border: 1px solid #ddd;
-    
-                                }
-                                input[type=submit]{
-                                    background: #000; color: #fff;border: none;
-                                    padding: 10px 20px;
-                                }
-                            }
-                        }
-                    }
-                }
-                
-            }
-            
-            .table_notice {
-                width: 100%;
-                margin: 0 auto;
-                thead{
-                    border-top: 1px solid #222;
-                    border-bottom: 1px solid #666;
-                    tr{
-                        th{
-                            padding: 20px 0;
-                            text-align: center;
-                        }
-                        th:nth-of-type(1){
-    
-                        }
-                        // th:nth-of-type(2){width:110px}
-                        // th:nth-of-type(3){width:560px}
-                        // th:nth-of-type(4){width:360px}
-                        // th:nth-of-type(5){width:100px}
-                    }
-                }
-                tbody{
-                    tr{
-                        td{
-                            text-align: center;
-                            padding: 20px 15px;
-                        }
-                        td:nth-of-type(1){
-                            color: #222;
-                        }
-                        td:nth-of-type(2){
-                            p{
-                                display: inline-block;
-                                padding: 5px 10px;
-                                border: 1px solid #dfac3f;
-                                color: #dfac3f;
-                            }
-                        }
-                        td:nth-of-type(3){
-                            a{
-                                color: #222;
-                            }
-                        }
-                        td:nth-of-type(4){
-                            a{
-                                color: #666;
-                            }
-    
-                        }
-                        td:nth-of-type(5){
-                            color: #666;
-                        }
-                    }
-                }
-            }
-            .table_notice_more{
-                margin:40px auto 0;
-                display: flex;
-                justify-content: flex-end;
-                > a {
-                    display: inline-block;
-                    padding: 10px 10px;   
-                    color:  #112d4e;
-                    border: 1px solid #112d4e;
-                    transition: .3s;
-                    &:hover{
-                        color: #fff;
-                        background: #112d4e;
-                    }
-                }
-            }
-            .table_notice_more_btn{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .num_box{
-                    a{display: inline-block; padding-right: 30px;}
-                }
-                .btn_box{
-                    display: flex;
-                    a{
-                        display: flex;
-                        align-items: center; justify-content: center;
-                        padding: 5px;
-                        border: 1px solid #ddd;
-                        margin: 0 5px;
-                    }
-    
-                }
-            }
-        }
     }
 // reits
 
@@ -1711,132 +1725,106 @@ main {
 // contact
     .contact.faq {
         .sub_page_detail {
-            width: 70%;
-            margin: 0 auto;
+      
+        }
+    }
 
-            > .wrap {
-
-                .content_01 {
-                    .table_notice {
-                        width: 100%;
-                        line-height: 1.78;
-                        letter-spacing: -0.45px;
-                        table-layout: fixed;
-
-                        thead {
-                            letter-spacing: -0.6px;
-                            border-top: 1px solid #777;
-                            border-bottom: 1px solid #777;
-                            color: #222;
-                            font-size: 1.8rem;
-                            tr {
-                                th {
-                                    padding: 20px 0;
-                                    text-align: center;
-                                    &:nth-of-type(1), &:nth-of-type(4), &:nth-of-type(5) {
-                                        width: 8%;
-                                    }
-                                    &:nth-of-type(2) {
-                                        width: 15%;
-                                    }
-                                    &:nth-of-type(3){
-                                        width: auto;
-                                    }
-                                }
-
-                            }
-                        }
-
-                        tbody {
-                            tr {
-                                border-bottom: 1px solid #e5e5e5;
-                                td {
-                                    padding: 20px 0;
-                                    text-align: center;
-                                    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
-                                    &:nth-child(2){
-                                        span {
-                                            padding: .25rem .5rem;
-                                            border: 1px solid #dfac3f;
-                                            color: #dfac3f;
-                                        }
-                                    }
-                                    &:nth-child(3){
-                                        text-align: left;
-                                    }
-                                }
-                                .notice_download {
-                                    a {
-                                        display: block;
-                                    }
-                                }
-                            }
-                        }
-
-                      
-                   
-                    }
-                    .table_notice_more {
-                        margin-top: 20px;
-                        padding: 10px;
-                        border: 1px solid #ddd;
-                    }
-                    .notice_btn_number {
+    .contact.related {
+        .sub_page_detail{
+            .content_01 {
+                .content_detail {
+                    margin-top: 30px;
+                    ul {
                         display: flex;
-                        justify-content: center;
-                        margin: 100px 0 170px;
-                    
-                        >p {
-                            display: flex;
-                            >a {
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                transition: .3s;
-                                color: #666;
-                                >span {
-                                    display: flex;
-                                    font-size: 1.8rem;
-                                    font-weight: bold;
-                                    margin-right: 3rem;
-                                    svg {
-                                        transition: .15s;
-                                    }
-                                }
-                    
-                                .btn_prev {
-                                    transform: rotate(180deg);
-                                }
-                    
-                       
-                                &:hover {
-                                    span {
-                                        svg {
-                                            fill: #112d4e;
-                                        }
-                                    }
-                                }
-                                &.active {
-                                    span {
-                                        color: #112d4e;
-                                    }
-                                }
-
-                                // 수정해야함 
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        li {
+                            margin: 5px 0;
+                            a {
+                                display: block;
                             }
                         }
-                    
                     }
-                    
                 }
+            }
+
+            .content_02{
+                margin-top: 100px;
+                .content_detail {
+                    ul{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        li {
+                            width: 20%;
+                            display: flex;
+                            flex-direction: column;
+                            margin: 2rem 3rem;
+                         
+                            label{
+                                font-size: 1.8rem;
+                                color: #222;
+                                font-weight: 500;
+                            }
+                            select{
+                                margin-top: 1rem;
+                                height: 40px;
+                                border: 1px solid #ddd;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+      
+    }
+
+    .contact.directions {
+        .sub_page_detail{
+            .content_01 {
 
             }
 
-
+            .content_02{
+                margin-top: 100px;
+                .content_detail {
+                    display: flex;
+                    > div {
+                        margin: 3rem 0 0 4rem;
+                        display: flex;
+                        align-items: baseline;
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                        p {
+                            margin-left: .5rem;
+                            display: flex;
+                            flex-direction: column;
+                            .addr_title {
+                                font-size: 2rem;
+                                color: #222;
+                            }
+                            .addr_detail {
+                                color: #666;
+                            }
+                        }
+                    }
+                }
+            }
         }
+      
     }
 // contact
 
+
+
+// recruitment
+    .recruitment {
+        .null {
+            text-align: center;
+        }
+    }
+// recruitment
 
 
 

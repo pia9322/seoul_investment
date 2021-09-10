@@ -22,9 +22,11 @@
 </head>
 
 <body>
-     <!-- header_init -->
-     <header></header>
+    <!-- header_init -->
+    <header></header>
 
+    <aside class="header_background_menu"></aside>
+     
     <!-- main -->
     <main>
         <div class="main_wrap">
@@ -143,7 +145,7 @@
         
                                             <p class="detail_more">
                                                 <a href="../reits/seoul_01.html">자세히보기</a>
-                                                <a href="../reits/seoul_01_more.html">공시보기</a>
+                                                <a href="../reits/seoul_01_notice.html">공시보기</a>
                                             </p>    
                                         </div>
                                         <p class="detail_sign">
@@ -185,7 +187,7 @@
         
                                             <p class="detail_more">
                                                 <a href="../reits/seoul_01.html">자세히보기</a>
-                                                <a href="../reits/seoul_01_more.html">공시보기</a>
+                                                <a href="../reits/seoul_01_notice.html">공시보기</a>
 
                                             </p>    
                                         </div>
@@ -228,7 +230,7 @@
         
                                             <p class="detail_more">
                                                 <a href="../reits/seoul_01.html">자세히보기</a>
-                                                <a href="../reits/seoul_01_more.html">공시보기</a>
+                                                <a href="../reits/seoul_01_notice.html">공시보기</a>
 
                                             </p>    
                                         </div>
@@ -249,7 +251,7 @@
             </article>
 
             <!-- main_wrap_05 -->
-            <article class="main_wrap_05">
+            <article class="main_wrap_03">
                 <div class="wrap_05">
                     <div class="main_wrap_title">
                         <!-- <h2>회사소개</h2> -->
@@ -275,7 +277,7 @@
 
 
             <!-- main_wrap_03 -->
-            <article class="main_wrap_03">
+            <article class="main_wrap_04">
                 <div class="wrap_03">
 
                     <div class="main_wrap_title">
@@ -549,7 +551,7 @@
 
 
             <!-- main_wrap_04 -->
-            <article class="main_wrap_04">
+            <article class="main_wrap_05">
                 <div class="wrap_04">
                     <figure>
                         <figcaption>
@@ -640,9 +642,16 @@
             //     prevEl: '.swiper-button-prev',
             // },
             breakpoints : { // 반응형 설정이 가능 width값으로 조정
+                1023 : {
+                slidesPerView : 1.5,
+                },
                 768 : {
                 slidesPerView : 1.5,
                 },
+                479 : {
+                slidesPerView : 1,
+                },
+     
             },
         });
 
@@ -669,7 +678,7 @@
             ? $(".footer").addClass("active")
             : $(".footer").removeClass("active")
         });
-
+        
 
         
         

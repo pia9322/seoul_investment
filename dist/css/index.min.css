@@ -168,6 +168,8 @@ main .contact .mv { background: no-repeat center/cover url("../contact/images/mv
 
 main .recruitment .mv { background: no-repeat center/cover url("../recruitment/images/mv.png"); }
 
+main .management .mv { background: no-repeat center/cover url("../management/images/mv.png"); }
+
 main .sub_page_header { position: relative; }
 
 main .sub_page_header > .wrap .mv { position: relative; height: 420px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }

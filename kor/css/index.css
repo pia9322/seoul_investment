@@ -541,6 +541,10 @@ main .recruitment .mv {
   background: no-repeat center/cover url("../recruitment/images/mv.png");
 }
 
+main .management .mv {
+  background: no-repeat center/cover url("../management/images/mv.png");
+}
+
 main .sub_page_header {
   position: relative;
 }
